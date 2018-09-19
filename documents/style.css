@@ -1,11 +1,9 @@
 body {
   background-image:url("../img/wood.jpg");
   background-attachment: fixed;
-}
-
-body {
   font-family:"Verdana", sans-serif;
 }
+
 
 #requirements{
   border: 1px solid black;
