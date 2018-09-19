@@ -1,5 +1,7 @@
 body {
-  background-color:lightblue
+  background-image:url("../img/wood.jpg");
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 header,
@@ -9,8 +11,17 @@ h2 {
   font-family:"Verdana", sans-serif;
 }
 
-
-img {
-
+div{
+  border: 1px solid black;
+  margin: 10px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background-color: #91AA9D;
 }
-'
+
+.heading{
+  width: 70%;
+  margin:auto;
+}
