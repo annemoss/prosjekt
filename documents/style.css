@@ -1,7 +1,6 @@
 body {
   background-image:url("../img/wood.jpg");
   background-attachment: fixed;
-  background-size: cover;
 }
 
 body {
@@ -22,5 +21,5 @@ body {
   width: 70%;
   margin:auto;
   color:#E5E2C0;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
