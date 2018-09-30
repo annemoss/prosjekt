@@ -40,3 +40,8 @@ h1, h2, h2 {
   font-family: 'Patric Hand';
 }
 
+.img{                 /*Fikse så bildene er sentrerte?*/
+  position: relative;
+  width: 400px;
+
+}
