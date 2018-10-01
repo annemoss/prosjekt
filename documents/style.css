@@ -43,3 +43,8 @@ h2{
 }
 
 
+.img{                 /*Fikse så bildene er sentrerte?*/
+  position: relative;
+  width: 400px;
+
+}
