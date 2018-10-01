@@ -1,6 +1,12 @@
+/*@font-face {
+  font-family: Amatic;
+  src: url(../amatic/AmaticSC-Regular.ttf);
+}
+*/
 body {
   background-image:url("../img/wood.jpg");
   background-attachment: fixed;
+  background-size: cover;
   font-family:"Verdana", sans-serif;
 }
 
@@ -36,7 +42,4 @@ h2{
   margin-top: 40px;
 }
 
-h1, h2, h2 {
-  font-family: 'Patric Hand';
-}
 
