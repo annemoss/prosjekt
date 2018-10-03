@@ -13,6 +13,8 @@ img/
 	tel.png
 	pin.png
 	mail.png
+	laktose.png
+	gluten.png
 	...
 css/
 	style.css
