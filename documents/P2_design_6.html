@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Design</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styling.css">
     </head>
     <body>
         <h1 class="heading">Design</h1>
@@ -23,8 +23,11 @@
               Vi ønsker derfor å treffe enhver kunde som besøker siden.
               Restauranten serverer norsk tradisjonsmat, og det er også ønskelig å treffe et eldre publikum.
               Siden må derfor være enkelt utformet slik at man ikke mister kunder på grunn av en for komplisert nettside.</p>
+<<<<<<< HEAD
             <p>Siden forrige innlevering av P1 er det lagt til en eksta side, kalt "Søk jobb". Vi vil derfor prøve å dekke noe av
             kravene i P1 for denne siden, i denne leveringen. </p>
+=======
+>>>>>>> f8ff1b2117b81379f3871a04caf815a50212fbec
 
             <h2>Generell layout</h2>
             <img src="../documents/mockups/generell_layout.png" alt="Mockup av den generelle layouten" class='img'>
@@ -40,8 +43,9 @@
               men vi skal bruke responsive design for å gjøre brukeropplevelsen god også på mindre skjermer som mobil og nettbrett. 
             </p>
 
-            <p> I overskrifter vil vi bruke fonten "Amatic", med "Verdana" som fallback.
-              "Verdana" er i tillegg fonten som vil bli brukt til all annen tekst på nettsiden.  </p>
+            <p> I menyen vil vi bruke fonten "Fjalla one", som er den samme fonten som "Restaurant" i logoen. I tillegg har vi tenkt at menyen skal være i store bokstaver.
+              I overskrifter vil vi bruke fonten "Lobster", som er den samme fonten som "Dugurd" i logoen. Begge steder vil vi bruke "Verdana" som fallback, og det er også den
+              fonten som vil bli brukt til all annen tekst på nettsiden. </p>
 
             <h2> Hovedside – index.html</h2>
             <p>Hovedsiden vil være det første besøkende av nettsiden vil se. Det vil ikke stå noen informasjon på denne siden.
@@ -63,6 +67,22 @@
             </p>
             <img src="../documents/mockups/hovedside2.png" alt="Mockup av hovedsiden" class="img">
 
+            <h2>Meny - Restaurant - rMeny.html</h2>
+            <p>Denne siden vil vise menyen til Dugurd. Her kan man se all den forskjellige tradisjonsrike maten som blir tilbudt ved restauranten. Siden eksisterer for å gi potensielle
+              kunder informasjon om hva som tilbys, samt lokke dem inn med urnorske retter. Vi vil ha en del lunsjretter, men også forretter, middagsretter og dessert.</p>
+            <p>Matrettene vil vises som bilder med en forklarende bildetekst som forteller brukeren navnet og prisen på retten, samt noen av nøkkelingrediensene. Vi vil også inkludere
+              symboler for vanlige allergener. Det skal være mye luft mellom bildene, og det skal være åpenbart hvilke bilder teksten tilhører.</p>
+            <img src="../documents/mockups/menyRestaurantAlt.png" alt="Mockup av restaurantmenyen" class="img">
+
+            <h2>Meny - Catering - cMeny.html</h2>
+            <p>Dugurd tilbyr også catering, men menyen er ikke identiske. Cateringmenyen skal informere om hva slags mat brukeren kan bestille gjennom cateringtjenesten og hvor mye det koster.</p>
+            <p>Catering-tjenesten vil tilby forskjellige ”pakker”, der man kan velge internt i pakken hvile retter man vil ha fra en forhåndsbestemt liste. Jobben til catering-menyen er å vise
+              fram alt som kan velges mellom i de forskjellige pakkene.</p>
+            <p>Pakkene vil være for eksempel (x * (forrett, hovedrett, dessert)), eller (y * (lunsj)), der bildeteksten vil si noe om hvor mange personer pakken kan dekke. Resten av siden vil
+              liste opp alle matrettene innenfor hver kategori, slik at hver matrett har en åpenbar plass i pakkene. Ønsker man mer valgfrihet, må man kontakte Dugurd via telefon eller mail.</p>
+            <img src="../documents/mockups/menyCatering1.png" alt="Mockup av øverste del av cateringmenyen" class="img">
+            <img src="../documents/mockups/menyCatering2.png" alt="Mockup av neste del av cateringmenyen" class="img">
+
             <h2>Bestill bord – bestillBord.html</h2>
             <p>Her ser vi først at menyen øverst på skjermen har endret seg noe. Vi ønsket å legge logoen øverst til venstre slik at den ikke ble forstyrrende eller i veien for
               innholdet på sidene. Dette oppsettet på menyen er likt på alle de andre del-sidene, med unntak av hovedsiden naturligvis. <br><br>
@@ -83,6 +103,23 @@
               <img src="../documents/mockups/bestillBord_3.png" alt="Mockup av hvordan man bestiller bord, fyll inn kontaktinfo" class="img">
               <img src="../documents/mockups/bestillBord_4.png" alt="Mokup av hvordan man bestiller bord, melding om at reserversjonen er fullført" class="img">
 
+
+            <h2>Catering - catering.html</h2>
+            <p>
+            Catering siden skal bestå av mange input-felter og checkboxer som skal hente den informasjonen fra brukeren som trengs for å kunne bekrefte bestillingen.
+            Informasjonen som trengs og må hentes fra brukeren for å kunne gjøre det er kontaktinformasjon, den ønskede cateringpakken, antall personer og eventuelle
+            allergener. Når all informasjon er skrevet inn og bekreftet med en «Submit» knapp skal siden skrive ut at bestillingen fra brukeren har blitt bekreftet.
+            </p>
+
+            <h2>Om oss - omOss.html</h2>
+            <p>
+            På denne nettsiden skal restauranten presenteres. Teksten skal fortelle om selve restauranten, maten som serveres der og tjenesten den tilbyr for kunder,
+            altså mat servering og catering.<br>
+            Teksten skal være delt opp i to deler. Den ene delen skal være plasser øverst i venstre hjørnet av tekstboksen og den andre nederst i høyre hjørnet.
+            Resten av tekstboksen skal være tatt opp av to slideshows av bilder med maten restauranten tilbyr som skal kjøres på forskjellige intervaller, dvs.
+            de to bilder skal ikke byttes samtidig.
+            </p>
+
             <h2> Kontakt oss – kontaktOss.html</h2>
             <p>På denne siden skal man finne all den informasjonen man trenger for å kunne kontakte eller besøke restauranten. Her er menyen lik som på de andre sidene, men når man trykker på kontakt oss
               knappen vil den bli større og endre farge slik at man lett kan se hva man trykker på. Siden vil bestå mest av informasjon. Øverst vil det være åpningstider og under vil det være knapper som
@@ -91,7 +128,7 @@
               kart med lokasjonen til restauranten. Det skal være interaktivt. Man skal altså kunne zoome og flytte det rundt.
             </p>
             <p>I forhold til design skal denne siden være lagt opp enklest mulig slik at man ikke trenger å lete etter den informasjonen man vil ha. Knappene skal være store og man skal lett kunne forstå hva de gjør.
-              Dette oppfyller også kravet om å ha knapper som sender en videre på kontakt siden og at de skal være brukervennlige. Et annet krav som blit oppfylt på Kontak oss siden, er at man skal kunne se hvor restauranten
+              Dette oppfyller også kravet om å ha knapper som sender en videre på kontakt siden og at de skal være brukervennlige. Et annet krav som blit oppfylt på kontakt oss siden, er at man skal kunne se hvor restauranten
               ligger på Google Maps.
 
             </p>
@@ -120,7 +157,105 @@
               av forsiden på PC-versjonen. Navbaren har vi nå flyttet til høyre hjørne som en dropdown meny. Når
               man trykker på denne vil menyen komme fram og logoen bli dyttet til venstre hjørne. Bilde nummer tre
               viser hvordan nettsiden vil se ut når du er inne på en av sidene.</p>
-            <img src="../documents/mockups/mobil.png" alt="Mocku av mobilversjonen" class="img">
+            <img src="../documents/mockups/mobil.png" alt="Mockup av mobilversjonen" class="img">
+
+            <h2>JavaScript</h2>
+            <p>På forsiden trenger vi en JavaScript funksjon som viser bilder dynamisk. Det skal være et slideshow med bilder av maten som tilbys på Dugurd.</p>
+            <p>På siden "Kontakt oss" skal vi ha et kart fra Google Maps som viser hvor restauranten ligger, dette kan vi også gjøre med JavaScript.</p>
+            <p>På flere av sidene trenger vi knapper, dette kan vi fikse med JavaScript. Blant annet en knapp for å sende inn jobbsøknad, for å bestille catering og for å bestille bord</p>
+            <p>På "Om oss"-siden vil vi bruke en JavaScript-funksjon. På siden vil det i utgangspunktet
+            være en del tekst og noen bilder. Når man har pekeren over et av bildene vil bildet bli mørkere
+            og det vil komme tekst oppå bildet.</p>
+
+
+            <h2>Struktur</h2>
+            <h2>Ansvar</h2>
+              <table>
+                <tr>
+                  <th>Filnavn</th>
+                  <th>Beskrivelse</th>
+                  <th>Ansvar</th>
+                  <th>Frist</th>
+                </tr>
+                <tr>
+                  <td>index.html</td>
+                  <td>Hovedsiden</td>
+                  <td>Gunvor</td>
+                  <td>03.11.18</td>
+                </tr>
+                <tr>
+                  <td>rMeny.html</td>
+                  <td>Restaurantmenyen </td>
+                  <td>Vidar</td>
+                  <td>01.11.18</td>
+                </tr>
+                <tr>
+                  <td>cMeny.html</td>
+                  <td>Cateringmenyen</td>
+                  <td>Sarunas</td>
+                  <td>03.11.18</td>
+                </tr>
+                <tr>
+                  <td>bestillBord.html</td>
+                  <td>Siden der man kan bestille bord</td>
+                  <td>Emilie</td>
+                  <td>03.11.18</td>
+                </tr>
+                <tr>
+                  <td>catering.html</td>
+                  <td>Siden der man kan bestille catering</td>
+                  <td>Vidar</td>
+                  <td>01.11.18</td>
+                </tr>
+                <tr>
+                  <td>omOss.html</td>
+                  <td>Informasjon om restauranten og historien</td>
+                  <td>Sarunas</td>
+                  <td>03.11.18</td>
+                </tr>
+                <tr>
+                  <td>kontaktOss.html</td>
+                  <td>Informasjon for å komme i kontakt med restauranten</td>
+                  <td>Anne</td>
+                  <td>03.11.18</td>
+                </tr>
+                <tr>
+                  <td>jobb.html</td>
+                  <td>Side der man kan søke jobb</td>
+                  <td>Emilie</td>
+                  <td>03.11.18</td>
+                </tr>
+                <tr>
+                  <td>style.css</td>
+                  <td>All stylingen til siden </td>
+                  <td>Alle</td>
+                  <td>04.11.18</td>
+                </tr>
+                <tr>
+                  <td>slideshow.js</td>
+                  <td>JavaScript fil som lager slideshow</td>
+                  <td>Gunvor</td>
+                  <td>03.11.18</td>
+                </tr>
+                <tr>
+                  <td>maps.js</td>
+                  <td>JavaScript fil der google maps blir implimentert</td>
+                  <td>Anne</td>
+                  <td>03.11.18</td>
+                </tr>
+                <tr>
+                  <td>knapp.js</td>
+                  <td>JavaScript der funksjonenen til alle knappene er</td>
+                  <td>Emilie, Anne, Vidar</td>
+                  <td>03.11.18</td>
+                </tr>
+                <tr>
+                  <td>om.js</td>
+                  <td>JavaScript fil som fikser funksjonene på om oss siden</td>
+                  <td>Sarunas</td>
+                  <td>03.11.18</td>
+                </tr>
+              </table>
         </div>
     </body>
 </html>
