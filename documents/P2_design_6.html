@@ -38,9 +38,14 @@
               men vi skal bruke responsive design for å gjøre brukeropplevelsen god også på mindre skjermer. Planen er også å lage en
               egen mobilversjon. </p>
 
+<<<<<<< HEAD
             <p> I menyen vil vi bruke fonten "Fjalla one", som er den samme fonten som "Restaurant" i logoen. I tillegg har vi tenkt at menyen skal være i store bokstaver.
               I overskrifter vil vi bruke fonten "Lobster", som er den samme fonten som "Dugurd" i logoen. Begge steder vil vi bruke "Verdana" som fallback, og det er også den
               fonten som vil bli brukt til all annen tekst på nettsiden. </p>
+=======
+            <p> I overskrifter vil vi bruke fonten "Amatic", med "Verdana" som fallback.
+              "Verdana" er i tillegg fonten som vil bli brukt til all annen tekst på nettsiden.  </p>
+>>>>>>> e8aa3405430a692e92fa05914db0ebc8e251c1f5
 
             <h2> Hovedside – index.html</h2>
             <p>Hovedsiden vil være det første besøkende av nettsiden vil se. Det vil ikke stå noen informasjon på denne siden,
@@ -62,6 +67,19 @@
             </p>
             <img src="../documents/mockups/hovedside2.png" alt="Mockup av hovedsiden" class="img">
 
+            <h2>Meny - Restaurant - menyRestaurant.html</h2>
+            <p>Denne siden vil vise menyen til Dugurd. Her kan man se all den forskjellige tradisjonsrike maten som blir tilbudt ved restauranten. Siden eksisterer for å gi potensielle
+              kunder informasjon om hva som tilbys, samt lokke dem inn med urnorske retter. Vi vil ha en del lunsjretter, men også forretter, middagsretter og dessert.</p>
+            <p>Matrettene vil vises som bilder med en forklarende bildetekst som forteller brukeren navnet og prisen på retten, samt noen av nøkkelingrediensene. Vi vil også inkludere
+              symboler for vanlige allergener. Det skal være mye luft mellom bildene, og det skal være åpenbart hvilke bilder teksten tilhører.</p>
+
+            <h2>Meny - Catering - menyCatering.html</h2>
+            <p>Dugurd tilbyr også catering, men menyen er ikke identiske. Cateringmenyen skal informere om hva slags mat brukeren kan bestille gjennom cateringtjenesten og hvor mye det koster.</p>
+            <p>Catering-tjenesten vil tilby forskjellige ”pakker”, der man kan velge internt i pakken hvile retter man vil ha fra en forhåndsbestemt liste. Jobben til catering-menyen er å vise
+              fram alt som kan velges mellom i de forskjellige pakkene.</p>
+            <p>Pakkene vil være for eksempel (x * (forrett, hovedrett, dessert)), eller (y * (lunsj)), der bildeteksten vil si noe om hvor mange personer pakken kan dekke. Resten av siden vil
+              liste opp alle matrettene innenfor hver kategori, slik at hver matrett har en åpenbar plass i pakkene. Ønsker man mer valgfrihet, må man kontakte Dugurd via telefon eller mail.</p>
+
             <h2>Bestill bord – bestillBord.html</h2>
             <p>Her ser vi først at menyen øverst på skjermen har endret seg noe. Vi ønsket å legge logoen øverst til venstre slik at den ikke ble forstyrrende eller i veien for
               innholdet på sidene. Dette oppsettet på menyen er likt på alle de andre del-sidene, med unntak av hovedsiden naturligvis. <br><br>
@@ -79,19 +97,27 @@
               <img src="../documents/mockups/bestillBord_3.png" alt="Mockup av hvordan man bestiller bord, fyll inn kontaktinfo" class="img">
               <img src="../documents/mockups/bestillBord_4.png" alt="Mokup av hvordan man bestiller bord, melding om at reserversjonen er fullført" class="img">
 
-            <h2>Meny - Restaurant - menyRestaurant.html</h2>
-            <p>Denne siden vil vise menyen til Dugurd. Her kan man se all den forskjellige tradisjonsrike maten som blir tilbudt ved restauranten. Siden eksisterer for å gi potensielle kunder informasjon om hva som tilbys, samt lokke dem inn med urnorske retter. Vi vil ha en del lunsjretter, men også forretter, middagsretter og dessert.</p>
-            <p>Matrettene vil vises som bilder med en forklarende bildetekst som forteller brukeren navnet og prisen på retten, samt noen av nøkkelingrediensene. Vi vil også inkludere symboler for vanlige allergener. Det skal være mye luft mellom bildene, og det skal være åpenbart hvilke bilder teksten tilhører.</p>
 
-            <h2>Meny - Catering - menyCatering.html</h2>
-            <p>Dugurd tilbyr også catering, men menyen er ikke identiske. Cateringmenyen skal informere om hva slags mat brukeren kan bestille gjennom cateringtjenesten og hvor mye det koster.</p>
-            <p>Catering-tjenesten vil tilby forskjellige ”pakker”, der man kan velge internt i pakken hvile retter man vil ha fra en forhåndsbestemt liste. Jobben til catering-menyen er å vise fram alt som kan velges mellom i de forskjellige pakkene.</p>
-            <p>Pakkene vil være for eksempel (x * (forrett, hovedrett, dessert)), eller (y * (lunsj)), der bildeteksten vil si noe om hvor mange personer pakken kan dekke. Resten av siden vil liste opp alle matrettene innenfor hver kategori, slik at hver matrett har en åpenbar plass i pakkene. Ønsker man mer valgfrihet, må man kontakte Dugurd via telefon eller mail.</p>
+            <h2>Catering</h2>
+            <p>
+            Catering siden skal bestå av mange input-felter og checkboxer som skal hente den informasjonen fra brukeren som trengs for å kunne bekrefte bestillingen. 
+            Informasjonen som trengs og må hentes fra brukeren for å kunne gjøre det er kontaktinformasjon, den ønskede cateringpakken, antall personer og eventuelle 
+            allergener. Når all informasjon er skrevet inn og bekreftet med en «Submit» knapp skal siden skrive ut at bestillingen fra brukeren har blitt bekreftet.
+            </p>
+
+            <h2>Om oss</h2>
+            <p>
+            På denne nettsiden skal restauranten presenteres. Teksten skal fortelle om selve restauranten, maten som serveres der og tjenesten den tilbyr for kunder, 
+            altså mat servering og catering.<br>
+            Teksten skal være delt opp i to deler. Den ene delen skal være plasser øverst i venstre hjørnet av tekstboksen og den andre nederst i høyre hjørnet. 
+            Resten av tekstboksen skal være tatt opp av to slideshows av bilder med maten restauranten tilbyr som skal kjøres på forskjellige intervaller, dvs. 
+            de to bilder skal ikke byttes samtidig.
+            </p>
 
             <h2> Kontakt oss – kontaktOss.html</h2>
             <p>På denne siden skal man finne all den informasjonen man trenger for å kunne kontakte eller besøke restauranten. Her er menyen lik som på de andre sidene, men når man trykker på kontakt oss
               knappen vil den bli større og endre farge slik at man lett kan se hva man trykker på. Siden vil bestå mest av informasjon. Øverst vil det være åpningstider og under vil det være knapper som
-              går direkte til bestilling av bord og catering, det er gjort for at det skal bli enda enklere å komme seg til sidene der man kan bestille bord og catering. Under knappene skal kontaktinformasjonen stå, med epost-adresse,
+              går direkte til bestilling av bord og catering. Dette er for å gjøre det enda lettere å komme dit man vil og enda mer intuitiv. Under knappene skal kontaktinformasjonen stå, med epost-adresse,
               telefonnummer og adressen. Hvis man trykker på epost-adressen skal brukerens mailprogram åpnes og mailadressen til Dugurd skal være fylt inn i mottakerfeltet. På denne siden skal det også være et
               kart med lokasjonen til restauranten. Det skal være interaktivt. Man skal altså kunne zoome og flytte det rundt.
             </p>
@@ -101,13 +127,12 @@
 
             </p>
             <p>
-              I footeren skal den viktigste kontaktinformasjonen stå, slik at den er tilgjengelig på alle sidene.
+              I footeren skal den viktigste kontaktinformasjoen stå, slik at den er tilgjengelig på alle sidene.
             </p>
             <img src="../documents/mockups/kontakt1.png" alt="Mockup av kontakt oss siden" class="img">
             <img src="../documents/mockups/kontakt2.png" alt="Mockup av kontakt oss siden" class="img">
 
             <h2> Søk jobb – jobb.html</h2>
-            <p>For å oppfylle kravene om antall sider har vi lagt til en side der man kan søke jobb. </p>
             <p> Her skal det være mulig å søke jobb hos Dugurd. Under "Hva vil du jobbe med?", vil det være en dropdown meny. Der kan man velge hva man vil søke om, som for eksempel kokk, servitør, hovmester... Videre må man fylle inn navn, epost og telefonnummer
               og alt dette må være fylt inn. Det skal også være to større felt der man skal skrive om utdanning og arbeidserfaring og hvorfor man vil jobbe på Dugurd. Disse feltene vil være en del større enn det de er på mockupen. Helt nederst skal det være en knapp
               sender inn skjemaet. Når man trykker på knappen vil man få opp en melding om at søknaden har blitt sent og litt info.
@@ -127,6 +152,12 @@
               man trykker på denne vil menyen komme fram og logoen bli dyttet til venstre hjørne. Bilde nummer tre
               viser hvordan nettsiden vil se ut når du er inne på en av sidene.</p>
             <img src="../documents/mockups/mobil.png" alt="Mocku av mobilversjonen" class="img">
+
+            <h2>JavaScript</h2>
+            <p>På forsiden skal det være et slideshow med bilder av maten som tilbys på Dugurd. Dette skal gjøres ved å bruke JavaScript.</p>
+            <p>På siden "Kontakt Oss" skal vi ha et kart fra Google Maps, som viser hvor restauranten ligger.</p>
+            <p>På flere av sidene trenger vi knapper, dette kan vi fikse med JavaScript. Blant annet en knapp for å sende inn jobbsøknad, for å bestille catering, for å bestille bord og ..?</p>
+            <p>Den siste funksjonen vi bruker JavaScript til er ...</p>
         </div>
     </body>
 </html>
