@@ -1,0 +1,27 @@
+index.html
+rMeny.html
+cMeny.html
+bestillBord.html
+catering.html
+omOss.html
+kontaktOss.html
+jobb.html
+...
+img/	
+	logo.png
+	wood.jpg
+	tel.png
+	pin.png
+	mail.png
+	...
+css/
+	style.css
+	...
+scripts/
+	slideshow.js
+	maps.js
+	knapp.js
+	entil.js
+	...
+
+
