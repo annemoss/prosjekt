@@ -21,38 +21,39 @@
             <p>Den imaginære restauranten, Dugurd, trenger en nettside.
               Her er målet at brukeren skal bestille bord og/eller catering fra restauranten.
               Vi ønsker derfor å treffe enhver kunde som besøker siden.
-              Restauranten server norsk tradisjonsmat, og man ønsker derfor også å treffe et eldre publikum.
+              Restauranten serverer norsk tradisjonsmat, og det er også ønskelig å treffe et eldre publikum.
               Siden må derfor være enkelt utformet slik at man ikke mister kunder på grunn av en for komplisert nettside.</p>
-            <p>Lagt til eksta side</p>
+            <p>Siden forrige innlevering av P1 er det lagt til en eksta side, kalt "Søk jobb". Vi vil derfor prøve å dekke noe av
+            kravene i P1 for denne siden, i denne leveringen. </p>
 
             <h2>Generell layout</h2>
             <img src="../documents/mockups/generell_layout.png" alt="Mockup av den generelle layouten" class='img'>
             <p>Designet på nettsiden skal gjenspeile en norsk hytte. Det største virkemiddelet vi bruker for å oppnå dette
               er bakgrunnsbildet for hele nettsiden. Nettsiden vil ha et variert publikum og må derfor være enkelt utformet.
-              For å holde siden enkel har vi valgt å bruke en svært begrensa fargepallett. Til navbaren, artikkelen og footeren
+              For å holde siden enkel har vi valgt å bruke et svært begrenset fargepallett. Til navigasjonsbaren, artikkelen og footeren
               har vi valgt den samme mørke, grå fargen (#262626, opacity: 20%). I sterk kontrast til dette har vi valgt å bruke
               hvit(#FFFFFF) til skriften.
               Målet med nettsiden er at brukeren skal bestille bord eller catering fra restauranten. Disse sidene må derfor
-              være enkle å finne. Dette gjør vi ved å legge navbaren på toppen av nettsiden, da kan man enkelt navigere seg
+              være enkle å finne. Dette gjør vi ved å legge navigasjonsbaren på toppen av nettsiden, da kan man enkelt navigere seg
               fra side til side. Logoen til restauranten ligger også i navbaren, for at man fort skal kunne se hvilken nettside
               man er på. Man skal også kunne trykke på logoen for å komme tilbake til forsiden. Nettsiden er utformet for PC-brukere,
-              men vi skal bruke responsive design for å gjøre brukeropplevelsen god også på mindre skjermer. Planen er også å lage en
-              egen mobilversjon. </p>
+              men vi skal bruke responsive design for å gjøre brukeropplevelsen god også på mindre skjermer som mobil og nettbrett. 
+            </p>
 
             <p> I overskrifter vil vi bruke fonten "Amatic", med "Verdana" som fallback.
               "Verdana" er i tillegg fonten som vil bli brukt til all annen tekst på nettsiden.  </p>
 
             <h2> Hovedside – index.html</h2>
-            <p>Hovedsiden vil være det første besøkende av nettsiden vil se. Det vil ikke stå noen informasjon på denne siden,
-              det vil kun være et stort bilde av noe mat som restauranten tilbyr. Tanken er å få inn et av javaScript elementene
-              inn her, og dermed lage et slideshow med forskjellige bilder som representerer restauranten på en imøtekommende måte.
+            <p>Hovedsiden vil være det første besøkende av nettsiden vil se. Det vil ikke stå noen informasjon på denne siden.
+              Det vil kun være et stort bilde av matretter som restauranten tilbyr. Tanken er å få inn et av javaScript-elementene
+              inn her, og dermed lage et slideshow med forskjellige bilder som representerer restauranten på en fin og imøtekommende måte.
               Bildene skal dekke hele vidden til skjermen (100%), og dekke fra menylinjen til bunnen av siden. I tillegg skal bildene
               si noe om hva som tilbys, og forhåpentligvis lokke til seg den besøkende og på denne måten bidra til å gi restauranten
-              flere besøkende, og eller at flere benytter seg av catering-tjenesten. Siden skal ha et enkelt utseende slik at det er
+              flere besøkende, og/ eller at flere benytter seg av catering-tjenesten. Siden skal ha et enkelt utseende slik at det er
               lett å oppdage hovedmenyen. Her har vi også valgt å ha god kontrast mellom den hvite skriften mot en svart/grålig
               halvtransparent bakgrunn. Logoen er også sentrert i menyen, slik at den er lett å legge merke til. Det er i tillegg
-              hvit mot den svarte bakgrunnen, og blir derfor et blikkfang. Et annet element som skal gjøre hovedsiden lett å bruke
-              er at det ikke vil være muligheter for å scrolle på denne siden. Man kan kun trykke på de forskjellige meny-knappene øverst på siden. <br><br>
+              hvit mot den svarte bakgrunnen, og blir derfor et blikkfang på grunn av kontrasten mellom mørkt og lyst. Et annet element som skal gjøre hovedsiden lett å bruke
+              er at det ikke vil være muligheter for å scrolle på forsiden. Man kan kun trykke på de forskjellige meny-knappene øverst på siden. <br><br>
 
               Hovedsiden vil på denne måten imøtekomme kravene om brukervennlighet, norsk tema i form av bildene som blir vist, og gjennom utseende
                på logoen, ønsket om at hovedsiden ikke skal være scrollbar og at man får innsyn i hva slags mat som tilbys gjennom bildefremvisningen.
@@ -66,13 +67,16 @@
             <p>Her ser vi først at menyen øverst på skjermen har endret seg noe. Vi ønsket å legge logoen øverst til venstre slik at den ikke ble forstyrrende eller i veien for
               innholdet på sidene. Dette oppsettet på menyen er likt på alle de andre del-sidene, med unntak av hovedsiden naturligvis. <br><br>
 
-              Videre ønsker vi å ha litt informasjon øverst på siden, for så å ha en boks hvor man først velger hvor mange man skal reservere
+              Videre ønsker vi å ha litt informasjon på halve delen av siden, for så å ha en boks hvor man først velger hvor mange man skal reservere
               bord til, deretter hvilken dato og klokkeslett. Det vil så vises en melding om det er ledig bord eller ikke, og hvis det er det
               kan man trykke seg videre til en side der man kan fylle ut kontaktinformasjon som navn og telefonnummer, og evt e-post. Er det
-              ikke ledig vil det komme beskjed om dette, for at det deretter vil være mulig å trykke seg tilbake for å velge en annen dato eller et annet klokkeslett.<br><br>
+              ikke ledig vil det komme beskjed om dette, for at det deretter vil være mulig å trykke seg tilbake for å velge en annen dato eller et annet klokkeslett. Boksen som
+              skal inneholde dette vil ligge på den andre delen. Det vil bli lite innhold på siden, og mindre å forholde seg til å hvert steg av bordreserveringen. Dette øker igjen
+              brukervennligheten.<br><br>
 
               Denne del-siden vil oppfylle blant annet kravene om å kunne bestille/ reservere bord elektronisk. Vi ønsker derfor å lage nettopp dette så enkelt som mulig,
-              slik at de fleste og helst alle skal kunne få det til. Dette vil dermed også oppfylle kriteriet om at elektronisk bordreservasjon vil minke antallet innringninger.
+              slik at de fleste og helst alle skal kunne få det til. Dette vil dermed også oppfylle kriteriet om at elektronisk bordreservasjon vil minke antallet innringninger. Også denne
+              siden tilfredsstiller ønsket om brukervennlighet.
               </p>
               <img src="../documents/mockups/bestillBord_1.png" alt="Mockup av hvordan man bestiller bord, valg av antall gjester" class="img">
               <img src="../documents/mockups/bestillBord_2.png" alt="Mockup av hvordan man bestiller bord, valg av dato og klokkeslett" class="img">
