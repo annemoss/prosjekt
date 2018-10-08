@@ -157,6 +157,7 @@
 
             <h2>Navigasjonsbar - navbar.html</h2>
             <p> Dette dokumentet skal inneholde selve navigasjonsbaren. Alle drop down menyer og knapper skal være pakket inn i en div. Brukeren skal ikke ha direkte tilgang til
+
               dette dokumentet, men dette dokumentet skal være inkludert i alle de andre HTML-filene nettstedet består av. Vi bestemte oss å flytte ut navbaren til en egen fil for å slippe
               unna å kopiere samme koden om og om igjen på hvert dokument. Dette gjør også koden av andre HTML-filer mer oversiktlig, lettere å lese og redigere.
             </p>
@@ -181,7 +182,12 @@
                for å bestille catering og for å bestille bord. Når man trykker på knappen for å sende inn jobbsøknad vil det sjekkes om
                de essensielle boksene har tekst i seg, altså navn, nummer og epost. Hvis alle kravene oppfylles vil det spesielle
                innholdet på siden byttes ut med en tekstbeskjed der det står "Takk for din søknad!". Knappen for å bestille catering
-               vil sjekke om </p>
+               vil sjekke om tekstboksene har tekst som oppfyller kravene, for deretter å gi en konfirmasjon om mottatt bestilling.
+               Knappen for å bestille bord vil være mer kompleks. Først velger brukeren hvor mange den vil ha bord til, så trykker man
+                på neste. Da erstattes innholdet i boksen med en query om hvilken dato og klokkeslett brukeren ønsker å bestille til.
+              Her skal det være en viss tilfeldig mulighet for at brukeren får beskjed om at det er fullt, og blir spurt om å søke om
+               nytt tidspunkt. Om dette ikke skjer vil boksen åpne tekstbokser der brukeren blir bedt om å putte inn fornavn, etternavn,
+                telefonnummer og e-post. Etter dette er gjort blir brukeren informert om at reservasjonen er registrert.</p>
             <p>På "Om oss"-siden vil vi bruke en JavaScript-funksjon. På siden vil det i utgangspunktet
               være en del tekst og noen bilder. Når man har pekeren over et av bildene vil bildet bli mørkere
               og det vil komme tekst oppå bildet.</p>
