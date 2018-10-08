@@ -6,6 +6,7 @@ catering.html
 omOss.html
 kontaktOss.html
 jobb.html
+nav.html
 ...
 img/
 	logo.png
@@ -15,6 +16,8 @@ img/
 	mail.png
 	laktose.png
 	gluten.png
+	nott.png
+	egg.png
 	...
 css/
 	style.css
