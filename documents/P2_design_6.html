@@ -6,10 +6,11 @@
         <link rel="stylesheet" href="styling.css">
     </head>
     <body>
-        <h1 class="heading">Design</h1>
+        <div id="requirements">
+        <h1 class="heading" id="design">Design</h1>
         <h2 class="heading">26.09.18</h2>
         <h2 class="heading">Emilie Kalleberg, Vidar Michaelsen, Sarunas Juskenas, Anne Mosvold Ørke, Gunvor Huso</h2>
-        <div id="requirements">
+        
             <h2>Prosjektet</h2>
             <p>
               <ul>
@@ -41,7 +42,7 @@
               man er på. Man skal også kunne trykke på logoen for å komme tilbake til forsiden. Nettsiden er utformet for PC-brukere,
               men vi skal bruke responsive design for å gjøre brukeropplevelsen god også på mindre skjermer som mobil og nettbrett.
               På standard computerskjerm skal skriftstørrelsen være 24pt på navigasjonselementet og titler, og 18pt på standard tekst.
-              Disse skriftstørrelsene må skaleres ned eller opp basert på skjermstørrelsen
+              Disse skriftstørrelsene skal skaleres ned eller opp basert på skjermstørrelsen
             </p>
 
             <p> I menyen vil vi bruke fonten "Fjalla one", som er den samme fonten som "Restaurant" i logoen. I tillegg har vi tenkt at menyen skal være i store bokstaver.
@@ -171,15 +172,22 @@
             <img src="../documents/mockups/mobil.png" alt="Mockup av mobilversjonen" class="img">
 
             <h2>JavaScript</h2>
-            <p>På forsiden trenger vi en JavaScript funksjon som viser bilder dynamisk. Det skal være et slideshow med bilder av maten som tilbys på Dugurd.</p>
-            <p>På siden "Kontakt oss" skal vi ha et kart fra Google Maps som viser hvor restauranten ligger, dette kan vi også gjøre med JavaScript.</p>
-            <p>På flere av sidene trenger vi knapper, dette kan vi fikse med JavaScript. Blant annet en knapp for å sende inn jobbsøknad, for å bestille catering og for å bestille bord</p>
+            <p>På forsiden trenger vi en JavaScript funksjon som viser bilder dynamisk. Det skal være et slideshow med bilder av
+              maten som tilbys på Dugurd. Slideshowet skal automatisk rullere gjennom rundt fem bilder. Bildene skal skli inn raskt,
+              med et par sekunders pause mellom hver slide.</p>
+            <p>På siden "Kontakt oss" skal vi ha et kart fra Google Maps som viser hvor restauranten ligger, dette kan vi også gjøre
+              med JavaScript. Kartet skal sentreres på Hemsedal, ettersom det er der restauranten skal være. Nærmere sentrering bestemmes
+               senere.</p>
+            <p>På flere av sidene trenger vi knapper, dette kan vi fikse med JavaScript. Blant annet en knapp for å sende inn jobbsøknad,
+               for å bestille catering og for å bestille bord. Når man trykker på knappen for å sende inn jobbsøknad vil det sjekkes om
+               de essensielle boksene har tekst i seg, altså navn, nummer og epost.</p>
             <p>På "Om oss"-siden vil vi bruke en JavaScript-funksjon. På siden vil det i utgangspunktet
             være en del tekst og noen bilder. Når man har pekeren over et av bildene vil bildet bli mørkere
             og det vil komme tekst oppå bildet.</p>
 
 
             <h2>Struktur</h2>
+            <img src="../img/struktur.png" alt="Filstrukturen" >
             <h2>Ansvar</h2>
               <table>
                 <tr>
@@ -198,7 +206,7 @@
                   <td>rMeny.html</td>
                   <td>Restaurantmenyen </td>
                   <td>Vidar</td>
-                  <td>01.11.18</td>
+                  <td>03.11.18</td>
                 </tr>
                 <tr>
                   <td>cMeny.html</td>
@@ -216,7 +224,7 @@
                   <td>catering.html</td>
                   <td>Siden der man kan bestille catering</td>
                   <td>Vidar</td>
-                  <td>01.11.18</td>
+                  <td>03.11.18</td>
                 </tr>
                 <tr>
                   <td>omOss.html</td>
