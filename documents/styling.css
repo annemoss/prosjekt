@@ -34,9 +34,9 @@ th, td{
 
 .heading{
   width: 70%;
-  margin:auto;
-  color:#E5E2C0;
-  text-shadow: -1px 1px black, 1px -1px black;
+  margin-top: 0px;
+  padding: 0px;
+  font-size: 15px;
 }
 
 footer{
@@ -58,4 +58,8 @@ h2{
   position: relative;
   width: 400px;
 
+}
+
+#design{
+  font-size: 35px;
 }
