@@ -1,3 +1,20 @@
+@font-face {
+    font-family: "FjallaOne";
+    src: url(../Fjalla_One/FjallaOne-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: "Lobster";
+    src: url(../Lobster/Lobster-Regular.ttf);
+  }
+  
+
+body {
+  background-image:url("../img/wood.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 #textbox {
   padding-left: 30px;
   padding-right: 30px;
