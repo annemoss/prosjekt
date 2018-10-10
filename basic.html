@@ -4,11 +4,16 @@
         <meta charset="utf-8">
         <title>Dugurd Restaurant</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="img/logo.png" type="image/png" sizes="25x25">
+        <link rel="icon" href="../img/logo.png" type="image/png" sizes="25x25">
     </head>
     <body>
-        <div id="navbar"></div>
+        <div id="navbar">
+        <link rel="import" href="dugurd/nav.html">
+        </div>
         <div id="textbox"></div>
-        <footer></footer>
+        <div id="footer"></div>
+        <script> 
+        var content = document.querySelector('link[rel="import"]').import;
+        </script>
     </body>
 </html>
