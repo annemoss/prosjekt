@@ -1,0 +1,13 @@
+body {
+  background-color: grey;
+}
+
+#textbox {
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 18pt;
+}
