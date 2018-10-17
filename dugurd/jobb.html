@@ -11,10 +11,18 @@
 
 
     <div class="textbox"> <!--legg til alt av kode inni her-->
-      <div>
+      <div id='soknad'>
         <h1>Vil du jobbe hos oss?</h1>
+
+
             <p>Hva vil du jobbe med?</p>
             <!--Sett inn drop-down meny-->
+            <select>
+              <option value="chef">Kokk</option>
+              <option value="">Vaskepersonell</option>
+              <option value="">Servitør</option>
+            </select>
+
             <p>Navn:</p>
           <label for="name"></label>
           <input type="text" name="name" required>
@@ -37,9 +45,12 @@
           <br>
 
           <p>Hvorfor vil du jobbe hos oss?</p>
-          <label for="text">
-          <input type="textbox" name="" required>
-        </label> <!--ENDRE STØRRELSE PÅ BOKSEN-->
+          <label for="text"></label>
+          <textarea type="textbox" name="text" id="textarea" required></textarea>
+          <br>
+         <!--ENDRE STØRRELSE PÅ BOKSEN-->
+          <label for="submit"></label>
+          <input type="submit" name="submit" value="Send inn søknad" id="submit">
 
         </div>
         </form>
