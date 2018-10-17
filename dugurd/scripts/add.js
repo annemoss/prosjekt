@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded",function(e){
                         +       '<li><a href="../jobb.html">SØK JOBB</a></li>'
                         +     '</ul>'
                         +'</div>'
-    
+
 	const footer = document.querySelector("footer")
     footer.innerHTML = "html"
 })
