@@ -14,6 +14,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   color: white;
+  font-family: "FjallaOne", "Verdana", sans-serif;
 }
 
 .textbox {
@@ -23,8 +24,10 @@ body {
   color: white;
   margin-left: 20%;
   margin-right: 20%;
+  margin-top: 100px;
   background-color: rgba(0, 0, 0, 0.75);
   font-size: 18pt;
+
 }
 
 #illustrasjonsbilde {
@@ -36,24 +39,32 @@ body {
   position:sticky;
 }
 
+h1 {
+    font-family: "FjallaOne", "Verdana", sans-serif;
+}
 /*nav.html*/
-#nav {
-    background-color: rgba(38, 38, 38, 0.8);
+.nav {
+    background-color: rgba(0, 0, 0, 0.75);
     font-family: "FjallaOne", "Verdana", sans-serif;
     font-size: 24pt;
     position: fixed;
     top: 0;
     width: 100%;
+    height: 80px;
+}
+
+ul {
+    width: 100%;
 }
 
 li {
     display: inline;
-
+    margin: auto;   
 } 
 
-#dropdown {
+.dropdown-content {
     display:none;
-
+    position: absolute;
 }
 
 li a {
@@ -61,17 +72,27 @@ li a {
     color:white;
 }
 
-li:hover {
-    background-color: black;
+li a.active {
+    background-color: red;
 }
 
-.active {
-    color: red;
+li a:hover:not(.active) {
+    background-color:black;
 }
 
-#logoHeader{
+
+.logoHeader{
     width: 80px;
     height: 80px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /*JOBBSØKNAD*/
