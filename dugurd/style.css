@@ -13,6 +13,7 @@ body {
   background-image:url("../img/wood.jpg");
   background-attachment: fixed;
   background-size: cover;
+  color: white;
 }
 
 #textbox {
@@ -33,4 +34,42 @@ body {
 #testid {
   text-align:right;
   position:sticky;
+}
+
+/*nav.html*/
+#nav {
+    background-color: rgba(38, 38, 38, 0.8);
+    font-family: "FjallaOne", "Verdana", sans-serif;
+    font-size: 24pt;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    display: inline;
+
+} 
+
+#dropdown {
+    display:none;
+
+}
+
+li a {
+    text-decoration: none;
+    color:white;
+}
+
+li:hover {
+    background-color: black;
+}
+
+.active {
+    color: red;
+}
+
+#logoHeader{
+    width: 80px;
+    height: 80px;
 }
