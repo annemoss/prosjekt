@@ -13,40 +13,47 @@
     <div class="textbox"> <!--legg til alt av kode inni her-->
       <div id='soknad'>
         <h1>Vil du jobbe hos oss?</h1>
-
+        <form action="?????" method="post"><!--FINN UT HVOR DET SKAL SENDES -->
 
             <p>Hva vil du jobbe med?</p>
             <!--Sett inn drop-down meny-->
             <select>
-              <option value="chef">Kokk</option>
-              <option value="">Vaskepersonell</option>
-              <option value="">Servitør</option>
+              <option value="velg">Velg en stilling...</option>
+              <option value="kokk" required>Kokk</option>
+              <option value="hovmester">Hovmester</option>
+              <option value="vaskepersonell" required>Vaskepersonell</option>
+              <option value="servitor" required>Servitør</option>
             </select>
 
-            <p>Navn:</p>
-          <label for="name"></label>
-          <input type="text" name="name" required>
+            <p>Fornavn: </p>
+          <label for="firstname"></label>
+          <input type="text" name="firstname" placeholder="Skriv inn ditt fornavn..." required>
           <br>
+
+          <p>Etternavn: </p>
+        <label for="lastname"></label>
+        <input type="text" name="lastname" placeholder="Skriv inn ditt etternavn..." required>
+        <br>
 
           <p>E-post:</p>
           <label for="email"></label>
-          <input type="email" name="email" required>
+          <input type="email" name="email" placeholder="Skriv inn din e-post..." required>
           <br>
 
           <p>Telefonnummer:</p>
           <label for="number"></label>
-          <input type="numbers" name="number" required>
+          <input type="numbers" name="number" placeholder="Skriv inn ditt telefonnummer..."required>
           <br>
 
           <p>Last opp dinCV/ Utdanning og arbeidserfaring:</p>
           <label for="file">
-          <input type="file" name="document/*">
+          <input type="file" name="document/*" id="file">
           </label>
           <br>
 
-          <p>Hvorfor vil du jobbe hos oss?</p>
+          <p>Hvorfor ønsker du jobbe hos oss?</p>
           <label for="text"></label>
-          <textarea type="textbox" name="text" id="textarea" required></textarea>
+          <textarea type="textbox" name="text" placeholder="Skriv om hvorfor du ønsker å jobbe hos oss..."id="textarea" required></textarea>
           <br>
          <!--ENDRE STØRRELSE PÅ BOKSEN-->
           <label for="submit"></label>
@@ -54,9 +61,13 @@
 
         </div>
         </form>
+          <p id="confirmation"> Takk for din søknad! <br>
+            Du vil høre fra oss snart!</p>
 
+      </div>
 
         <footer></footer>
         <script type="text/javascript" src="scripts/add.js"></script>
+        <script type="text/javascript" src="scripts/knapp.js"></script>
     </body>
 </html>
