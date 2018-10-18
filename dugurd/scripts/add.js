@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded",function(e){
 	const header = document.querySelector("header")
-    header.innerHTML = '<div id="nav"'
+    header.innerHTML = '<div class="nav"'
                         +    '<ul>'
-                        +       '<li><a href="../index.html"><img src="img/logo.png" alt="logo" id="logoHeader"></a></li>'
-                        +       '<li>MENY'
-                        +           '<ul id="dropdown">'
+                        +       '<li><a href="../index.html"><img src="img/logo.png" alt="logo"class="logoHeader"></a></li>'
+                        +       '<li class="dropdown">MENY'
+                        +           '<ul class="dropdown-content">'
                         +               '<li><a href="rMeny.html">RESTAURANT</a></li>'
                         +               '<li><a href="cMeny.html">CATERING</a></li>'
                         +           '</ul>'
