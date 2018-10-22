@@ -29,7 +29,7 @@ body {
 }
 
 /*rMeny */
-#floatL {
+#flyteguri {
   float: left;
 }
 
@@ -49,14 +49,16 @@ body {
   text-align:center;
   float:left;
   clear:left;
-  width:50%;
+  width:48%;
+  margin-right:10px;
 }
 
 #right {
   text-align: center;
   float:right;
   clear:right;
-  width:50%;
+  width:48%;
+  margin-left:10px;
 }
 
 /*nav.html*/
