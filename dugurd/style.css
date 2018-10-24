@@ -272,7 +272,16 @@ td {
 }
 
 /*Kontakt oss*/
-.icon, .infoT{
+.icon{
     height: 50px;
-    display: inline;
+    /*display:inline;*/
+}
+
+.infoT{
+    display:inline;
+}
+
+#googleMap{
+    width:100%;
+    height:400px;
 }
