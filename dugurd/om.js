@@ -25,14 +25,6 @@ function picDarken(pic){
 }
 
 function picLighten(pic){
-<<<<<<< HEAD
     document.getElementById(pics[pic.slice(-1)-1]).style.filter = "brightness(100%)";
     document.getElementById(texts[pic.slice(-1)-1]).style.display = 'none';
 }
-=======
-    document.getElementById(pic).style.filter = "brightness(100%)";
-
-    var text_id = pic + "_text";
-    document.getElementById(text_id).style.display = 'none';
-}
->>>>>>> e4de5cb39750d9db7475fd7f5fffe8f1a0719dcc
