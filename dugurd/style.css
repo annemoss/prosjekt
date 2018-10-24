@@ -26,7 +26,7 @@ body {
   color: white;
   margin-left: 20%;
   margin-right: 20%;
-  width:60%;
+  width:auto;
   background-color: rgba(0, 0, 0, 0.75);
   font-size: 18pt;
   margin-top: 100px;
@@ -35,7 +35,7 @@ body {
 
 /*rMeny */
 #flyteguri {
-  position: absolute;
+  float:left;
   top: 0;
 }
 
