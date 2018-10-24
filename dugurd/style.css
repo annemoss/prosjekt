@@ -271,3 +271,13 @@ td {
 
 
 }
+
+/*Kontakt oss*/
+.icon{
+    height: 50px;
+    display: inline;
+}
+
+#infoT{
+    display: block;
+}
