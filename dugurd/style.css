@@ -82,6 +82,7 @@ body {
 
 ul {
     /*width: 100%;*/
+    /*padding-inline-start: 0px;*/
 }
 
 li {
@@ -228,7 +229,7 @@ form {
 
 td {
   padding-right: 25px;
-
+}
 
 
 /*navbar til index*/
