@@ -30,7 +30,7 @@ p3.style.display = 'none';
 p4.style.visibility = 'hidden';
 p4.style.display = 'none';
 
-if ((p1.visibility='visible')){
+if ((p1.visibility=='visible')){
 btn.onclick = function changeDisplay1 () {
   p1.style.visibility = 'hidden';
   p1.style.display = 'none';
@@ -40,15 +40,20 @@ btn.onclick = function changeDisplay1 () {
   valg.style.display = 'none';
 
 }}
-else if ((p2.visibility='visible' && randomtall<8)) {
+else if ((p2.visibility=='visible') {
   btn.onclick = function changeDisplay2 (){
     p2.style.visibility = 'hidden';
     p2.style.display = 'none';
-    p3.style.visibility = 'visible';
-    p3.style.display = 'block';
+    if (randomtall<8){
+      p3.style.visibility = 'visible';
+      p3.style.display = 'block';
+    }
+    else{
+      p4.style.visibility = 'visible';
+      p4.style.display = 'block';
+    }
   }
 }
-
-else if (randomtall<8){
-    btn.onclick = function changeDisplay3 ()
+else if ((p3.visibility=='visible')||(p4.visibility= ''){
+  p
 }
