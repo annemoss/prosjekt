@@ -10,8 +10,8 @@ h1{
 }
 #container1_text{
     position: absolute;
-    left: 55%;
     top: 30%;
+    left: 55%;
     max-width: 25%;
 }
 
@@ -19,13 +19,13 @@ h1{
     display: none;
     position: absolute;
     left: 55%;
-    top: 88%;
+    top: 82%;
     max-width: 25%;
 }
 #container2_text{
     position: absolute;
     left: 25%;
-    top: 80%;
+    top: 75%;
     max-width: 25%
 }
 
@@ -33,13 +33,13 @@ h1{
     display: none;
     position: absolute;
     left: 25%;
-    top: 128%;
+    top: 120%;
     max-width: 25%;
 }
 #container3_text{
     position: absolute;
     left: 55%;
-    top: 128%;
+    top: 120%;
     max-width: 25%;
 }
 
@@ -50,6 +50,12 @@ h1{
 
 .textbox {
     padding: 20px;
+<<<<<<< HEAD
     font-family: Verdana;
+    font-size: 0.9vw;
+}
+=======
+    font-family: Verdana, sans-serif;
     font-size: 2vh;
 }
+>>>>>>> e4de5cb39750d9db7475fd7f5fffe8f1a0719dcc
