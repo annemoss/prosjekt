@@ -271,11 +271,7 @@ td {
 }
 
 /*Kontakt oss*/
-.icon{
+.icon, .infoT{
     height: 50px;
     display: inline;
-}
-
-#infoT{
-    display: block;
 }
