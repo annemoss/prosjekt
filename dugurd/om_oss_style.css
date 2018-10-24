@@ -4,43 +4,43 @@ h1{
 #pic1_text {
     display: none;
     position: absolute;
-    left: 12.5%;
-    top: 35%;
+    left: 25%;
+    top: 37%;
     max-width: 25%;
 }
 #container1_text{
     position: absolute;
-    left: 59%;
-    top: 25%;
-    max-width: 30%;
+    left: 55%;
+    top: 30%;
+    max-width: 25%;
 }
 
 #pic2_text{
     display: none;
     position: absolute;
-    left: 59%;
-    top: 104%;
+    left: 55%;
+    top: 88%;
     max-width: 25%;
 }
 #container2_text{
     position: absolute;
-    left: 12.5%;
-    top: 94%;
-    max-width: 30%
+    left: 25%;
+    top: 80%;
+    max-width: 25%
 }
 
 #pic3_text{
     display: none;
     position: absolute;
-    left: 12.5%;
-    top: 174%;
+    left: 25%;
+    top: 128%;
     max-width: 25%;
 }
 #container3_text{
     position: absolute;
-    left: 59%;
-    top: 174%;
-    max-width: 30%;
+    left: 55%;
+    top: 128%;
+    max-width: 25%;
 }
 
 #pic2 {
@@ -51,6 +51,7 @@ h1{
 .textbox {
     padding: 20px;
     font-family: Verdana;
+    font-size: 13px;
 }
 
 .om_oss_pics{
