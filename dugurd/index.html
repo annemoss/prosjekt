@@ -10,15 +10,15 @@
     <body>
       <div class="navbar">
         <ul class="bar">
-          <li class="boks">MENY
-            <div class="dropdown">
+          <li id="mknapp">MENY
+            <div class="dropdowna">
               <a href="rMeny.html">RESTAURANT</a>
               <a href="cMeny.html">CATERING</a>
             </div>
           </li>
           <li class="boks"><a href="bestillBord.html">BESTILL BORD</a></li>
           <li class="boks"><a href="catering.html">CATERING</a></li>
-          <a href="index.html"><img src="img/logo.png" alt="logo" id = "logo"></a>
+          <li id = "logo"><a href="index.html"><img src="img/logo.png" alt="logo" ></a></li>
           <li class="boks"><a href="omOss.html">OM OSS</a></li>
           <li class="boks"><a href="kontaktOss.html">KONTAKT OSS</a></li>
           <li class="boks"><a href="jobb.html">SØK JOBB</a></li>
@@ -29,7 +29,22 @@
           "sitat"
         </div>
 
+        <div class="slideshow">
+          <img class="slides" src="img/flyt3.jpg" alt="bilde1">
+          <img class="slides" src="img/logo.png" alt="bilde2">
+          <img class="slides" src="img/struktur.png" alt="bilde3">
+        </div>
+
+        <button class="slidebutton" type="button" name="button"></button>
+        <button class="slidebutton" type="button" name="button"></button>
+
+        <div>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
         <footer></footer>
-        <script type="text/javascript" src="scripts/add.js"></script>
+        <script src="slideshow.js"></script>
     </body>
 </html>
