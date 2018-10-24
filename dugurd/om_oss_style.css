@@ -51,9 +51,5 @@ h1{
 .textbox {
     padding: 20px;
     font-family: Verdana;
-    font-size: 13px;
-}
-
-.om_oss_pics{
-    max-height: 600px;
+    font-size: 2vh;
 }
