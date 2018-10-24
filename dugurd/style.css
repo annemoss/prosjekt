@@ -82,7 +82,7 @@ body {
 
 ul {
     /*width: 100%;*/
-    padding-inline-start: 0px;
+    /*padding-inline-start: 0px;*/
 
 }
 
@@ -103,7 +103,7 @@ li {
     background-color: rgba(0, 0, 0, 0.75);
     /*min-width: 160px;*/
     z-index: 2;
-    margin-block-start: 0em;
+    margin-block-start: 0;
 }
 
 .dropdown-content a {
