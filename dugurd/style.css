@@ -140,3 +140,19 @@ select {
   font-size: 20pt;
 
 }
+/*BESTILL BORD*/
+form {
+  padding: 25px;
+  position: relative;
+  border-radius: 3px;
+  width: 475px;
+  margin-left: 19%;
+}
+#number {
+  position: relative;
+  margin-left: 25%;
+}
+
+td {
+  padding-right: 25px;
+}
