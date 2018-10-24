@@ -218,7 +218,7 @@ select {
 
 
 /*navbar til index*/
-ul {
+.bar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -226,13 +226,13 @@ ul {
     background-color: #262626;
 }
 
-li {
+.boks {
     float: left;
     font-family: "FjallaOne";
     font-size: 24pt;
 }
 
-li a {
+.boks a {
     display: block;
     color: #ffffff;
     text-align: center;
@@ -240,7 +240,7 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+.boks a:hover {
     background-color: #111;
 }
 
