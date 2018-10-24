@@ -50,6 +50,12 @@ h1{
 
 .textbox {
     padding: 20px;
+<<<<<<< HEAD
     font-family: Verdana;
     font-size: 0.9vw;
 }
+=======
+    font-family: Verdana, sans-serif;
+    font-size: 2vh;
+}
+>>>>>>> e4de5cb39750d9db7475fd7f5fffe8f1a0719dcc

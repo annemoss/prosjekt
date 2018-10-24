@@ -1,4 +1,4 @@
-@font-face {
+whybox@font-face {
     font-family: "FjallaOne";
     src: url(../Fjalla_One/FjallaOne-Regular.ttf);
   }
@@ -35,8 +35,7 @@ body {
 
 /*rMeny */
 #flyteguri {
-  float: left;
-  position: fixed;
+  position: absolute;
   top: 0;
 }
 
@@ -48,7 +47,7 @@ body {
   margin-bottom: 20px;
 }
 
-#rett {
+.rett {
   text-align:center;
   font-size:24pt;
 }
@@ -83,8 +82,7 @@ body {
 
 ul {
     /*width: 100%;*/
-    padding-inline-start: 0px;
-
+    /*padding-inline-start: 0px;*/
 }
 
 li {
@@ -104,7 +102,7 @@ li {
     background-color: rgba(0, 0, 0, 0.75);
     /*min-width: 160px;*/
     z-index: 2;
-    margin-block-start: 0em;
+    margin-block-start: 0;
 }
 
 .dropdown-content a {
@@ -167,7 +165,7 @@ li:hover {
   left: 40%;
   font-size: 15px;
   outline: none;
-  background-color:rgba(255,255,255,0.7%);
+  background-color:rgba(255,255,255,0.7);
   color: white;
 }
 
@@ -177,13 +175,13 @@ li:hover {
   text-align: center;
 }
 
-textarea {
+#whybox {
   resize: none;
   overflow: auto;
   width: 300px;
   height: 200px;
 }
-input[placeholder], textarea, select {
+input[placeholder], #whybox, select {
   padding: 2.5%;
   background-color: rgba(0,0,0,0.8);
   color: white;
@@ -191,7 +189,7 @@ input[placeholder], textarea, select {
   font-size: 12pt;
 }
 
-input, textarea, .button{
+input, #whybox, .button{
   outline-color: orange;
 }
 
@@ -216,9 +214,26 @@ select {
 
 }
 
+/*BESTILL BORD*/
+form {
+  padding: 25px;
+  position: relative;
+  border-radius: 3px;
+  width: 475px;
+  margin-left: 19%;
+}
+#number {
+  position: relative;
+  margin-left: 25%;
+}
+
+td {
+  padding-right: 25px;
+}
+
 
 /*navbar til index*/
-ul {
+.bar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -226,13 +241,13 @@ ul {
     background-color: #262626;
 }
 
-li {
+.boks {
     float: left;
     font-family: "FjallaOne";
     font-size: 24pt;
 }
 
-li a {
+.boks a {
     display: block;
     color: #ffffff;
     text-align: center;
@@ -240,7 +255,7 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+.boks a:hover {
     background-color: #111;
 }
 
@@ -253,4 +268,20 @@ li a:hover {
 
 #logo {
 
+
+}
+
+/*Kontakt oss*/
+.icon{
+    height: 50px;
+    /*display:inline;*/
+}
+
+.infoT{
+    display:inline;
+}
+
+#googleMap{
+    width:100%;
+    height:400px;
 }
