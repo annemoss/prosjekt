@@ -43,9 +43,9 @@ btn.onclick = function changeDisplay1 () {
   valg.style.display = 'none';
   leggInnKontaktInfo.style.visibility = 'visible';
   leggInnKontaktInfo.style.display = 'block';
+  }
+}
 
-
-}}
 else if ((p2.visibility=='visible') {
   btn.onclick = function changeDisplay2 (){
     p2.style.visibility = 'hidden';
