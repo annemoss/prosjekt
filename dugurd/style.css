@@ -35,8 +35,7 @@ body {
 
 /*rMeny */
 #flyteguri {
-  float: left;
-  position: fixed;
+  position: absolute;
   top: 0;
 }
 
@@ -48,7 +47,7 @@ body {
   margin-bottom: 20px;
 }
 
-#rett {
+.rett {
   text-align:center;
   font-size:24pt;
 }
@@ -167,7 +166,7 @@ li:hover {
   left: 40%;
   font-size: 15px;
   outline: none;
-  background-color:rgba(255,255,255,0.7%);
+  background-color:rgba(255,255,255,0.7);
   color: white;
 }
 
