@@ -1,0 +1,55 @@
+h1{
+    text-align: center;
+}
+#pic1_text {
+    display: none;
+    position: absolute;
+    left: 25%;
+    top: 37%;
+    max-width: 25%;
+}
+#container1_text{
+    position: absolute;
+    left: 55%;
+    top: 30%;
+    max-width: 25%;
+}
+
+#pic2_text{
+    display: none;
+    position: absolute;
+    left: 55%;
+    top: 88%;
+    max-width: 25%;
+}
+#container2_text{
+    position: absolute;
+    left: 25%;
+    top: 80%;
+    max-width: 25%
+}
+
+#pic3_text{
+    display: none;
+    position: absolute;
+    left: 25%;
+    top: 128%;
+    max-width: 25%;
+}
+#container3_text{
+    position: absolute;
+    left: 55%;
+    top: 128%;
+    max-width: 25%;
+}
+
+#pic2 {
+    position: relative;
+    left: 50%;
+}
+
+.textbox {
+    padding: 20px;
+    font-family: Verdana;
+    font-size: 2vh;
+}
