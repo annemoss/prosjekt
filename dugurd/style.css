@@ -210,37 +210,71 @@ td {
     z-index: 1;
 }
 
-ul {
-    /*width: 100%;*/
-    /*padding-inline-start: 0px;*/
+/*navbar til index*/
+.bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #262626;
 }
 
-li {
-    display: inline;
+.boks, #mknapp {
+  float: left;
+  font-family: "FjallaOne";
+  font-size: 24pt;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
+.boks a, #mknapp a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.75);
-    /*min-width: 160px;*/
-    z-index: 2;
-    margin-block-start: 0;
+.boks a:hover, #mknapp a:hover {
+  background-color: #111;
 }
 
-.dropdown-content a {
-    /*padding: 12px 16px;*/
-    /*text-decoration: none;*/
-    display: block;
+/*dropdown*/
+.dropdowna {
+  position: relative;
+  display: inline-block;
 }
 
-.dropdown-content a:hover {
-    background-color: #f1f1f1}
+.dropdowna-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdowna-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdowna-content a:hover {background-color: #ddd;}
+
+.dropdowna:hover .dropdowna-content {display: block;}
+
+.dropdowna:hover #mknapp {background-color: #3e8e41;}
+
+/*sitat på index*/
+#sitat {
+  font-family: "Lobster";
+  font-size: 48pt;
+  color: #ffffff;
+}
+
+
+
+/*slideshow*/
 
 .dropdown:hover .dropdown-content {
     display: block;
