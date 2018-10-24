@@ -3,6 +3,7 @@
     src: url(../Fjalla_One/FjallaOne-Regular.ttf);
   }
 
+
 @font-face {
     font-family: "Lobster";
     src: url(../Lobster/Lobster-Regular.ttf);
@@ -13,14 +14,204 @@ body {
   background-image:url("../img/wood.jpg");
   background-attachment: fixed;
   background-size: cover;
+  color: white;
+  font-family: "FjallOne", "Verdana", sans-serif;
+  margin-left:0px;
 }
 
-#textbox {
+.textbox {
   padding-left: 30px;
   padding-right: 30px;
+  padding-top:30px;
   color: white;
   margin-left: 20%;
   margin-right: 20%;
-  background-color: rgba(0, 0, 0, 0.5);
+  width:60%;
+  background-color: rgba(0, 0, 0, 0.75);
   font-size: 18pt;
+  margin-top: 100px;
+  z-index: 0;
+}
+
+/*rMeny */
+#flyteguri {
+  float: left;
+  position: fixed;
+  top: 0;
+}
+
+#illustrasjonsbilde {
+  max-width: 100%;
+  position: relative;
+  display:inline-block;
+  float:left;
+  margin-bottom: 20px;
+}
+
+#rett {
+  text-align:center;
+  font-size:24pt;
+}
+#left {
+  text-align:center;
+  float:left;
+  clear:left;
+  width:48%;
+  margin-right:10px;
+}
+
+#right {
+  text-align: center;
+  float:right;
+  clear:right;
+  width:48%;
+  margin-left:10px;
+}
+
+
+/*nav.html*/
+.nav {
+    background-color: black;
+    font-family: "FjallaOne", "Verdana", sans-serif;
+    font-size: 24pt;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+}
+
+ul {
+    /*width: 100%;*/
+    padding-inline-start: 0px;
+
+}
+
+li {
+    display: inline;
+
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    /*min-width: 160px;*/
+    z-index: 2;
+    margin-block-start: 0em;
+}
+
+.dropdown-content a {
+    /*padding: 12px 16px;*/
+    /*text-decoration: none;*/
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+li a {
+    text-decoration: none;
+    color:white;
+    width: 14.2vw;
+}
+
+li:hover {
+    background-color: black;
+}
+
+.active {
+    color: red;
+}
+
+.logoHeader{
+    width: 80px;
+    height: 80px;
+}
+.button {
+  position: relative;
+  left: 75%;
+  margin-bottom: 10%;
+  padding: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-radius: 10px;
+}
+
+/*.menymeny {
+    display: block;
+}
+*/
+
+/*JOBBSØKNAD*/
+#submit {
+  border-radius: 20px;
+  position: relative;
+  padding: 10px;
+  margin-top: 25px;
+  left: 40%;
+  font-size: 15px;
+  outline: none;
+  background-color:rgba(255,255,255,0.7%);
+  color: white;
+}
+
+#soknad {
+  padding: 25px;
+  position: relative;
+  text-align: center;
+}
+
+textarea {
+  resize: none;
+  overflow: auto;
+  width: 300px;
+  height: 200px;
+}
+input[placeholder], textarea, select {
+  padding: 2.5%;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  border-color: black;
+  font-size: 12pt;
+}
+
+input, textarea, .button{
+  outline-color: orange;
+}
+
+.button:active {
+  background-color: orange;
+}
+select option:first-child {
+  color:pink;
+/*ENDRE FARGE PÅ FØRSTE FUNKER IKKE
+FARGE:  rgb(138, 142, 139)  */
+}
+select {
+  padding: 2.5%;
+/*ENDRE FARGE*/
+}
+
+#confirmation {
+  padding-top: 20%;
+  padding-bottom: 30%;
+  text-align: center;
+  font-size: 20pt;
+
 }
