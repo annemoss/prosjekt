@@ -1,0 +1,58 @@
+h1{
+    text-align: center;
+}
+#pic1_text {
+    display: none;
+    position: absolute;
+    left: 12.5%;
+    top: 35%;
+    max-width: 25%;
+}
+#container1_text{
+    position: absolute;
+    left: 59%;
+    top: 25%;
+    max-width: 30%;
+}
+
+#pic2_text{
+    display: none;
+    position: absolute;
+    left: 59%;
+    top: 104%;
+    max-width: 25%;
+}
+#container2_text{
+    position: absolute;
+    left: 12.5%;
+    top: 94%;
+    max-width: 30%
+}
+
+#pic3_text{
+    display: none;
+    position: absolute;
+    left: 12.5%;
+    top: 174%;
+    max-width: 25%;
+}
+#container3_text{
+    position: absolute;
+    left: 59%;
+    top: 174%;
+    max-width: 30%;
+}
+
+#pic2 {
+    position: relative;
+    left: 50%;
+}
+
+.textbox {
+    padding: 20px;
+    font-family: Verdana;
+}
+
+.om_oss_pics{
+    max-height: 600px;
+}
