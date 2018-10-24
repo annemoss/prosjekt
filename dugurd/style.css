@@ -26,11 +26,16 @@ body {
   width:60%;
   background-color: rgba(0, 0, 0, 0.75);
   font-size: 18pt;
+<<<<<<< Updated upstream
 }
 
 /*rMeny */
 #flyteguri {
   float: left;
+=======
+  position: fixed;
+  top: 0;
+>>>>>>> Stashed changes
 }
 
 #illustrasjonsbilde {
@@ -61,6 +66,13 @@ body {
   margin-left:10px;
 }
 
+<<<<<<< Updated upstream
+=======
+.menymeny {
+    display: block;
+}
+
+>>>>>>> Stashed changes
 /*nav.html*/
 #nav {
     background-color: rgba(38, 38, 38, 0.8);
@@ -69,6 +81,15 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+<<<<<<< Updated upstream
+=======
+    height: 80px;
+
+}
+
+ul {
+    width: 100%;
+>>>>>>> Stashed changes
 }
 
 li {
