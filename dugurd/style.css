@@ -1,4 +1,4 @@
-@font-face {
+whybox@font-face {
     font-family: "FjallaOne";
     src: url(../Fjalla_One/FjallaOne-Regular.ttf);
   }
@@ -176,13 +176,13 @@ li:hover {
   text-align: center;
 }
 
-textarea {
+#whybox {
   resize: none;
   overflow: auto;
   width: 300px;
   height: 200px;
 }
-input[placeholder], textarea, select {
+input[placeholder], #whybox, select {
   padding: 2.5%;
   background-color: rgba(0,0,0,0.8);
   color: white;
@@ -190,7 +190,7 @@ input[placeholder], textarea, select {
   font-size: 12pt;
 }
 
-input, textarea, .button{
+input, #whybox, .button{
   outline-color: orange;
 }
 
@@ -230,7 +230,7 @@ form {
 
 td {
   padding-right: 25px;
-
+}
 
 
 /*navbar til index*/

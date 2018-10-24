@@ -21,6 +21,7 @@ const p2 = document.getElementById('2');
 const p3 = document.getElementById('3');
 const p4 = document.getElementById('4');
 const valg = document.getElementById('valg')
+var randomtall = Math.random*10
 
 p2.style.visibility = 'hidden';
 p2.style.display = 'none' ;
@@ -39,11 +40,15 @@ btn.onclick = function changeDisplay1 () {
   valg.style.display = 'none';
 
 }}
-else if ((p2.visibility='visible')) {
+else if ((p2.visibility='visible' && randomtall<8)) {
   btn.onclick = function changeDisplay2 (){
     p2.style.visibility = 'hidden';
     p2.style.display = 'none';
     p3.style.visibility = 'visible';
     p3.style.display = 'block';
   }
+}
+
+else if (randomtall<8){
+    btn.onclick = function changeDisplay3 ()
 }

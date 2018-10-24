@@ -18,31 +18,31 @@
             <p>Hva vil du jobbe med?</p>
             <!--Sett inn drop-down meny-->
             <select>
-              <option value="velg">Velg en stilling...</option>
-              <option value="kokk" required>Kokk</option>
-              <option value="hovmester">Hovmester</option>
-              <option value="vaskepersonell" required>Vaskepersonell</option>
-              <option value="servitor" required>Servitør</option>
+              <option value="velg"> Velg en stilling...</option>
+              <option value="kokk"> Kokk</option>
+              <option value="hovmester"> Hovmester</option>
+              <option value="vaskepersonell"> Vaskepersonell</option>
+              <option value="servitor"> Servitør</option>
             </select>
 
             <p>Fornavn: </p>
           <label for="firstname"></label>
-          <input type="text" name="firstname" placeholder="Skriv inn ditt fornavn..." required>
+          <input type="text" name="firstname" id="firstname" placeholder="Skriv inn ditt fornavn..." required>
           <br>
 
           <p>Etternavn: </p>
         <label for="lastname"></label>
-        <input type="text" name="lastname" placeholder="Skriv inn ditt etternavn..." required>
+        <input type="text" name="lastname" id="lastname" placeholder="Skriv inn ditt etternavn..." required>
         <br>
 
           <p>E-post:</p>
           <label for="email"></label>
-          <input type="email" name="email" placeholder="Skriv inn din e-post..." required>
+          <input type="email" name="email" id="email" placeholder="Skriv inn din e-post..." required>
           <br>
 
           <p>Telefonnummer:</p>
           <label for="number"></label>
-          <input type="numbers" name="number" placeholder="Skriv inn ditt telefonnummer..."required>
+          <input type="number" name="number" id="number" placeholder="Skriv inn ditt telefonnummer..." required>
           <br>
 
           <p>Last opp dinCV/ Utdanning og arbeidserfaring:</p>
@@ -52,15 +52,16 @@
           <br>
 
           <p>Hvorfor ønsker du jobbe hos oss?</p>
-          <label for="text"></label>
-          <textarea type="textbox" name="text" placeholder="Skriv om hvorfor du ønsker å jobbe hos oss..."id="textarea" required></textarea>
+          <label for="whybox"></label>
+          <textarea name="text" id="whybox" placeholder="Skriv om hvorfor du ønsker å jobbe hos oss..." required></textarea>
           <br>
          <!--ENDRE STØRRELSE PÅ BOKSEN-->
           <label for="submit"></label>
           <input type="submit" name="submit" value="Send inn søknad" id="submit">
 
+          </form>
         </div>
-        </form>
+
           <p id="confirmation"> Takk for din søknad! <br>
             Du vil høre fra oss snart!</p>
 
