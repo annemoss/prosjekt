@@ -33,7 +33,44 @@ body {
   z-index: 0;
 }
 
-/*rMeny */
+/*1 navbar til index*/
+.bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #262626;
+}
+
+.boks {
+    float: left;
+    font-family: "FjallaOne";
+    font-size: 24pt;
+}
+
+.boks a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.boks a:hover {
+    background-color: #111;
+}
+
+/*1 sitat på index*/
+#sitat {
+  font-family: "Lobster";
+  font-size: 48pt;
+  color: #ffffff;
+}
+
+#logo {
+}
+
+/*2 rMeny */
 #flyteguri {
   float:left;
   top: 0;
@@ -51,6 +88,7 @@ body {
   text-align:center;
   font-size:24pt;
 }
+
 #left {
   text-align:center;
   float:left;
@@ -67,8 +105,100 @@ body {
   margin-left:10px;
 }
 
+/*4 BESTILL BORD*/
+form {
+  padding: 25px;
+  position: relative;
+  border-radius: 3px;
+  width: 475px;
+  margin-left: 19%;
+}
 
-/*nav.html*/
+#number {
+  position: relative;
+  margin-left: 25%;
+}
+
+/*7 Kontakt oss*/
+.icon{
+    height: 50px;
+    /*display:inline;*/
+}
+
+.infoT{
+    display:inline;
+}
+
+#googleMap{
+    width:100%;
+    height:400px;
+}
+
+/*8 JOBBSØKNAD*/
+#submit {
+  border-radius: 20px;
+  position: relative;
+  padding: 10px;
+  margin-top: 25px;
+  left: 40%;
+  font-size: 15px;
+  outline: none;
+  background-color:rgba(255,255,255,0.7);
+  color: white;
+}
+
+#soknad {
+  padding: 25px;
+  position: relative;
+  text-align: center;
+}
+
+#whybox {
+  resize: none;
+  overflow: auto;
+  width: 300px;
+  height: 200px;
+}
+
+input[placeholder], #whybox, select {
+  padding: 2.5%;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  border-color: black;
+  font-size: 12pt;
+}
+
+input, #whybox, .button{
+  outline-color: orange;
+}
+
+.button:active {
+  background-color: orange;
+}
+
+select option:first-child {
+  color:pink;
+/*ENDRE FARGE PÅ FØRSTE FUNKER IKKE
+FARGE:  rgb(138, 142, 139)  */
+}
+
+select {
+  padding: 2.5%;
+/*ENDRE FARGE*/
+}
+
+#confirmation {
+  padding-top: 20%;
+  padding-bottom: 30%;
+  text-align: center;
+  font-size: 20pt;
+}
+
+td {
+  padding-right: 25px;
+}
+
+/*9 nav.html*/
 .nav {
     background-color: black;
     font-family: "FjallaOne", "Verdana", sans-serif;
@@ -87,8 +217,6 @@ ul {
 
 li {
     display: inline;
-
-
 }
 
 .dropdown {
@@ -122,7 +250,6 @@ li {
     background-color: #3e8e41;
 }
 
-
 li a {
     text-decoration: none;
     color:white;
@@ -149,139 +276,4 @@ li:hover {
   padding-left: 3%;
   padding-right: 3%;
   border-radius: 10px;
-}
-
-/*.menymeny {
-    display: block;
-}
-*/
-
-/*JOBBSØKNAD*/
-#submit {
-  border-radius: 20px;
-  position: relative;
-  padding: 10px;
-  margin-top: 25px;
-  left: 40%;
-  font-size: 15px;
-  outline: none;
-  background-color:rgba(255,255,255,0.7);
-  color: white;
-}
-
-#soknad {
-  padding: 25px;
-  position: relative;
-  text-align: center;
-}
-
-#whybox {
-  resize: none;
-  overflow: auto;
-  width: 300px;
-  height: 200px;
-}
-input[placeholder], #whybox, select {
-  padding: 2.5%;
-  background-color: rgba(0,0,0,0.8);
-  color: white;
-  border-color: black;
-  font-size: 12pt;
-}
-
-input, #whybox, .button{
-  outline-color: orange;
-}
-
-.button:active {
-  background-color: orange;
-}
-select option:first-child {
-  color:pink;
-/*ENDRE FARGE PÅ FØRSTE FUNKER IKKE
-FARGE:  rgb(138, 142, 139)  */
-}
-select {
-  padding: 2.5%;
-/*ENDRE FARGE*/
-}
-
-#confirmation {
-  padding-top: 20%;
-  padding-bottom: 30%;
-  text-align: center;
-  font-size: 20pt;
-
-}
-
-/*BESTILL BORD*/
-form {
-  padding: 25px;
-  position: relative;
-  border-radius: 3px;
-  width: 475px;
-  margin-left: 19%;
-}
-#number {
-  position: relative;
-  margin-left: 25%;
-}
-
-td {
-  padding-right: 25px;
-}
-
-
-/*navbar til index*/
-.bar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #262626;
-}
-
-.boks {
-    float: left;
-    font-family: "FjallaOne";
-    font-size: 24pt;
-}
-
-.boks a {
-    display: block;
-    color: #ffffff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.boks a:hover {
-    background-color: #111;
-}
-
-/*sitat på index*/
-#sitat {
-  font-family: "Lobster";
-  font-size: 48pt;
-  color: #ffffff;
-}
-
-#logo {
-
-
-}
-
-/*Kontakt oss*/
-.icon{
-    height: 50px;
-    /*display:inline;*/
-}
-
-.infoT{
-    display:inline;
-}
-
-#googleMap{
-    width:100%;
-    height:400px;
 }
