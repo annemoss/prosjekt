@@ -40,13 +40,15 @@ body {
   background-color: #262626;
 }
 
-.boks, #mknapp {
+.boks,
+#mknapp {
   float: left;
   font-family: "FjallaOne";
   font-size: 24pt;
 }
 
-.boks a, #mknapp a {
+.boks a,
+#mknapp a {
   display: block;
   color: #ffffff;
   text-align: center;
@@ -54,7 +56,8 @@ body {
   text-decoration: none;
 }
 
-.boks a:hover, #mknapp a:hover {
+.boks a:hover,
+#mknapp a:hover {
   background-color: #111;
 }
 
@@ -68,7 +71,7 @@ body {
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -77,6 +80,8 @@ body {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+}
+
 .boks {
   float: left;
   font-family: "FjallaOne";
@@ -95,11 +100,17 @@ body {
   background-color: #111;
 }
 
-.nedover-content a:hover {background-color: #ddd;}
+.nedover-content a:hover {
+  background-color: #ddd;
+}
 
-.nedover:hover .nedover-content {display: block;}
+.nedover:hover .nedover-content {
+  display: block;
+}
 
-.nedover:hover #mknapp {background-color: #3e8e41;}
+.nedover:hover #mknapp {
+  background-color: #3e8e41;
+}
 
 /*slideshow*/
 
@@ -312,71 +323,6 @@ li a {
 .logoHeader {
   width: 80px;
   height: 80px;
-}
-
-
-
-/*navbar til index*/
-.bar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #262626;
-}
-
-.boks,
-#mknapp {
-  float: left;
-  font-family: "FjallaOne";
-  font-size: 24pt;
-}
-
-.boks a,
-#mknapp a {
-  display: block;
-  color: #ffffff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.boks a:hover,
-#mknapp a:hover {
-  background-color: #111;
-}
-
-.dropdowna {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdowna-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdowna-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdowna-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdowna:hover .dropdowna-content {
-  display: block;
-}
-
-.dropdowna:hover #mknapp {
-  background-color: #3e8e41;
 }
 
 /*sitat på index*/
