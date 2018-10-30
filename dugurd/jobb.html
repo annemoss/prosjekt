@@ -7,7 +7,7 @@
         <link rel="icon" href="img/logo.png" type="image/png" sizes="25x25">
     </head>
     <body>
-        <header> </header>
+        <header> </header> <!--Her skal menyen inn-->
 
 
     <div class="textbox"> <!--legg til alt av kode inni her-->
@@ -17,9 +17,9 @@
 
             <p>Hva vil du jobbe med?</p>
             <!--Sett inn drop-down meny-->
-            <select>
-              <option value="velg"> Velg en stilling...</option>
-              <option value="kokk"> Kokk</option>
+            <select required>
+              <option value=""> Velg en stilling...</option>
+              <option value="kokk" > Kokk</option>
               <option value="hovmester"> Hovmester</option>
               <option value="vaskepersonell"> Vaskepersonell</option>
               <option value="servitor"> Servitør</option>
@@ -41,8 +41,8 @@
           <br>
 
           <p>Telefonnummer:</p>
-          <label for="number"></label>
-          <input type="number" name="number" id="number" placeholder="Skriv inn ditt telefonnummer..." required>
+          <label for="phonenumber"></label>
+          <input type="tel" name="phonenumber" id="phonenumber" placeholder="Skriv inn ditt telefonnummer..." required>
           <br>
 
           <p>Last opp dinCV/ Utdanning og arbeidserfaring:</p>

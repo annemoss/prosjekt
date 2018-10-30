@@ -16,7 +16,42 @@ submit.onclick = function confirmation () {
 
 /* BESTILL BORD*/
 
+/*dato*/
+const datoen = document.querySelector('#dato');
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //januar er 0!
+var yyyy = today.getFullYear();
+ if(dd<10){
+        dd='0'+dd
+    }
+  if(mm<10){
+        mm='0'+mm
+    }
+today = yyyy+'-'+mm+'-'+dd;
+datoen.setAttribute("min", today);
 
+/*klokkeslett*/  //FUNKER IKKE
+const time = document.querySelector('#klokkeslett')
+var weekday = datoen.value
+console.log(weekday)
+/*FRE-LØR*/
+if (weekday == 0 || weekday == 6 || weekday == 5){
+  time.setAttribute('min', '11:00:00');
+  time.setAttribute('max', '22:00:00');
+}
+/*MAN-TOR*/
+else {
+  time.setAttribute('min', '11:00:00')
+  time.setAttribute('max', '20:00:00')
+}
+//
+
+//if(myDate.getDay() == 6 || myDate.getDay() == 0) alert('Weekend!');
+
+//
+
+/*
 const btn = document.querySelector('.button');
 var velgAntallPersoner = document.getElementById('velgAntallPersoner');
 var velgDato = document.getElementById('velgDato');
@@ -60,3 +95,4 @@ else if ((p2.visibility=='visible') {
 else if ((p3.visibility=='visible')||(p4.visibility= ''){
 
 }
+*/

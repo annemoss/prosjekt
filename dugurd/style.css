@@ -161,7 +161,7 @@ h1 {
 }
 
 /*4 BESTILL BORD*/
-form {
+.form {
   padding: 25px;
   position: relative;
   border-radius: 3px;
@@ -249,9 +249,10 @@ form {
   color: white;
 }
 
+
 #soknad {
-  padding: 25px;
   position: relative;
+  margin: auto;
   text-align: center;
 }
 
@@ -265,11 +266,13 @@ form {
 input[placeholder],
 #whybox,
 select {
-  padding: 2.5%;
+  padding: 3%;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   border-color: black;
   font-size: 12pt;
+  width: 50%;
+  text-align: center;
 }
 
 input,
@@ -278,12 +281,13 @@ input,
   outline-color: orange;
 }
 
+
 .button:active {
   background-color: orange;
 }
 
 select option:first-child {
-  color: pink;
+  color: orange;
   /*ENDRE FARGE PÅ FØRSTE FUNKER IKKE
 FARGE:  rgb(138, 142, 139)  */
 }
@@ -300,9 +304,9 @@ select {
   font-size: 20pt;
 }
 
-td {
+/*td {
   padding-right: 25px;
-}
+}*/
 
 /*9 nav.html*/
 .nav {
