@@ -2,18 +2,26 @@
 const soknad = document.getElementById('soknad');
 const submit = document.getElementById('submit');
 const levert = document.getElementById('confirmation');
-  /*levert.style.visibility = 'hidden';
-  levert.style.display = 'none';
-  //if alle feltene er oppfyllt!!!!!!!!!!!
-submit.onclick = function confirmation () {
-  soknad.style.visibility = 'hidden';
-  soknad.style.display = 'none';
-  levert.style.visibility = 'visible';
-  levert.style.display = 'block';
+const navnBekreftelse = document.getElementById('bekreftelseNavn');
+var fornavnBekreftelse = document.getElementById('firstname');
+levert.style.display = 'none';
+
+/*submit.onclick = function SendInn() {
+    soknad.style.display = 'none';
+    levert.style.display='block';
+    navnBekreftelse.append(fornavnBekreftelse.value);
+    //event.preventDefault() //Endrer så kravenen ikke lenger tas hensyn til
+
 }*/
-//FIKK IKKE TIL Å FUNGERE!
 
-
+/*function validateForm() {
+    var x = document.forms.value;
+    if (x == "") {
+        alert("Feltet må fylles ut");
+        return false;
+    }
+}
+*/
 /* BESTILL BORD*/
 
 /*dato*/
@@ -22,7 +30,7 @@ var today = new Date();
 var dd = today.getDate();
 var mm = today.getMonth()+1; //januar er 0!
 var yyyy = today.getFullYear();
- if(dd<10){
+  if(dd<10){
         dd='0'+dd
     }
   if(mm<10){
@@ -31,7 +39,7 @@ var yyyy = today.getFullYear();
 today = yyyy+'-'+mm+'-'+dd;
 datoen.setAttribute("min", today);
 
-/*klokkeslett*/  //FUNKER IKKE
+/*klokkeslett*/
 const time = document.querySelector('#klokkeslett')
 var weekday = datoen.value
 console.log(weekday)
@@ -45,15 +53,23 @@ else {
   time.setAttribute('min', '11:00:00')
   time.setAttribute('max', '20:00:00')
 }
-//
 
-//if(myDate.getDay() == 6 || myDate.getDay() == 0) alert('Weekend!');
+/*span verdier*/
+const spanAntall = document.querySelector('.bordAntallPersoner');
+const spanDato = document.querySelector('.reservertDato');
+const spanTid = document.querySelector('.reservertKlokkeslett')
+const inputAntall = document.querySelector('#antall_manuell');
+const inputDato = document.querySelector('#dato');
+const inputKlokkeslett = document.querySelector('#klokkeslett');
 
-//
+spanAntall.append(inputAntall.value);
+spanDato.append(inputDato.value);
+spanTid.append(inputKlokkeslett.value);
 
+/*funksjonene for knapp*/
 /*
 const btn = document.querySelector('.button');
-var velgAntallPersoner = document.getElementById('velgAntallPersoner');
+var reservasjonen = document.getElementById('reservasjonen');
 var velgDato = document.getElementById('velgDato');
 var leggInnKontaktInfo = document.querySelector('#leggInnKontaktInfo');
 var ikkeLedig = document.getElementById('4');

@@ -13,11 +13,11 @@
     <div class="textbox"> <!--legg til alt av kode inni her-->
       <div id='soknad'>
         <h1>Vil du jobbe hos oss?</h1>
-        <form action="?????" method="post"><!--FINN UT HVOR DET SKAL SENDES -->
+        <form action="index.html" method="post"><!--FINN UT HVOR DET SKAL SENDES -->
 
             <p>Hva vil du jobbe med?</p>
             <!--Sett inn drop-down meny-->
-            <select required>
+            <select required id="velgStilling" autofocus>
               <option value=""> Velg en stilling...</option>
               <option value="kokk" > Kokk</option>
               <option value="hovmester"> Hovmester</option>
@@ -25,22 +25,22 @@
               <option value="servitor"> Servitør</option>
             </select>
 
-            <p>Fornavn: </p>
+            <p>Fornavn:* </p>
           <label for="firstname"></label>
           <input type="text" name="firstname" id="firstname" placeholder="Skriv inn ditt fornavn..." required>
           <br>
 
-          <p>Etternavn: </p>
+          <p>Etternavn:* </p>
         <label for="lastname"></label>
         <input type="text" name="lastname" id="lastname" placeholder="Skriv inn ditt etternavn..." required>
         <br>
 
-          <p>E-post:</p>
+          <p>E-post:* </p>
           <label for="email"></label>
           <input type="email" name="email" id="email" placeholder="Skriv inn din e-post..." required>
           <br>
 
-          <p>Telefonnummer:</p>
+          <p>Telefonnummer:* </p>
           <label for="phonenumber"></label>
           <input type="tel" name="phonenumber" id="phonenumber" placeholder="Skriv inn ditt telefonnummer..." required>
           <br>
@@ -51,18 +51,20 @@
           </label>
           <br>
 
-          <p>Hvorfor ønsker du jobbe hos oss?</p>
+          <p>Hvorfor ønsker du jobbe hos oss?*</p>
           <label for="whybox"></label>
           <textarea name="text" id="whybox" placeholder="Skriv om hvorfor du ønsker å jobbe hos oss..." required></textarea>
           <br>
-         <!--ENDRE STØRRELSE PÅ BOKSEN-->
+
           <label for="submit"></label>
           <input type="submit" name="submit" value="Send inn søknad" id="submit">
+          <br>
+          <br>
 
           </form>
         </div>
 
-          <p id="confirmation"> Takk for din søknad! <br>
+          <p id="confirmation"> Takk for din søknad, <span id='bekreftelseNavn'></span>! <br>
             Du vil høre fra oss snart!</p>
 
       </div>

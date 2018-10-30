@@ -11,14 +11,14 @@
 
         <div class="textbox"> <!--Legg inn all kode her-->
 
-            <div id="velgAntallPersoner">
+            <div id="reservasjonen">
               <h1>Informasjon om bordreservasjon</h1>
               <p id="1">Velg fra hurtigvelgeren, hvis du ønsker flere benytt den manuelle
                 og trykk pluss for å øke antallet du ønsker å reservere bord for, og
                 minus for å minke antallet</p>
 
               <p>Velg hvor mange du ønsker å reservere bord til:</p>
-              <form class="form" action="index.html" method="post">
+              <form action="index.html" method="post">
 
               <!--<table>
 
@@ -49,9 +49,9 @@
                   vi sjekke om vi har noe ledig. </p>
 
               <label for="dato">Dato: </label>
-              <input type="date" id="dato" required> <!--MIN DATO -->
+              <input type="date" id="dato" required>
               <label for="klokkeslett">klokkeslett: </label>
-              <input type="time" id="klokkeslett" required> <!--MIN MAX TID IFH ÅPNINGSTIND-->
+              <input type="time" id="klokkeslett" required>
               <br>
               <button type="submit" name="neste" class="button"> Neste –> </button>
 
@@ -59,14 +59,14 @@
             </div>
 
             <div id="leggInnKontaktInfo">
-            <p id="3">Vi har funnet et ledig bord til ”tall” personer den ”dato” klokken
-                   ”klokkeslett”. Fyll ut kontaktinformasjonen din i skjemaet til venstre slik
+            <p>Vi har funnet et ledig bord til <span class="bordAntallPersoner"></span> personer den <span class="reservertDato"></span> klokken
+                   <span class="reservertKlokkeslett"></span>. Fyll ut kontaktinformasjonen din i skjemaet til venstre slik
                    at vi kan sende deg bekreftelsen på din reservasjon.</p>
               <form class="" action="index.html" method="post">
-                <label for="fornavn">Fornavn:* </label>
+                <label for="fornavn">Fornavn:* </label> <br>
                 <input type="text" id="fornavn" placeholder="Skriv inn fornavn..." required>
                 <br>
-                <label for="etternavn">Etternavn:* </label>
+                <label for="etternavn">Etternavn:* </label> <br>
                 <input type="text" id="etternavn" placeholder="Skriv inn etternavn..." required>
                 <br>
                 <p>Velg kjønn: </p>
@@ -79,24 +79,27 @@
                 <label for="other">Annet: </label>
                 <input type="radio" name="gender" value="other" id="other" required>
                 <br>
-                <label for="telefonnummer">Telefonnummer: </label>
-                <input type="tel" id="telefonnummer">
+                <label for="telefonnummer">Telefonnummer: </label> <br>
+                <input type="tel" id="telefonnummer" placeholder="Skriv inn ditt telefonnummer...">
                 <br>
-                <label for="epost">E-post:* </label>
+                <label for="epost">E-post:* </label> <br>
                 <input type="email" id="epost" placeholder="Skriv inn e-post..." required>
                 <br>
                 <button type="button" name="neste" class="button"> Neste –> </button>
               </form>
 
+              <div id="ikkeLedigReservasjon">
               <p id="4"> Vi har dessverre ikke noe ledig bord for <span class='reservertDato'></span> personer den <span class="bordAntallPersoner"></span>
                     klokka <span class="reservertKlokkeslett"></span>. Du kan forsøke å endre klokkeslett eller dato og
                     forsøke på nytt. </p>
+              </div>
+              <div id="reservasjonFullfort">
               <h1 class="5">Takk for din reservasjon!</h1>
               <p class="5">
                 Du har nå reservert bord klokka <span class="reservertKlokkeslett"></span>den <span class="reservertDato"></span>, for <span class="bordAntallPersoner"></span>
                  personer. En bekreftelse vil sendes til deg på e-post: <span id="mailBekreftelse"></span>.
               </p>
-
+              </div>
             </div>
 
             <button type="button" name="neste" class="button"> Neste –> </button>
