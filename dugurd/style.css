@@ -1,177 +1,265 @@
-whybox@font-face {
-    font-family: "FjallaOne";
-    src: url(../Fjalla_One/FjallaOne-Regular.ttf);
-  }
-
+@font-face {
+  font-family: "FjallaOne";
+  src: url(../Fjalla_One/FjallaOne-Regular.ttf);
+}
 
 @font-face {
-    font-family: "Lobster";
-    src: url(../Lobster/Lobster-Regular.ttf);
-  }
-
+  font-family: "Lobster";
+  src: url(../Lobster/Lobster-Regular.ttf);
+}
 
 body {
-  background-image:url("../img/wood.jpg");
+  background-image: url("../img/wood.jpg");
   background-attachment: fixed;
   background-size: cover;
   color: white;
-  font-family: "FjallOne", "Verdana", sans-serif;
-  margin-left:0px;
+  font-family: "FjallaOne", "Verdana", sans-serif;
+  margin-left: 0px;
 }
 
 .textbox {
+  position: relative;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top:30px;
+  padding-top: 30px;
   color: white;
-  margin-left: 20%;
-  margin-right: 20%;
-  width:60%;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: auto;
   background-color: rgba(0, 0, 0, 0.75);
   font-size: 18pt;
   margin-top: 100px;
   z-index: 0;
 }
 
-/*rMeny */
-#flyteguri {
+h1 {
+  font-size: 27pt;
+}
+/*1 navbar til index*/
+.bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #262626;
+}
+
+.boks,
+#mknapp {
+  float: left;
+  font-family: "FjallaOne";
+  font-size: 24pt;
+}
+
+.boks a,
+#mknapp a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.boks a:hover,
+#mknapp a:hover {
+  background-color: #111;
+}
+
+.nedover {
+  position: relative;
+  display: inline-block;
+}
+
+.nedover-content {
+  display: none;
   position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.nedover-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.boks {
+  float: left;
+  font-family: "FjallaOne";
+  font-size: 24pt;
+}
+
+.boks a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.boks a:hover {
+  background-color: #111;
+}
+
+.nedover-content a:hover {
+  background-color: #ddd;
+}
+
+.nedover:hover .nedover-content {
+  display: block;
+}
+
+.nedover:hover #mknapp {
+  background-color: #3e8e41;
+}
+
+/*slideshow*/
+
+/*1 sitat på index*/
+#sitat {
+  font-family: "Lobster";
+  font-size: 48pt;
+  color: #ffffff;
+}
+
+/*2 rMeny */
+#flyteguri {
+  float: left;
   top: 0;
 }
 
 #illustrasjonsbilde {
   max-width: 100%;
   position: relative;
-  display:inline-block;
-  float:left;
+  display: inline-block;
+  float: left;
   margin-bottom: 20px;
 }
 
 .rett {
-  text-align:center;
-  font-size:24pt;
+  text-align: center;
+  font-size: 24pt;
 }
+
 #left {
-  text-align:center;
-  float:left;
-  clear:left;
-  width:48%;
-  margin-right:10px;
+  text-align: center;
+  float: left;
+  clear: left;
+  width: 48%;
+  margin-right: 10px;
 }
 
 #right {
   text-align: center;
-  float:right;
-  clear:right;
-  width:48%;
-  margin-left:10px;
+  float: right;
+  clear: right;
+  width: 48%;
+  margin-left: 10px;
 }
 
-
-/*nav.html*/
-.nav {
-    background-color: black;
-    font-family: "FjallaOne", "Verdana", sans-serif;
-    font-size: 24pt;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 80px;
-    z-index: 1;
-}
-
-ul {
-    /*width: 100%;*/
-    /*padding-inline-start: 0px;*/
-}
-
-li {
-    display: inline;
-
-
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.75);
-    /*min-width: 160px;*/
-    z-index: 2;
-    margin-block-start: 0;
-}
-
-.dropdown-content a {
-    /*padding: 12px 16px;*/
-    /*text-decoration: none;*/
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-}
-
-
-li a {
-    text-decoration: none;
-    color:white;
-    width: 14.2vw;
-}
-
-li:hover {
-    background-color: black;
-}
-
-.active {
-    color: red;
-}
-
-.logoHeader{
-    width: 80px;
-    height: 80px;
-}
-.button {
+/*4 BESTILL BORD*/
+.form {
+  padding: 25px;
   position: relative;
-  left: 75%;
-  margin-bottom: 10%;
-  padding: 2%;
-  padding-left: 3%;
-  padding-right: 3%;
-  border-radius: 10px;
+  border-radius: 3px;
+  width: 475px;
+  margin-left: 19%;
 }
 
-/*.menymeny {
-    display: block;
+#number {
+  position: relative;
+  margin-left: 25%;
 }
-*/
 
-/*JOBBSØKNAD*/
+#reservasjonen, #leggInnKontaktInfo,
+#ikkeLedigReservasjon, #reservasjonFullfort {
+  position: relative;
+  text-align: center;
+
+}
+
+/*7 Kontakt oss*/
+.icon {
+  height: 50px;
+  /*display:inline;*/
+}
+
+.infoT {
+  display: inline;
+}
+
+#tider p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.buttonKontakt {
+  position: relative;
+  padding: 15px;
+  margin-top: 25px;
+  left: 40%;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  font-family: "FjallaOne", "Verdana", sans-serif;
+  display: inline;
+  font-size: 15pt;
+}
+
+.formKontakt {
+  display: inline;
+}
+.buttonKontakt:hover {
+  background-color: rgba(212, 212, 212, 0.9);
+  color: black;
+}
+
+#info {
+  position: absolute;
+  width: 50%;
+  left: 0;
+}
+
+#info a {
+  color: white;
+  text-decoration: none;
+}
+.map-responsive {
+  position: absolute;
+  overflow: hidden;
+  padding-bottom: 36.25%;
+  /*height: 100px;*/
+  width: 50%;
+  right: 0;
+}
+
+.map-responsive iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  right: 0;
+}
+
+/*8 JOBBSØKNAD*/
 #submit {
   border-radius: 20px;
   position: relative;
   padding: 10px;
-  margin-top: 25px;
-  left: 40%;
+  margin-top: 20px;
+  left: 35%;
   font-size: 15px;
   outline: none;
-  background-color:rgba(255,255,255,0.7);
+  background-color: rgba(255, 255, 255, 0.7);
   color: white;
 }
 
+
 #soknad {
-  padding: 25px;
   position: relative;
+  margin: auto;
   text-align: center;
 }
 
@@ -181,29 +269,49 @@ li:hover {
   width: 300px;
   height: 200px;
 }
-input[placeholder], #whybox, select {
-  padding: 2.5%;
-  background-color: rgba(0,0,0,0.8);
+
+input[placeholder],
+#whybox,
+#velgStilling {
+  padding: 3%;
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
   border-color: black;
   font-size: 12pt;
+  width: 50%;
+  text-align: center;
 }
 
-input, #whybox, .button{
+#velgStilling {
+  width: 30%
+}
+
+
+#soknad p {
+  font-size: 15pt;
+}
+
+input,
+#whybox,
+.button,
+#velgStilling {
   outline-color: orange;
 }
+
 
 .button:active {
   background-color: orange;
 }
+
 select option:first-child {
-  color:pink;
-/*ENDRE FARGE PÅ FØRSTE FUNKER IKKE
+  color: orange;
+  /*ENDRE FARGE PÅ FØRSTE FUNKER IKKE
 FARGE:  rgb(138, 142, 139)  */
 }
-select {
+
+#velgStilling {
   padding: 2.5%;
-/*ENDRE FARGE*/
+  /*ENDRE FARGE*/
 }
 
 #confirmation {
@@ -211,52 +319,103 @@ select {
   padding-bottom: 30%;
   text-align: center;
   font-size: 20pt;
-
 }
 
-/*BESTILL BORD*/
-form {
-  padding: 25px;
+
+/*9 nav.html*/
+.nav {
+  background-color: black;
+  font-family: "FjallaOne", "Verdana", sans-serif;
+  font-size: 24pt;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 1;
+}
+
+.navUl > li {
+  display: inline;
+  /*padding: browser width / menyknapper*/
+  /*padding-right: 40px;*/
+  padding: 5px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+}
+
+.navUl {
+  position: absolute;
+  left: 50px;
+  top: -12px;
+}
+
+.logoHeader {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  float: left;
+}
+
+.dropdown {
   position: relative;
-  border-radius: 3px;
-  width: 475px;
-  margin-left: 19%;
-}
-#number {
-  position: relative;
-  margin-left: 25%;
+  display: inline-block;
 }
 
-td {
-  padding-right: 25px;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  z-index: 2;
+  margin-block-start: 20px;
+  list-style-type: none;
+  padding: 0px;
 }
 
-
-/*navbar til index*/
-.bar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #262626;
+.dropdown-content a {
+  display: block;
+  padding: 10px;
 }
 
-.boks {
-    float: left;
-    font-family: "FjallaOne";
-    font-size: 24pt;
+.dropdown-content a:hover {
+  background-color: rgb(157, 110, 91);
+  color: white;
 }
 
-.boks a {
-    display: block;
-    color: #ffffff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
-.boks a:hover {
-    background-color: #111;
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+li:hover {
+  background-color: rgb(157, 110, 91);
+  color: white;
+}
+
+li a:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav {
+    font-size: 20pt;
+  }
+
+  .navUl {
+    position: absolute;
+    top: -5px;
+  }
+
+  .navUl > li {
+    padding-bottom: 24px;
+    padding-top: 30px;
+    padding-right: 3%;
+  }
 }
 
 /*sitat på index*/
@@ -266,22 +425,14 @@ td {
   color: #ffffff;
 }
 
-#logo {
+/*slideshow*/
 
-
-}
-
-/*Kontakt oss*/
-.icon{
-    height: 50px;
-    /*display:inline;*/
-}
-
-.infoT{
-    display:inline;
-}
-
-#googleMap{
-    width:100%;
-    height:400px;
+.button {
+  position: relative;
+  left: 75%;
+  margin-bottom: 10%;
+  padding: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-radius: 10px;
 }
