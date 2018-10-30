@@ -319,6 +319,7 @@ td {
 li {
   display: inline;
   /*padding: browser width / menyknapper*/
+  padding-right: 0%;
 }
 
 .dropdown {
