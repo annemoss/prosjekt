@@ -197,16 +197,16 @@ h1 {
 }
 .buttonKontakt {
   position: relative;
-  padding: 10px;
+  padding: 15px;
   margin-top: 25px;
   left: 40%;
-  font-size: 15px;
   border: none;
   outline: none;
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
   font-family: "FjallaOne", "Verdana", sans-serif;
   display: inline;
+  font-size: 15pt;
 }
 
 .formKontakt {
@@ -334,10 +334,28 @@ FARGE:  rgb(138, 142, 139)  */
   z-index: 1;
 }
 
-li {
+.navUl > li {
   display: inline;
   /*padding: browser width / menyknapper*/
-  padding-right: 0%;
+  /*padding-right: 40px;*/
+  padding: 5px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+}
+
+.navUl {
+  position: absolute;
+  left: 50px;
+  top: -12px;
+}
+
+.logoHeader {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  float: left;
 }
 
 .dropdown {
@@ -348,36 +366,56 @@ li {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: black;
   z-index: 2;
-  margin-block-start: 0;
+  margin-block-start: 20px;
+  list-style-type: none;
+  padding: 0px;
 }
 
 .dropdown-content a {
   display: block;
+  padding: 10px;
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: rgb(157, 110, 91);
+  color: white;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
-
 li a {
   text-decoration: none;
   color: white;
-  width: 14.2vw;
 }
 
-.logoHeader {
-  width: 80px;
-  height: 80px;
+li:hover {
+  background-color: rgb(157, 110, 91);
+  color: white;
+}
+
+li a:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav {
+    font-size: 20pt;
+  }
+
+  .navUl {
+    position: absolute;
+    top: -5px;
+  }
+
+  .navUl > li {
+    padding-bottom: 24px;
+    padding-top: 30px;
+    padding-right: 3%;
+  }
 }
 
 /*sitat på index*/
