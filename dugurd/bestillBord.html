@@ -47,13 +47,13 @@
             </div>
 
             <div id="velgDato">
-              <p id="2">Du har nå valgt antallet personer som ønsker bord hos oss. Du kan
+              <p id="2"> Du har nå valgt antallet personer som ønsker bord hos oss. Du kan
                 nå velge dato og klokkeslett for når du ønsker bordreservasjonen, så skal
                 vi sjekke om vi har noe ledig. </p>
 
                 <form class="" action="index.html" method="post">
                   <label for="dato">Dato: </label>
-                  <input type="date" id="dato">
+                  <input type="date" id="dato" min=" ">
                   <label for="klokkeslett">klokkeslett: </label>
                   <input type="time" id="klokkeslett">
                 </form>
@@ -83,7 +83,7 @@
                 Du har nå reservert bord klokka <span class="reservertKlokkeslett"></span>den <span class="reservertDato"></span>, for <span class="bordAntallPersoner"></span>
                  personer. En bekreftelse vil sendes til deg på e-post: <span id="mailBekreftelse"></span>.
               </p>
-              
+
             </div>
 
             <button type="button" name="neste" class="button"> Neste –> </button>

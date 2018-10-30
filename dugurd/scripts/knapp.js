@@ -15,25 +15,22 @@ submit.onclick = function confirmation () {
 
 
 /* BESTILL BORD*/
-const btn = document.querySelector('.button');
-//const informasjon = document.getElementById('informasjon');
-const velgAntallPersoner = document.getElementById('velgAntallPersoner');
-const velgDato = document.getElementById('velgDato');
-const leggInnKontaktInfo = document.querySelector('#leggInnKontaktInfo');
-const p1 = document.getElementById('1');
-const p2 = document.getElementById('2');
-const p3 = document.getElementById('3');
-const p4 = document.getElementById('4');
-const valg = document.getElementById('velgAntallPersoner')
 
+
+const btn = document.querySelector('.button');
+var velgAntallPersoner = document.getElementById('velgAntallPersoner');
+var velgDato = document.getElementById('velgDato');
+var leggInnKontaktInfo = document.querySelector('#leggInnKontaktInfo');
+var ikkeLedig = document.getElementById('4');
+var reservasjonKomplett = document.getElementsByClassName('5');
 var randomtall = Math.random*10
 
 //p2.style.visibility = 'hidden';
-velgAntallPersoner.style.display = 'none' ;
 velgDato.style.display = 'none';
+velgDato.style.visibility = 'hidden';
 leggInnKontaktInfo.style.display = 'none';
 
-if ((p1.visibility=='visible')){
+if ((valgAntallPersoner.display='block')){
 btn.onclick = function changeDisplay1 () {
   p1.style.visibility = 'hidden';
   p1.style.display = 'none';
