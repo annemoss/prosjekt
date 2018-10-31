@@ -159,7 +159,14 @@ h1 {
   text-align: center;
 }
 
-<<<<<<< HEAD
+.bestillBordForm table{
+  margin: auto;
+}
+.bestillBordForm input[type=radio]{
+    width: 20px;
+    background-color: orange;}
+
+
 /*5 Catering*/
 .hyperlink {
     color: rgb(157, 110, 91);
@@ -200,16 +207,8 @@ h1 {
     width:100%;
   }
 }
-=======
-.bestillBordForm table{
-  margin: auto;
-}
-.bestillBordForm input[type=radio]{
-    width: 20px;
-    background-color: orange;
-}
 
->>>>>>> 346d930a6c99c2fe62054cc39353b9ca5b4971d0
+
 /*7 Kontakt oss*/
 .icon {
   height: 50px;
