@@ -21,5 +21,5 @@ document.addEventListener("DOMContentLoaded", function(e) {
     "</div>";
 
   const footer = document.querySelector("footer");
-  footer.innerHTML = "footer";
+  //footer.innerHTML = "footer";
 });

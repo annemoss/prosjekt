@@ -7,10 +7,11 @@ var fornavnBekreftelse = document.getElementById('firstname');
 document.getElementById('confirmation').style.display = "none";
 
 
-function SendInn() {
+function SendInn(event) {
     event.preventDefault()
-    soknad.style.display = 'none';
-    levert.style.display='block';
-    navnBekreftelse.append(fornavnBekreftelse.value);
+    //soknad.style.display = 'none';
+    //levert.style.display='block';
+    //navnBekreftelse.append(fornavnBekreftelse.value);
     //Sendes til hovedside /action....
+    return false;
 }
