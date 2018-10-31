@@ -35,6 +35,13 @@ body {
   /*min-height: 550px;*/
 }
 
+@media only screen and (max-width:768px){
+  .textbox {
+    font-size:30pt;
+
+  }
+}
+
 h1 {
   font-size: 27pt;
 }
@@ -251,10 +258,10 @@ li a:hover {
   padding:8px 10px;
   box-sizing:border-box;
 }
-.cSelect {
+/*.cSelect {
   width:50%;
   padding:8px 20px;
-}
+}*/
 .container {
   display:block;
   padding-left:15px;
@@ -359,7 +366,7 @@ li a:hover {
 
 input[placeholder],
 #whybox,
-#velgStilling {
+select{
   padding: 3%;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
@@ -369,7 +376,7 @@ input[placeholder],
   text-align: center;
 }
 
-#velgStilling {
+select{
   width: 30%;
 }
 
@@ -380,7 +387,7 @@ input[placeholder],
 input,
 #whybox,
 .button,
-#velgStilling {
+select{
   outline-color: rgb(157, 110, 91);
 }
 
@@ -388,13 +395,13 @@ input,
   background-color: rgb(157, 110, 91);
 }
 
-select option:first-child {
+#velgStilling option:first-child {
   color: rgb(157, 110, 91);
   /*ENDRE FARGE PÅ FØRSTE FUNKER IKKE
 FARGE:  rgb(138, 142, 139)  */
 }
 
-#velgStilling {
+select {
   padding: 2.5%;
   /*ENDRE FARGE*/
 }
