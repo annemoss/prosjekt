@@ -11,6 +11,7 @@ h1{
 
 #inner_container1 {
     float: left;
+    max-width: 50%;
 }
 
 #container1_text{
@@ -24,12 +25,15 @@ h1{
 #pic2_text{
     display: none;
     position: absolute;
-    margin-left: 55%;
+    margin-left: 30%;
     margin-top: -25%;
     max-width: 25%;
 }
 #inner_container2{
+    margin-top: 0%;
+    margin-right: 23%;
     float: right;
+    max-width: 50%;
 }
 
 
@@ -49,8 +53,9 @@ h1{
     max-width: 25%;
 }
 #inner_container3{
-    float: right;
-}
+    float: left;
+    max-width: 50%;
+    }
 
 #container3_text{
     position: absolute;
@@ -71,13 +76,8 @@ h1{
 
 }
 
-.inner_containers{
-    min-width: 50%;
-    max-width: 100%;
-}
-
 .om_oss_pics{
-    width: 50%;
+    width: 100%;
 }
 
 .textbox {
