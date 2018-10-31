@@ -53,7 +53,6 @@ h1 {
 .navUlIndex > li {
   display: inline;
   /*padding: browser width / menyknapper*/
-  /*padding-right: 40px;*/
   padding: 5px;
   padding-bottom: 20px;
   padding-top: 30px;
@@ -68,10 +67,9 @@ h1 {
 }
 
 .logoHeaderIndex {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   position: absolute;
-
 }
 
 .dropdownIndex {
