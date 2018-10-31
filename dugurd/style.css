@@ -397,7 +397,7 @@ select{
   background-color: rgb(157, 110, 91);
 }
 
-select option:first-child {
+#velgStilling option:first-child {
   color: rgb(157, 110, 91);
   /*ENDRE FARGE PÅ FØRSTE FUNKER IKKE
 FARGE:  rgb(138, 142, 139)  */
