@@ -6,6 +6,11 @@
     <title>Dugurd Restaurant</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="../img/logo.png" type="image/png" sizes="25x25">
+    <style>
+        .textbox{
+            min-height: 645px;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,21 +21,33 @@
             <p>Mandag - Torsdag: 11-20</p>
             <p>Fredag - Søndag: 11-22</p>
         </div>
-        <form action="bestillBord.html" class="formKontakt"><button class="buttonKontakt">Bestill bord</button></form>
-        <form action="catering.html" class="formKonakt"><button class="buttonKontakt">Catering</button></form>
-        <div id="info">
-            <img class="icon" src="img/mail.png" alt="mail icon">
-            <a class="infoT" href="mailto:kontakt@dugurd.no?Subject=Henvendelse">kontakt@dugurd.no</a>
-            <br>
-            <img class="icon" src="img/tel.png" alt="telefon icon">
-            <p class="infoT">+47 483 56 782</p>
-            <br>
-            <img class="icon" src="img/pin.png" alt="pin icon">
-            <p class="infoT">Skadvinvegen 14, 3560 Hemsedal </p>
-        </div>
-        <div class="map-responsive">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10062.548409435753!2d8.535730691511006!3d60.86532394445417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463fe8065cc9e5f3%3A0xddf4f7bc885e31c4!2sSkadvinvegen+14%2C+3560+Hemsedal!5e0!3m2!1sno!2sno!4v1540810934690"
-                frameborder="0" style="border:0" allowfullscreen></iframe>
+        <form action="bestillBord.html" class="formKontakt"><input type="submit" value="Bestill bord" class="buttonKontakt"></form>
+        <form action="catering.html" class="formKonakt"><input type="submit" value="Catering" class="buttonKontakt"></form>
+        <div id="infoMap">
+            <div id="info">
+                <div class="infoPart">
+                    <div class="iconDiv"><img class="icon" src="img/mail.png" alt="mail icon"></div>
+                    <div class="infoDiv"><a class="infoT" href="mailto:kontakt@dugurd.no?Subject=Henvendelse">kontakt@dugurd.no</a></div>
+                    <br>
+                </div>
+                <div class="infoPart">
+                    <div class="iconDiv"><img class="icon" src="img/tel.png" alt="telefon icon"></div>
+                    <div class="infoDiv">
+                        <p class="infoT">+47 483 56 782</p>
+                    </div>
+                    <br>
+                </div>
+                <div class="infoPart">
+                    <div class="iconDiv"><img class="icon" src="img/pin.png" alt="pin icon"></div>
+                    <div class="infoDiv">
+                        <p class="infoT">Skadvinvegen 14, 3560 Hemsedal </p>
+                    </div>
+                </div>
+            </div>
+            <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10062.548409435753!2d8.535730691511006!3d60.86532394445417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463fe8065cc9e5f3%3A0xddf4f7bc885e31c4!2sSkadvinvegen+14%2C+3560+Hemsedal!5e0!3m2!1sno!2sno!4v1540810934690"
+                    frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
         </div>
     </div>
     <footer></footer>
