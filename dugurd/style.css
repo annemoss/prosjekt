@@ -37,10 +37,8 @@ body {
 @media only screen and (max-width: 800px) {
   .textbox {
     font-size: 14pt;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    left: 0;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 
@@ -370,6 +368,17 @@ form {
   width: 100%;
 }
 
+@media screen and (max-width: 800px) {
+  .map-responsive {
+    float: none;
+    margin-top: 5px;
+  }
+
+  .infoPart:last-of-type {
+    margin-bottom: 10px;
+  }
+}
+
 /*8 JOBBSØKNAD*/
 #submit {
   position: relative;
@@ -465,6 +474,10 @@ select {
   padding-left: 1.5%;
 }
 
+.navUl > li > #aJobb {
+  padding-right: 0;
+}
+
 .navUl {
   position: absolute;
   left: 50px;
@@ -538,7 +551,12 @@ li a:hover {
   .navUl > li {
     padding-bottom: 24px;
     padding-top: 30px;
-    padding-right: 3%;
+    padding-right: 1.4%;
+    padding-left: 1.4%;
+  }
+
+  .navUl > li > #aJobb {
+    padding-right: 0;
   }
 }
 
