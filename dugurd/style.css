@@ -77,6 +77,8 @@ h1 {
   width: 150px;
   height: 150px;
   position: absolute;
+  margin: auto;
+  width: 15%;
 }
 
 .dropdownIndex {
