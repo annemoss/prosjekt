@@ -17,9 +17,9 @@
                 og trykk pluss for å øke antallet du ønsker å reservere bord for, og
                 minus for å minke antallet</p>
 
-              <p>Velg hvor mange du ønsker å reservere bord til:</p>
-              <form class='bestillBordForm' action="index.html" method="post">
 
+              <form class='bestillBordForm' action="index.html" method="post">
+                <p>Velg hvor mange du ønsker å reservere bord til:</p>
               <!--<table>
 
               <tr>
@@ -40,7 +40,6 @@
               <td><input type="radio" name="antall" value="6" id="seks" required></td>
               </tr>
             </table>-->
-              <br>
               <label for="antall_manuell"> </label> <br>
                 <input type="number" name="antall" id="antall_manuell" min="1" max="99" required>
 
@@ -48,12 +47,13 @@
               <p> Velg dato og klokkeslett for når du ønsker bordreservasjonen, så skal
                   vi sjekke om vi har noe ledig. </p>
 
-              <label for="dato">Dato: </label>
+              <label for="dato">Dato: </label> <br>
               <input type="date" id="dato" required>
-              <label for="klokkeslett">klokkeslett: </label>
+              <br>
+              <label for="klokkeslett">klokkeslett: </label> <br>
               <input type="time" id="klokkeslett" required>
               <br>
-              <button type="submit" name="neste" class="button"> Neste –> </button>
+              <button type="submit" name="neste" class="bestillBordButton"> Neste –> </button>
 
               </form>
             </div>
@@ -70,14 +70,23 @@
                 <input type="text" id="etternavn" placeholder="Skriv inn etternavn..." required>
                 <br>
                 <p>Velg kjønn: </p>
-                <label for="female">Kvinne: </label>
-                <input type="radio" name="gender" value="female" id="female" required>
-                <br>
-                <label for="male">Mann: </label>
-                <input type="radio" name="gender" value="male" id="male" required>
-                <br>
-                <label for="other">Annet: </label>
-                <input type="radio" name="gender" value="other" id="other" required>
+                <table>
+
+              <tr>
+
+
+                <td><label for="female">Kvinne: </label></td>
+                <td> <input type="radio" name="gender" value="female" id="female" required></td>
+              </tr>
+              <tr>
+                <td> <label for="male">Mann: </label> </td>
+                <td> <input type="radio" name="gender" value="male" id="male" required> </td>
+              </tr>
+              <tr>
+                <td> <label for="other">Annet: </label> </td>
+                <td> <input type="radio" name="gender" value="other" id="other" required> </td>
+              </tr>
+                </table>
                 <br>
                 <label for="telefonnummer">Telefonnummer: </label> <br>
                 <input type="tel" id="telefonnummer" placeholder="Skriv inn ditt telefonnummer...">
@@ -85,7 +94,7 @@
                 <label for="epost">E-post:* </label> <br>
                 <input type="email" id="epost" placeholder="Skriv inn e-post..." required>
                 <br>
-                <button type="submit" name="neste" class="button"> Neste –> </button>
+                <button type="submit" name="neste" class="bestillBordButton"> Neste –> </button>
               </form>
 
               <div id="ikkeLedigReservasjon">
@@ -97,18 +106,16 @@
               <h1>Takk for din reservasjon!</h1>
               <p>
                 Du har nå reservert bord klokka <span class="reservertKlokkeslett"></span>den <span class="reservertDato"></span>, for <span class="bordAntallPersoner"></span>
-                 personer. En bekreftelse vil sendes til deg på e-post: <span class="mailBekreftelse"></span>.
+                 personer. En bekreftelse vil sendes til deg på e-post: <span class="mailBekreftelse"></span>. <br><br>
               </p>
               </div>
             </div>
-
-            <button type="button" name="neste" class="button"> Neste –> </button>
 
 
         </div>
         <footer></footer>
         <script src="scripts/add.js"> </script>
-        <script src="scripts/knapp.js"> </script>
+        <script src="scripts/bestillBordKnapp.js"> </script>
     </body>
 </html>
 
