@@ -34,9 +34,13 @@ body {
   min-height: 520px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .textbox {
     font-size: 14pt;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    left: 0;
   }
 }
 
@@ -295,7 +299,7 @@ li a:hover {
   margin-top: auto;
   margin-bottom: auto;
   display: inline-block;
-  width: 60%;
+  width: 70%;
   vertical-align: middle;
 }
 
@@ -453,8 +457,6 @@ select {
 .navUl > li {
   display: inline;
   /*padding: browser width / menyknapper*/
-  /*padding-right: 40px;*/
-  padding: 5px;
   padding-bottom: 20px;
   padding-top: 30px;
   padding-right: 1.5%;
