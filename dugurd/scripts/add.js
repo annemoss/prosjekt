@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function(e) {
   const header = document.querySelector("header");
   header.innerHTML =
     '<div class="nav"' +
-    "<ul class='navUl'>" +
     '<li><a href="index.html"><img src="img/logo.png" alt="logo"class="logoHeader"></a></li>' +
+    "<ul class='navUl'>" +
     '<li class="dropdown">MENY' +
     '<ul class="dropdown-content">' +
     '<li class="menymeny"><a href="rMeny.html">RESTAURANT</a></li>' +

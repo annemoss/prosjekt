@@ -30,99 +30,55 @@ body {
   font-size: 18pt;
   margin-top: 100px;
   z-index: 0;
+  /*min-height: 550px;*/
 }
 
 h1 {
   font-size: 27pt;
 }
 /*1 navbar til index*/
-.bar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #262626;
-}
 
-.boks,
-#mknapp {
-  float: left;
-  font-family: "FjallaOne";
-  font-size: 24pt;
-}
-
-.boks a,
-#mknapp a {
-  display: block;
-  color: #ffffff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.boks a:hover,
-#mknapp a:hover {
-  background-color: #111;
-}
-
-.nedover {
-  position: relative;
-  display: inline-block;
-}
-
-.nedover-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.nedover-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.boks {
-  float: left;
-  font-family: "FjallaOne";
-  font-size: 24pt;
-}
-
-.boks a {
-  display: block;
-  color: #ffffff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.boks a:hover {
-  background-color: #111;
-}
-
-.nedover-content a:hover {
-  background-color: #ddd;
-}
-
-.nedover:hover .nedover-content {
-  display: block;
-}
-
-.nedover:hover #mknapp {
-  background-color: #3e8e41;
-}
 
 /*slideshow*/
+* {box-sizing: border-box}
+
+.slideshow {
+  width: 1000px;
+  position: relative;
+  margin: auto;
+
+}
+
+.slides {
+  display: none;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animantion-name: fade;
+  animation-duartion: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 
 /*1 sitat på index*/
 #sitat {
   font-family: "Lobster";
   font-size: 48pt;
   color: #ffffff;
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
 }
 
 /*2 rMeny */
@@ -175,11 +131,12 @@ h1 {
   margin-left: 25%;
 }
 
-#reservasjonen, #leggInnKontaktInfo,
-#ikkeLedigReservasjon, #reservasjonFullfort {
+#reservasjonen,
+#leggInnKontaktInfo,
+#ikkeLedigReservasjon,
+#reservasjonFullfort {
   position: relative;
   text-align: center;
-
 }
 
 /*7 Kontakt oss*/
@@ -197,31 +154,31 @@ h1 {
   margin-bottom: 10px;
 }
 .buttonKontakt {
-  position: relative;
-  padding: 10px;
-  margin-top: 25px;
-  left: 40%;
-  font-size: 15px;
+  /*position: absolute;*/
+  padding: 15px;
+  /*margin-top: 25px;*/
+  left: 0;
   border: none;
   outline: none;
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
   font-family: "FjallaOne", "Verdana", sans-serif;
   display: inline;
+  font-size: 15pt;
+  top: 10px;
 }
 
 .formKontakt {
   display: inline;
 }
 .buttonKontakt:hover {
-  background-color: rgba(212, 212, 212, 0.9);
-  color: black;
+  background-color: rgb(157, 110, 91);
 }
 
 #info {
-  position: absolute;
+  /*position: absolute;*/
   width: 50%;
-  left: 0;
+  top: 0px;
 }
 
 #info a {
@@ -229,12 +186,12 @@ h1 {
   text-decoration: none;
 }
 .map-responsive {
-  position: absolute;
+  /*position: absolute;*/
   overflow: hidden;
   padding-bottom: 36.25%;
   /*height: 100px;*/
-  width: 50%;
-  right: 0;
+  width: 100px;
+  margin-right: 0px;
 }
 
 .map-responsive iframe {
@@ -256,7 +213,6 @@ h1 {
   background-color: rgba(255, 255, 255, 0.7);
   color: white;
 }
-
 
 #soknad {
   position: relative;
@@ -284,9 +240,8 @@ input[placeholder],
 }
 
 #velgStilling {
-  width: 30%
+  width: 30%;
 }
-
 
 #soknad p {
   font-size: 15pt;
@@ -298,7 +253,6 @@ input,
 #velgStilling {
   outline-color: orange;
 }
-
 
 .button:active {
   background-color: orange;
@@ -322,7 +276,6 @@ FARGE:  rgb(138, 142, 139)  */
   font-size: 20pt;
 }
 
-
 /*9 nav.html*/
 .nav {
   background-color: black;
@@ -335,10 +288,28 @@ FARGE:  rgb(138, 142, 139)  */
   z-index: 1;
 }
 
-li {
+.navUl > li {
   display: inline;
   /*padding: browser width / menyknapper*/
-  padding-right: 0%;
+  /*padding-right: 40px;*/
+  padding: 5px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+}
+
+.navUl {
+  position: absolute;
+  left: 50px;
+  top: -12px;
+}
+
+.logoHeader {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  float: left;
 }
 
 .dropdown {
@@ -349,36 +320,56 @@ li {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: black;
   z-index: 2;
-  margin-block-start: 0;
+  margin-block-start: 20px;
+  list-style-type: none;
+  padding: 0px;
 }
 
 .dropdown-content a {
   display: block;
+  padding: 10px;
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: rgb(157, 110, 91);
+  color: white;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
-
 li a {
   text-decoration: none;
   color: white;
-  width: 14.2vw;
 }
 
-.logoHeader {
-  width: 80px;
-  height: 80px;
+li:hover {
+  background-color: rgb(157, 110, 91);
+  color: white;
+}
+
+li a:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav {
+    font-size: 20pt;
+  }
+
+  .navUl {
+    position: absolute;
+    top: -5px;
+  }
+
+  .navUl > li {
+    padding-bottom: 24px;
+    padding-top: 30px;
+    padding-right: 3%;
+  }
 }
 
 /*sitat på index*/
