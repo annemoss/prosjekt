@@ -8,6 +8,7 @@
   src: url(../Lobster/Lobster-Regular.ttf);
 }
 
+
 body {
   background-image: url("../img/wood.jpg");
   background-attachment: fixed;
@@ -31,6 +32,13 @@ body {
   margin-top: 100px;
   z-index: 0;
   /*min-height: 550px;*/
+}
+
+@media only screen and (max-width:768px){
+  .textbox {
+    font-size:30pt;
+
+  }
 }
 
 h1 {
@@ -190,10 +198,10 @@ h1 {
   padding:8px 10px;
   box-sizing:border-box;
 }
-.cSelect {
+/*.cSelect {
   width:50%;
   padding:8px 20px;
-}
+}*/
 .container {
   display:block;
   padding-left:15px;
@@ -298,7 +306,7 @@ h1 {
 
 input[placeholder],
 #whybox,
-#velgStilling {
+select{
   padding: 3%;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
@@ -308,7 +316,7 @@ input[placeholder],
   text-align: center;
 }
 
-#velgStilling {
+select{
   width: 30%;
 }
 
@@ -319,7 +327,7 @@ input[placeholder],
 input,
 #whybox,
 .button,
-#velgStilling {
+select{
   outline-color: rgb(157, 110, 91);
 }
 
@@ -333,7 +341,7 @@ select option:first-child {
 FARGE:  rgb(138, 142, 139)  */
 }
 
-#velgStilling {
+select {
   padding: 2.5%;
   /*ENDRE FARGE*/
 }
