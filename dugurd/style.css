@@ -139,6 +139,46 @@ h1 {
   text-align: center;
 }
 
+/*5 Catering*/
+.hyperlink {
+    color: rgb(157, 110, 91);
+}
+
+.cRight {
+  width:45%;
+  float:left;
+  margin-right:10px;
+}
+.cLeft {
+  width:50%;
+  float:left;
+}
+#runneth {
+  overflow:hidden;
+}
+
+.cInput {
+  width:50%;
+  padding:8px 10px;
+  box-sizing:border-box;
+}
+.cSelect {
+  width:50%;
+  padding:8px 20px;
+}
+.container {
+  display:block;
+  padding-left:15px;
+  margin-left:5px;
+}
+.cCheck {
+/*  visibility: hidden;*/
+}
+@media only screen and (max-width: 768px) {
+  .cInput,.cRight,.cLeft {
+    width:100%;
+  }
+}
 /*7 Kontakt oss*/
 .icon {
   height: 50px;

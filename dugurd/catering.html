@@ -8,15 +8,55 @@
     </head>
     <body>
         <header></header>
-        <div class="textbox">
-          <div class="overskrift">Bestilling av catering</div>
+        <div class="textbox" id="runneth">
+          <h1>Bestilling av catering</h1>
           <br>
           <div>På denne siden kan du bestille catering hos oss. Bare skriv inn kontaktinformasjonen din og så skal vi ta kontakt med deg så snart som mulig.
-          Hvis du ikke er kjent med catering-menyen vår, kan du sjekke den her</div>
+          Hvis du ikke er kjent med catering-menyen vår, kan du sjekke den <a href="../dugurd/cMeny.html" class="hyperlink">her</a></div>
           <br>
-          <br>
+          <form>
+            <div class="cLeft">
+              Navn:<br>
+              <input type="text" name="navn" class="cInput">
+              <br><br>
+              Email:
+              <br>
+              <input type="email" name="email" class="cInput">
+              <br><br>
+              Adresse:
+              <br>
+              <input type="text" name="adresse" class="cInput">
+            </div>
+            <div class="cRight">
+              <br>
+              Ønskede pakke:<br>
+              <select class="cSelect">
+                <option value="1">Pakke 1</option>
+                <option value="2">Pakke 2</option>
+                <option value="3">Pakke 3</option>
+                <option value="4">Pakke 4</option>
+                <option value="5">Pakke 5</option>
+              </select>
+              <br><br>
+              Allergener:<br>
+              <label class="container">
+                <input type="checkbox" name="nøtter" id="nøtter" class="cCheck"><label for="nøtter">Nøtter</label><br>
+              </label>
+              <label class="container">
+                <input type="checkbox" name="egg" id="egg" class="cCheck"><label for="egg">Egg</label><br>
+              </label>
+              <label class="container">
+                <input type="checkbox" name="melk" id="melk" class="cCheck"><label for="melk">Melkeprodukter</label><br>
+              </label>
+              <label class="container">
+                <input type="checkbox" name="annet" id="annet" class="cCheck"><label for="annet">Annet</label>
+              </label>
+              <br>
+              <input type="submit" value="Submit" id="cSubmit">
+            </div>
 
-
+          </form>
+          <div class="clearchild"> </div>
         </div>
 
         <footer></footer>
