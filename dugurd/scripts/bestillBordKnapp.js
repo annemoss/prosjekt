@@ -1,27 +1,3 @@
-/* SØKNAD */
-const soknad = document.getElementById('soknad');
-const submit = document.getElementById('submit');
-const levert = document.getElementById('confirmation');
-const navnBekreftelse = document.getElementById('bekreftelseNavn');
-var fornavnBekreftelse = document.getElementById('firstname');
-levert.style.display = 'none';
-
-/*submit.onclick = function SendInn() {
-    soknad.style.display = 'none';
-    levert.style.display='block';
-    navnBekreftelse.append(fornavnBekreftelse.value);
-    //event.preventDefault() //Endrer så kravenen ikke lenger tas hensyn til
-
-}*/
-
-/*function validateForm() {
-    var x = document.forms.value;
-    if (x == "") {
-        alert("Feltet må fylles ut");
-        return false;
-    }
-}
-*/
 /* BESTILL BORD*/
 
 /*dato*/
@@ -46,12 +22,12 @@ console.log(weekday)
 /*FRE-LØR*/
 if (weekday == 0 || weekday == 6 || weekday == 5){
   time.setAttribute('min', '11:00:00');
-  time.setAttribute('max', '22:00:00');
+  time.setAttribute('max', '21:00:00');
 }
 /*MAN-TOR*/
 else {
   time.setAttribute('min', '11:00:00')
-  time.setAttribute('max', '20:00:00')
+  time.setAttribute('max', '19:00:00')
 }
 
 /*span verdier*/

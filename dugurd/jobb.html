@@ -16,7 +16,6 @@
         <form action="index.html" method="post"><!--FINN UT HVOR DET SKAL SENDES -->
 
             <p>Hva vil du jobbe med?</p>
-            <!--Sett inn drop-down meny-->
             <select required id="velgStilling" autofocus>
               <option value=""> Velg en stilling...</option>
               <option value="kokk" > Kokk</option>
@@ -57,20 +56,20 @@
           <br>
 
           <label for="submit"></label>
-          <input type="submit" name="submit" value="Send inn søknad" id="submit">
+          <input type="submit" name="submit" value="Send inn søknad" id="submit" onsubmit="SendInn()">
           <br>
           <br>
 
           </form>
         </div>
 
-          <p id="confirmation"> Takk for din søknad, <span id='bekreftelseNavn'></span>! <br>
+          <p id="confirmation" display="none"> Takk for din søknad, <span id='bekreftelseNavn'></span>! <br>
             Du vil høre fra oss snart!</p>
 
       </div>
 
         <footer></footer>
         <script type="text/javascript" src="scripts/add.js"></script>
-        <script type="text/javascript" src="scripts/knapp.js"></script>
+        <script type="text/javascript" src="scripts/jobbKnapp.js"></script>
     </body>
 </html>

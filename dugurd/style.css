@@ -188,14 +188,30 @@ li a:hover {
   padding: 25px;
   position: relative;
   border-radius: 3px;
-  width: 475px;
-  margin-left: 19%;
+  width: 100%;
+  margin: auto;
 }
-
-
-#number {
+.bestillBordButton {
   position: relative;
-  margin-left: 25%;
+  margin: auto;
+  position: relative;
+  padding: 10px;
+  margin-top: 20px;
+  left: 35%;
+  font-size: 15px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: white;
+}
+.bestillBordForm input{
+  padding: 3%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-color: black;
+  font-size: 12pt;
+  width: 50%;
+  text-align: center;
+  outline-color: rgb(157, 110, 91);
 }
 
 #reservasjonen,
@@ -205,6 +221,56 @@ li a:hover {
   position: relative;
   text-align: center;
 }
+
+.bestillBordForm table{
+  margin: auto;
+}
+.bestillBordForm input[type=radio]{
+    width: 20px;
+    background-color: orange;}
+
+
+/*5 Catering*/
+.hyperlink {
+    color: rgb(157, 110, 91);
+}
+
+.cRight {
+  width:45%;
+  float:left;
+  margin-right:10px;
+}
+.cLeft {
+  width:50%;
+  float:left;
+}
+#runneth {
+  overflow:hidden;
+}
+
+.cInput {
+  width:50%;
+  padding:8px 10px;
+  box-sizing:border-box;
+}
+.cSelect {
+  width:50%;
+  padding:8px 20px;
+}
+.container {
+  display:block;
+  padding-left:15px;
+  margin-left:5px;
+}
+.cCheck {
+/*  visibility: hidden;*/
+}
+@media only screen and (max-width: 768px) {
+  .cInput,.cRight,.cLeft {
+    width:100%;
+  }
+}
+
 
 /*7 Kontakt oss*/
 .icon {
@@ -270,7 +336,6 @@ li a:hover {
 
 /*8 JOBBSØKNAD*/
 #submit {
-  border-radius: 20px;
   position: relative;
   padding: 10px;
   margin-top: 20px;
@@ -318,15 +383,15 @@ input,
 #whybox,
 .button,
 #velgStilling {
-  outline-color: orange;
+  outline-color: rgb(157, 110, 91);
 }
 
 .button:active {
-  background-color: orange;
+  background-color: rgb(157, 110, 91);
 }
 
 select option:first-child {
-  color: orange;
+  color: rgb(157, 110, 91);
   /*ENDRE FARGE PÅ FØRSTE FUNKER IKKE
 FARGE:  rgb(138, 142, 139)  */
 }

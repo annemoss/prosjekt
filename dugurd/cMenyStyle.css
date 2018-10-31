@@ -1,0 +1,46 @@
+#cFoodPic{
+    width: 70%;
+    margin-left: 10%;
+}
+
+#leftSide{
+    max-width: 45%;
+    float: left;
+}
+
+#rightSide{
+    max-width: 45%;
+    float: right;
+}
+
+.contentBox{
+    padding: 5%;
+}
+
+.textbox {
+    
+    font-family: Verdana;
+    font-size: 0.9vw;
+    float: left;
+}
+
+#contentHeader{
+    font-size: 3vw;
+}
+#headerContainer{
+    max-height: 40%;
+}
+
+.innerHeader{
+    font-size: 1.25vw;
+    letter-spacing: 3px;
+}
+#contentContainerL{
+    margin-top: 6%;
+    margin-left: 5%;
+}
+
+#contentContainerR{
+    margin-top: -6%;
+    margin-right: 5%;
+}
