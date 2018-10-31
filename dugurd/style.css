@@ -37,8 +37,14 @@ body {
 
 @media only screen and (max-width:768px){
   .textbox {
+<<<<<<< HEAD
     font-size:30pt;
 
+=======
+    font-size: 14pt;
+    margin-left: 5%;
+    margin-right: 5%;
+>>>>>>> 523793bccb5748b31106d1aaf78d0ea14e645d64
   }
 }
 
@@ -258,6 +264,7 @@ li a:hover {
   padding:8px 10px;
   box-sizing:border-box;
 }
+<<<<<<< HEAD
 /*.cSelect {
   width:50%;
   padding:8px 20px;
@@ -269,6 +276,11 @@ li a:hover {
 }
 .cCheck {
 /*  visibility: hidden;*/
+=======
+
+#cSubmit {
+  float: right;
+>>>>>>> 523793bccb5748b31106d1aaf78d0ea14e645d64
 }
 @media only screen and (max-width: 768px) {
   .cInput,.cRight,.cLeft {
@@ -276,7 +288,52 @@ li a:hover {
   }
 }
 
+<<<<<<< HEAD
 
+=======
+/* Checkbox, tatt fra https://paulund.co.uk/how-to-style-a-checkbox-with-css fordi å style checkbox er nært umulig */
+.cCheck {
+  visibility:hidden;
+}
+.container {
+    width: 25px;
+    margin: 20px 0px;
+    position: relative;
+}
+.container label {
+    cursor: pointer;
+    position:absolute;
+    width: 25px;
+    height: 25px;
+    left:-10px;
+    background: #eee;
+    border:1px solid #ddd;
+}
+
+.container label:after {
+     content: '';
+     opacity: 0.2;
+     content:"";
+     position: absolute;
+     width: 9px;
+     height: 5px;
+     background: transparent;
+     top: 6px;
+     left: 7px;
+     border: 3px solid #333;
+     border-top: none;
+     border-right: none;
+
+     transform: rotate(-45deg);
+}
+.container label:hover::after {
+    opacity: 0.5;
+}
+
+.container input[type=checkbox]:checked + label:after {
+    opacity: 1;
+}
+>>>>>>> 523793bccb5748b31106d1aaf78d0ea14e645d64
 /*7 Kontakt oss*/
 .icon {
   height: 50px;
@@ -337,6 +394,17 @@ li a:hover {
   height: 100%;
   width: 100%;
   right: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .map-responsive {
+    float: none;
+    margin-top: 5px;
+  }
+
+  .infoPart:last-of-type {
+    margin-bottom: 10px;
+  }
 }
 
 /*8 JOBBSØKNAD*/
@@ -436,6 +504,10 @@ select {
   padding-left: 1.5%;
 }
 
+.navUl > li > #aJobb {
+  padding-right: 0;
+}
+
 .navUl {
   position: absolute;
   left: 50px;
@@ -509,7 +581,12 @@ li a:hover {
   .navUl > li {
     padding-bottom: 24px;
     padding-top: 30px;
-    padding-right: 3%;
+    padding-right: 1.4%;
+    padding-left: 1.4%;
+  }
+
+  .navUl > li > #aJobb {
+    padding-right: 0;
   }
 }
 
