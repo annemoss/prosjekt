@@ -37,7 +37,7 @@ body {
 
 @media only screen and (max-width:768px){
   .textbox {
-    font-size:30pt;
+    font-size:14pt;
 
   }
 }
@@ -270,7 +270,12 @@ li a:hover {
   margin-left:5px;
 }
 .cCheck {
+  color:black;
 /*  visibility: hidden;*/
+}
+
+#cSubmit {
+  float:right;
 }
 @media only screen and (max-width: 768px) {
   .cInput,.cRight,.cLeft {
