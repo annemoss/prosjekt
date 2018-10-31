@@ -57,18 +57,25 @@ else {
 /*span verdier*/
 const spanAntall = document.querySelector('.bordAntallPersoner');
 const spanDato = document.querySelector('.reservertDato');
-const spanTid = document.querySelector('.reservertKlokkeslett')
+const spanTid = document.querySelector('.reservertKlokkeslett');
+const spanMail = document.querySelector('.mailBekreftelse');
 const inputAntall = document.querySelector('#antall_manuell');
 const inputDato = document.querySelector('#dato');
 const inputKlokkeslett = document.querySelector('#klokkeslett');
+const inputMail = document.querySelector('#epost');
 
 spanAntall.append(inputAntall.value);
 spanDato.append(inputDato.value);
 spanTid.append(inputKlokkeslett.value);
+spanMail.append(inputMail.value);
 
 /*funksjonene for knapp*/
-/*
 const btn = document.querySelector('.button');
+const ikkeLedig = document.querySelector('#ikkeLedigReservasjon');
+const reservasjonFullfort = document.querySelector('#reservasjonFullfort');
+
+/*
+
 var reservasjonen = document.getElementById('reservasjonen');
 var velgDato = document.getElementById('velgDato');
 var leggInnKontaktInfo = document.querySelector('#leggInnKontaktInfo');

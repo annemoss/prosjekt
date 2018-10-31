@@ -37,93 +37,52 @@ h1 {
   font-size: 27pt;
 }
 /*1 navbar til index*/
-.bar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #262626;
-}
 
-.boks,
-#mknapp {
-  float: left;
-  font-family: "FjallaOne";
-  font-size: 24pt;
-}
-
-.boks a,
-#mknapp a {
-  display: block;
-  color: #ffffff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.boks a:hover,
-#mknapp a:hover {
-  background-color: #111;
-}
-
-.nedover {
-  position: relative;
-  display: inline-block;
-}
-
-.nedover-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.nedover-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.boks {
-  float: left;
-  font-family: "FjallaOne";
-  font-size: 24pt;
-}
-
-.boks a {
-  display: block;
-  color: #ffffff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.boks a:hover {
-  background-color: #111;
-}
-
-.nedover-content a:hover {
-  background-color: #ddd;
-}
-
-.nedover:hover .nedover-content {
-  display: block;
-}
-
-.nedover:hover #mknapp {
-  background-color: #3e8e41;
-}
 
 /*slideshow*/
+* {box-sizing: border-box}
+
+.slideshow {
+  max-width: 100%;
+  position: relative;
+  margin: 0;
+  padding:0;
+}
+
+.slides {
+  display: none;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animantion-name: fade;
+  animation-duartion: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#uscroll {
+  overflow: hidden;
+}
+
 
 /*1 sitat på index*/
 #sitat {
   font-family: "Lobster";
   font-size: 48pt;
   color: #ffffff;
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
 }
 
 /*2 rMeny */
@@ -162,13 +121,14 @@ h1 {
 }
 
 /*4 BESTILL BORD*/
-.form {
+.bestillBordForm {
   padding: 25px;
   position: relative;
   border-radius: 3px;
   width: 475px;
   margin-left: 19%;
 }
+
 
 #number {
   position: relative;
