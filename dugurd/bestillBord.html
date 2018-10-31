@@ -13,12 +13,12 @@
 
             <div id="reservasjonen">
               <h1>Informasjon om bordreservasjon</h1>
-              <p id="1">Velg fra hurtigvelgeren, hvis du ønsker flere benytt den manuelle
+              <p>Velg fra hurtigvelgeren, hvis du ønsker flere benytt den manuelle
                 og trykk pluss for å øke antallet du ønsker å reservere bord for, og
                 minus for å minke antallet</p>
 
               <p>Velg hvor mange du ønsker å reservere bord til:</p>
-              <form action="index.html" method="post">
+              <form class='bestillBordForm' action="index.html" method="post">
 
               <!--<table>
 
@@ -45,7 +45,7 @@
                 <input type="number" name="antall" id="antall_manuell" min="1" max="99" required>
 
                 <!--KontaktINFO-->
-              <p id="2"> Velg dato og klokkeslett for når du ønsker bordreservasjonen, så skal
+              <p> Velg dato og klokkeslett for når du ønsker bordreservasjonen, så skal
                   vi sjekke om vi har noe ledig. </p>
 
               <label for="dato">Dato: </label>
@@ -62,7 +62,7 @@
             <p>Vi har funnet et ledig bord til <span class="bordAntallPersoner"></span> personer den <span class="reservertDato"></span> klokken
                    <span class="reservertKlokkeslett"></span>. Fyll ut kontaktinformasjonen din i skjemaet til venstre slik
                    at vi kan sende deg bekreftelsen på din reservasjon.</p>
-              <form class="" action="index.html" method="post">
+              <form class="bestillBordForm" action="index.html" method="post">
                 <label for="fornavn">Fornavn:* </label> <br>
                 <input type="text" id="fornavn" placeholder="Skriv inn fornavn..." required>
                 <br>
@@ -85,19 +85,19 @@
                 <label for="epost">E-post:* </label> <br>
                 <input type="email" id="epost" placeholder="Skriv inn e-post..." required>
                 <br>
-                <button type="button" name="neste" class="button"> Neste –> </button>
+                <button type="submit" name="neste" class="button"> Neste –> </button>
               </form>
 
               <div id="ikkeLedigReservasjon">
-              <p id="4"> Vi har dessverre ikke noe ledig bord for <span class='reservertDato'></span> personer den <span class="bordAntallPersoner"></span>
+              <p> Vi har dessverre ikke noe ledig bord for <span class='reservertDato'></span> personer den <span class="bordAntallPersoner"></span>
                     klokka <span class="reservertKlokkeslett"></span>. Du kan forsøke å endre klokkeslett eller dato og
                     forsøke på nytt. </p>
               </div>
               <div id="reservasjonFullfort">
-              <h1 class="5">Takk for din reservasjon!</h1>
-              <p class="5">
+              <h1>Takk for din reservasjon!</h1>
+              <p>
                 Du har nå reservert bord klokka <span class="reservertKlokkeslett"></span>den <span class="reservertDato"></span>, for <span class="bordAntallPersoner"></span>
-                 personer. En bekreftelse vil sendes til deg på e-post: <span id="mailBekreftelse"></span>.
+                 personer. En bekreftelse vil sendes til deg på e-post: <span class="mailBekreftelse"></span>.
               </p>
               </div>
             </div>

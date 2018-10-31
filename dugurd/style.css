@@ -161,13 +161,14 @@ h1 {
 }
 
 /*4 BESTILL BORD*/
-.form {
+.bestillBordForm {
   padding: 25px;
   position: relative;
   border-radius: 3px;
   width: 475px;
   margin-left: 19%;
 }
+
 
 #number {
   position: relative;
