@@ -257,11 +257,12 @@ li a:hover {
 }
 
 .cInput {
-  width:50%;
+  width:100%;
   padding:8px 10px;
-  box-sizing:border-box;
 }
-
+#cForm {
+  width:100%;
+}
 #cSubmit {
   float: right;
 }
@@ -272,7 +273,14 @@ li a:hover {
     width: 100%;
   }
 }
+div label p{
+  white-space:nowrap;
 
+}
+.cTekst{
+  position:relative;
+  right:100px;
+}
 /* Checkbox, tatt fra https://paulund.co.uk/how-to-style-a-checkbox-with-css fordi å style checkbox er nært umulig */
 .cCheck {
   visibility:hidden;
@@ -287,7 +295,7 @@ li a:hover {
     position:absolute;
     width: 25px;
     height: 25px;
-    left:-10px;
+    left:0px;
     background: #eee;
     border:1px solid #ddd;
 }
@@ -444,6 +452,9 @@ select {
   font-size: 12pt;
   width: 50%;
   text-align: center;
+}
+.cInput{
+  width:100%;
 }
 
 select {
