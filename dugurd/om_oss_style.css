@@ -25,13 +25,13 @@ h1{
 #pic2_text{
     display: none;
     position: absolute;
-    margin-left: 30%;
+    margin-left: 10%;
     margin-top: -25%;
     max-width: 25%;
 }
 #inner_container2{
-    margin-top: 0%;
-    margin-right: 23%;
+    margin-top: 34%;
+    margin-right: -3%;
     float: right;
     max-width: 50%;
 }
@@ -53,6 +53,7 @@ h1{
     max-width: 25%;
 }
 #inner_container3{
+    margin-top: 34%;
     float: left;
     max-width: 50%;
     }
@@ -63,11 +64,6 @@ h1{
     margin-left: 55%;
     max-width: 35%;
     float: left;
-}
-
-#pic2 {
-    position: relative;
-    left: 50%;
 }
 
 .pic_container{
@@ -85,4 +81,83 @@ h1{
     font-family: Verdana;
     font-size: 0.9vw;
     float: left;
+}
+
+@media only screen and (max-width: 600px){
+
+    .textbox {
+        padding: 20px;
+        font-family: Verdana;
+        font-size: 2vw;
+        float: left;
+    }
+
+
+
+
+    #inner_container1{
+        max-width: 100%;
+    }
+
+    #pic1_text {
+        display: none;
+        position: absolute;
+        margin-left: 10%;
+        margin-top: -50%;
+        max-width: 60%;
+    }
+
+    #container1_text{
+        position: absolute;
+        margin-top: 55%;
+        margin-left: 10%;
+        max-width: 70%;
+        float: left;
+    }
+
+
+
+
+    #pic2_text{
+        display: none;
+        position: absolute;
+        margin-left: 10%;
+        margin-top: -50%;
+        max-width: 60%;
+    }
+    #inner_container2{
+        margin-top: 75%;
+        max-width: 100%;
+    }
+    #container2_text{
+        position: absolute;
+        margin-left: 10%;
+        margin-top: 170%;
+        max-width: 70%;
+        float: left;
+    }
+
+
+
+    #pic3_text{
+        display: none;
+        position: absolute;
+        margin-left: 10%;
+        margin-top: -50%;
+        max-width: 60%;
+    }
+    #inner_container3{
+        margin-top: 75%;
+        float: left;
+        max-width: 100%;
+        }
+    
+    #container3_text{
+        position: relative;
+        margin-top: 5%;
+        margin-left: 15%;
+        max-width: 70%;
+        float: left;
+    }
+
 }
