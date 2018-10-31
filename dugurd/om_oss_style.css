@@ -108,9 +108,9 @@ h1{
     }
 
     #container1_text{
-        position: absolute;
-        margin-top: 55%;
-        margin-left: 10%;
+        position: relative;
+        margin-top: 5%;
+        margin-left: 15%;
         max-width: 70%;
         float: left;
     }
@@ -126,13 +126,13 @@ h1{
         max-width: 60%;
     }
     #inner_container2{
-        margin-top: 75%;
+        margin-top: 10%;
         max-width: 100%;
     }
     #container2_text{
-        position: absolute;
-        margin-left: 10%;
-        margin-top: 170%;
+        position: relative;
+        margin-top: 5%;
+        margin-left: 15%;
         max-width: 70%;
         float: left;
     }
@@ -147,7 +147,7 @@ h1{
         max-width: 60%;
     }
     #inner_container3{
-        margin-top: 75%;
+        margin-top: 10%;
         float: left;
         max-width: 100%;
         }
