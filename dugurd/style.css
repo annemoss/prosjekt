@@ -322,9 +322,9 @@ div label p {
 }
 
 /*7 Kontakt oss*/
+
 .icon {
   height: 50px;
-  /*display:inline;*/
 }
 
 .iconDiv {
@@ -355,6 +355,11 @@ div label p {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+#tider p:last-of-type {
+  margin-bottom: 30px;
+}
+
 .buttonKontakt {
   /*position: absolute;*/
   padding: 15px;
@@ -370,19 +375,16 @@ div label p {
   top: 10px;
 }
 
-form {
+.divForm {
   display: inline-block;
   font-size: 15pt;
   top: 10px;
 }
 
 #infoMap {
-  margin-top: 25px;
+  margin-top: 18px;
 }
 
-.formKontakt {
-  display: inline;
-}
 .buttonKontakt:hover {
   background-color: rgb(157, 110, 91);
 }
