@@ -610,7 +610,7 @@ select {
 }
 
 .dropdown-content {
-  /*display: none;*/
+  display: none;
   position: absolute;
   background-color: black;
   z-index: 2;
