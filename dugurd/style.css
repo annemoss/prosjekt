@@ -34,7 +34,7 @@ body {
   /*min-height: 550px;*/
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .textbox {
     font-size: 14pt;
     margin-left: 5%;
@@ -285,7 +285,7 @@ li a:hover {
 #cSubmit {
   float: right;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .cInput,
   .cRight,
   .cLeft {
@@ -439,10 +439,38 @@ li a:hover {
   .map-responsive {
     float: none;
     margin-top: 5px;
+    width: 70%;
+    padding-bottom: 20px;
   }
 
   .infoPart:last-of-type {
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .iconDiv {
+    display: block;
+  }
+
+  .infoDiv {
+    display: block;
+  }
+
+  .infoPart {
+    margin-top: 40px;
+  }
+
+  .infoPart:first-of-type {
+    margin-top: 0px;
+  }
+
+  .infoPart:last-of-type {
+    margin-bottom: 30px;
+  }
+
+  #infoMap {
+    margin-top: 0px;
   }
 }
 
