@@ -1,90 +1,86 @@
-#cFoodPic{
-    width: 70%;
-    margin-left: 10%;
+#cFoodPic {
+  width: 70%;
+  margin-left: 10%;
 }
 
-#leftSide{
-    max-width: 45%;
-    float: left;
+#leftSide {
+  max-width: 45%;
+  float: left;
 }
 
-#rightSide{
-    max-width: 45%;
-    float: right;
+#rightSide {
+  max-width: 45%;
+  float: right;
 }
 
-.contentBox{
-    padding: 5%;
+.contentBox {
+  padding: 5%;
 }
 
 .textbox {
-    
-    font-family: Verdana;
-    font-size: 0.9vw;
-    float: left;
+  font-family: Verdana;
+  font-size: 0.9vw;
+  float: left;
 }
 
-#contentHeader{
-    font-size: 3vw;
+#contentHeader {
+  font-size: 3vw;
 }
-#headerContainer{
-    max-height: 40%;
+#headerContainer {
+  max-height: 40%;
 }
 
-.innerHeader{
-    font-size: 1.25vw;
-    letter-spacing: 3px;
+.innerHeader {
+  font-size: 1.25vw;
+  letter-spacing: 3px;
 }
-#contentContainerL{
-    margin-top: 6%;
+#contentContainerL {
+  margin-top: 6%;
+  margin-left: 5%;
+}
+
+#contentContainerR {
+  margin-top: -6%;
+  margin-right: 5%;
+}
+
+@media only screen and (max-width: 800px) {
+  #contentHeader {
+    font-size: 5vw;
+    text-align: left;
     margin-left: 5%;
-}
+  }
 
-#contentContainerR{
-    margin-top: -6%;
-    margin-right: 5%;
-}
+  .textbox {
+    font-family: Verdana;
+    font-size: 2.5vw;
+    float: left;
+  }
 
-@media only screen and (max-width: 800px){
+  .innerHeader {
+    font-size: 4vw;
+  }
 
-    #contentHeader{
-        font-size: 5vw;
-        text-align: left;
-        margin-left: 5%;
-    }
+  #cFoodPic {
+    display: none;
+  }
 
+  #rightSide {
+    max-width: 100%;
+    float: left;
+    position: relative;
+    margin-bottom: 0%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
 
-    .textbox {
-        font-family: Verdana;
-        font-size: 2.5vw;
-        float: left;
-    }
-
-    .innerHeader{
-        font-size: 4vw;
-    }
-
-    #cFoodPic{
-        display: none;
-    }
-
-    #rightSide{
-        max-width: 100%;
-        float: left;
-        position: relative;
-        margin-bottom: 0%;
-        margin-top: 5%;
-        margin-left: 5%;
-    }
-
-    #leftSide{
-        max-width: 100%;
-        float: left;
-        position: relative;
-        margin-top: 0%;
-    }
-    .contentBox{
-        padding: 5%;
-    }
-    
+  #leftSide {
+    max-width: 100%;
+    float: left;
+    position: relative;
+    margin-top: 0%;
+  }
+  .contentBox {
+    padding: 5%;
+  }
 }

@@ -34,7 +34,7 @@ body {
   /*min-height: 550px;*/
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .textbox {
     font-size: 14pt;
     margin-left: 5%;
@@ -74,9 +74,9 @@ h1 {
 }
 
 .logoHeaderIndex {
+  position: absolute;
   width: 150px;
   height: 150px;
-  position: absolute;
 }
 
 .dropdownIndex {
@@ -155,11 +155,10 @@ li a:hover {
 }
 
 /*2 rMeny */
-@media only screen and (max-width:800px){
-  #flyteguri
-  #right,
-  #left{
-    float:none;
+@media only screen and (max-width: 800px) {
+  #flyteguri #right,
+  #left {
+    float: none;
   }
   #right,
   #left {
@@ -205,7 +204,7 @@ li a:hover {
 }
 
 #right p {
-  margin-bottom:30px;
+  margin-bottom: 30px;
 }
 
 /*4 BESTILL BORD*/
@@ -255,6 +254,13 @@ li a:hover {
   background-color: orange;
 }
 
+#ikkeLedigReservasjon, #reservasjonFullfort { /*KAN KOPLES SAMMEN MED JOBB*/
+  padding-top: 20%;
+  padding-bottom: 30%;
+  text-align: center;
+  font-size: 20pt;
+}
+
 /*5 Catering*/
 .hyperlink {
   color: rgb(157, 110, 91);
@@ -283,16 +289,16 @@ li a:hover {
 #cSubmit {
   float: right;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .cInput,
   .cRight,
   .cLeft {
     width: 100%;
   }
 }
-.cTekst{
-  display:inline;
-  position:absolute;
+.cTekst {
+  display: inline;
+  position: absolute;
   left: 30px;
 }
 /* Checkbox, tatt fra https://paulund.co.uk/how-to-style-a-checkbox-with-css fordi å style checkbox er nært umulig */
@@ -305,13 +311,13 @@ li a:hover {
   position: relative;
 }
 .container label {
-    cursor: pointer;
-    position:absolute;
-    width: 25px;
-    height: 25px;
-    left: 0px;
-    background: #eee;
-    border:1px solid #ddd;
+  cursor: pointer;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 0px;
+  background: #eee;
+  border: 1px solid #ddd;
 }
 
 .container label:after {
@@ -331,7 +337,7 @@ li a:hover {
   transform: rotate(-45deg);
 }
 .container label:hover::after {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .container input[type="checkbox"]:checked + label:after {
@@ -437,10 +443,38 @@ li a:hover {
   .map-responsive {
     float: none;
     margin-top: 5px;
+    width: 70%;
+    padding-bottom: 20px;
   }
 
   .infoPart:last-of-type {
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .iconDiv {
+    display: block;
+  }
+
+  .infoDiv {
+    display: block;
+  }
+
+  .infoPart {
+    margin-top: 40px;
+  }
+
+  .infoPart:first-of-type {
+    margin-top: 0px;
+  }
+
+  .infoPart:last-of-type {
+    margin-bottom: 30px;
+  }
+
+  #infoMap {
+    margin-top: 0px;
   }
 }
 
@@ -522,6 +556,7 @@ select {
 }
 
 /*9 nav.html*/
+
 .nav {
   background-color: black;
   font-family: "FjallaOne", "Verdana", sans-serif;
@@ -533,10 +568,36 @@ select {
   z-index: 1;
 }
 
+.nav ul {
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  margin-left: 100px;
+  padding: 0;
+  width: 100%;
+  /*overflow: hidden;*/
+  /*margin-top: 0px;*/
+}
+
+.nav li {
+  float: left;
+  /*padding-bottom: 24px;
+  padding-top: 10px;*/
+  /*padding: 20px 20px;*/
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 38.8px;
+}
+/*
 .navUl > li {
   display: inline;
-  /*padding: browser width / menyknapper*/
-  /*padding-right: 40px;*/
+  */ /*padding: browser width / menyknapper*/
+/*padding-right: 40px;*/ /*
   padding: 5px;
   padding-bottom: 20px;
   padding-top: 30px;
@@ -550,20 +611,39 @@ select {
 
 .navUl {
   position: absolute;
-  left: 50px;
-  top: -12px;
-}
+  left: 100px;
+  top: 7px;
+}*/
 
 .logoHeader {
   width: 80px;
   height: 80px;
   position: absolute;
   float: left;
+  left: 10px;
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
+  /*display: block;*/
+  color: white;
+  text-align: center;
+  padding: 20px 38.8px;
+  text-decoration: none;
+}
+
+.dropdown ul {
+  margin-left: 0px;
+  width: 192px;
+}
+
+.dropdown ul a {
+  padding: 20px;
+}
+
+.dropdown ul li:last-of-type {
+  padding-right: 37px;
 }
 
 .dropdown-content {
@@ -573,12 +653,12 @@ select {
   z-index: 2;
   margin-block-start: 20px;
   list-style-type: none;
-  padding: 0px;
+  top: 80px;
+  left: 0;
 }
 
 .dropdown-content a {
   display: block;
-  padding: 10px;
 }
 
 .dropdown-content a:hover {
@@ -613,31 +693,48 @@ li a:hover {
     font-size: 20pt;
   }
 
-  .navUl {
-    position: absolute;
-    top: -5px;
+  .nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 23px 25.5px;
   }
 
+  .dropdown {
+    padding: 23px 25.5px;
+  }
+
+  .dropdown ul {
+    width: 165%;
+  }
+  /*
+  .navUl {
+    position: absolute;
+    top: -30px;
+  }*/
+  /*
   .navUl > li {
     padding-bottom: 24px;
     padding-top: 30px;
     padding-right: 1.4%;
     padding-left: 1.4%;
-  }
-
+  }*/
+  /*
   .navUl > li > #aJobb {
     padding-right: 0;
-  }
+  }*/
 }
 
 /* When the screen is less than 800 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 800px) {
-  .nav a:not(:first-child) {
+  .nav li {
     display: none;
   }
   .nav a.iconMobil {
     float: right;
     display: block;
+    color: white;
   }
 
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
