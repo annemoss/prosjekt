@@ -17,20 +17,21 @@
           <form id="cForm">
             <div class="cLeft">
               Navn:<br>
-              <input type="text" name="navn" class="cInput" placeholder="Skriv inn ditt navn...">
+              <input type="text" name="navn" class="cInput" placeholder="Skriv inn ditt navn..." required>
               <br><br>
               E-post:
               <br>
-              <input type="email" name="email" class="cInput" placeholder="Skriv inn din e-post">
+              <input type="email" name="email" class="cInput" placeholder="Skriv inn din e-post" required>
               <br><br>
               Adresse:
               <br>
-              <input type="text" name="adresse" class="cInput" placeholder="Skriv inn din adresse">
+              <input type="text" name="adresse" class="cInput" placeholder="Skriv inn din adresse" required>
             </div>
             <div class="cRight">
               <br>
               Ønskede pakke:<br>
               <select class="cSelect">
+                <option value="" disabled selected hidden id="ikkeEnStilling">Velg pakke</option>
                 <option value="1">Pakke 1</option>
                 <option value="2">Pakke 2</option>
                 <option value="3">Pakke 3</option>
@@ -42,19 +43,23 @@
               <br>
               <label class="container">
                 <input type="checkbox" name="nøtter" class="cCheck" id="nøtter">
-                  <label class="styleBox" for="nøtter"></label><div class="cTekst">Nøtter</div><br>
+                  <span class="styleBox"></span>
+                  <a class="cTekst">Nøtter</a><br>
               </label>
               <label class="container">
                 <input type="checkbox" name="egg" class="cCheck" id="egg">
-                  <label class="styleBox" for="egg"></label><div class="cTekst">Egg</div><br>
+                <span class="styleBox"></span>
+                <a class="cTekst">Egg</a><br>
               </label>
               <label class="container">
                 <input type="checkbox" name="melk" class="cCheck" id="melk">
-                  <label class="styleBox" for="melk"></label><div class="cTekst">Melkeprodukter</div><br>
+                  <span class="styleBox"></span>
+                  <a class="cTekst">Melkeprodukter</a><br>
               </label>
               <label class="container">
-                <input type="checkbox" name="annet"class="cCheck" id="annet">
-                  <label class="styleBox" for="annet"></label><div class="cTekst">Annet</div><br>
+                <input type="checkbox" name="annet" class="cCheck" id="annet">
+                  <span class="styleBox"></span>
+                  <a class="cTekst">Annet</a><br>
               </label>
               <br>
               <input type="submit" value="Submit" id="cSubmit">
