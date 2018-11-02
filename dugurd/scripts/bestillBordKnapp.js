@@ -38,12 +38,17 @@ const spanMail = document.querySelector('.mailBekreftelse');
 
 /*funksjonene for knapp*/
 const inputAntall = document.querySelector('#antall_manuell');
-const inputDato = '1999-06-07'//document.querySelector('#dato');
-const inputKlokkeslett = 'HEI DATO'//document.querySelector('#klokkeslett');
-const inputMail = 'HEI MAIL'//document.querySelector('#epost');
+const inputDato = 'HEI DATO'//document.querySelector('#dato');
+const inputKlokkeslett = 'HEI KLOKKESLETT'//document.querySelector('#klokkeslett');
+const inputEpost = document.querySelector('#epost');
+const inputFornavn = document.querySelector('#fornavn');
+const inputEtternavn = document.querySelector('#etternavn');
+//???? const inputKjonn = document.querySelector('#kjonn');
+const inputMobil = document.querySelector('#telefonnummer');
 
 const reservasjon = document.querySelector('#reservasjonen');
 const btn = document.querySelector('.bestillBordButton');
+const btn2 = document.querySelector('#kontaktinfoButton');
 const ikkeLedig = document.querySelector('#ikkeLedigReservasjon');
 const reservasjonFullfort = document.querySelector('#reservasjonFullfort');
 const leggInnKontaktInfo = document.querySelector('#leggInnKontaktInfo');
@@ -52,34 +57,44 @@ ikkeLedig.style.display = 'none';
 reservasjonFullfort.style.display = 'none';
 leggInnKontaktInfo.style.display = 'none';
 
-//let tillfeldigTall = Math.random()*10
+let tillfeldigTall = Math.random()*10
 //HVORDAN APPENDE VERDI TIL CLASS
 btn.onclick = function LedigBord(event) {
-  spanAntall.append(inputAntall.value);
-  spanDato.append(inputDato.value);
-  spanTid.append(inputKlokkeslett.value);
-
-  event.preventDefault()
-  reservasjon.style.display = 'none';
-  leggInnKontaktInfo.style.display = 'block';
-}
-
-  /*if ((inputAntall.value !== '')&&(inputDato.value !== '')&&
-    (inputKlokkeslett.value !== '')){
-      //if (tillfeldigTall < 0){
-
-      //}
+  if ((inputAntall.checkValidity()) && (inputDato.value.checkValidity())&&//SJEKKER IKKE DATO OG KLOKKESLETT
+(inputKlokkeslett.value.checkValidity())){
+      console.log("hei");
+      if (tillfeldigTall > 0){
+        event.preventDefault()
+        reservasjon.style.display = 'none';
+        leggInnKontaktInfo.style.display = 'block';
+      }
         else {
           event.preventDefault()
           reservasjon.style.display = 'none';
           ikkeLedig.style.display = 'block';
-
       }
-    }
 
-  }*/
+  }
 
+  else {
 
+  }
+}
+
+btn2.onclick = function KomplettReservasjon(event) {
+  if ((inputFornavn.value!== '') && (inputEtternavn.value !== '')
+      && (inputMobil.value !== '')&& (inputEpost.value !=='')){
+    event.preventDefault()
+    leggInnKontaktInfo.style.display='none';
+    reservasjonFullfort.style.display='block';
+  }
+
+}
+/*
+spanAntall.append(inputAntall.value);
+spanDato.append(inputDato.value);
+spanTid.append(inputKlokkeslett.value);
+spanMail.append(inputMail.value);*/
 
   /*spanAntall.append(inputAntall.value);
   spanDato.append(inputDato.value);

@@ -18,7 +18,7 @@
                 minus for å minke antallet</p>
 
 
-              <form class='bestillBordForm' action="index.html" method="post">
+              <form class='bestillBordForm' method="post">
                 <p>Velg hvor mange du ønsker å reservere bord til:</p>
               <!--<table>
 
@@ -70,11 +70,9 @@
                 <input type="text" id="etternavn" placeholder="Skriv inn etternavn..." required>
                 <br>
                 <p>Velg kjønn: </p>
-                <table>
 
+                <table id="kjonn">
               <tr>
-
-
                 <td><label for="female">Kvinne: </label></td>
                 <td> <input type="radio" name="gender" value="female" id="female" required></td>
               </tr>
@@ -94,7 +92,7 @@
                 <label for="epost">E-post:* </label> <br>
                 <input type="email" id="epost" placeholder="Skriv inn e-post..." required>
                 <br>
-                <button type="submit" name="neste" class="bestillBordButton"> Neste –> </button>
+                <button type="submit" name="neste" class="bestillBordButton" id="kontaktinfoButton"> Neste –> </button>
               </form>
               </div>
 
