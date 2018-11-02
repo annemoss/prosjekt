@@ -77,9 +77,6 @@ h1 {
   position: absolute;
   width: 150px;
   height: 150px;
-
-
-
 }
 
 .dropdownIndex {
@@ -570,6 +567,7 @@ select {
   margin: 0;
   margin-left: 100px;
   padding: 0;
+  width: 100%;
   /*overflow: hidden;*/
   /*margin-top: 0px;*/
 }
@@ -586,7 +584,7 @@ select {
   color: white;
   text-align: center;
   text-decoration: none;
-  padding: 20px 38.5px;
+  padding: 20px 38.8px;
 }
 /*
 .navUl > li {
@@ -624,12 +622,13 @@ select {
   /*display: block;*/
   color: white;
   text-align: center;
-  padding: 20px 38.5px;
+  padding: 20px 38.8px;
   text-decoration: none;
 }
 
 .dropdown ul {
   margin-left: 0px;
+  width: 192px;
 }
 
 .dropdown ul a {
@@ -647,6 +646,8 @@ select {
   z-index: 2;
   margin-block-start: 20px;
   list-style-type: none;
+  top: 80px;
+  left: 0;
 }
 
 .dropdown-content a {
@@ -685,21 +686,37 @@ li a:hover {
     font-size: 20pt;
   }
 
-  .navUl {
-    position: absolute;
-    top: -5px;
+  .nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 23px 25.5px;
   }
 
+  .dropdown {
+    padding: 23px 25.5px;
+  }
+
+  .dropdown ul {
+    width: 165%;
+  }
+  /*
+  .navUl {
+    position: absolute;
+    top: -30px;
+  }*/
+  /*
   .navUl > li {
     padding-bottom: 24px;
     padding-top: 30px;
     padding-right: 1.4%;
     padding-left: 1.4%;
-  }
-
+  }*/
+  /*
   .navUl > li > #aJobb {
     padding-right: 0;
-  }
+  }*/
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
