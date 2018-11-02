@@ -14,7 +14,7 @@
           <div>På denne siden kan du bestille catering hos oss. Bare skriv inn kontaktinformasjonen din og så skal vi ta kontakt med deg så snart som mulig.
           Hvis du ikke er kjent med catering-menyen vår, kan du sjekke den <a href="../dugurd/cMeny.html" class="hyperlink">her</a></div>
           <br>
-          <form>
+          <form id="cForm">
             <div class="cLeft">
               Navn:<br>
               <input type="text" name="navn" class="cInput" placeholder="Skriv inn ditt navn...">
@@ -39,17 +39,22 @@
               </select>
               <br><br>
               Allergener:<br>
+              <br>
               <label class="container">
-                <input type="checkbox" name="nøtter" id="nøtter" class="cCheck"><label for="nøtter">Nøtter</label><br>
+                <input type="checkbox" name="nøtter" class="cCheck" id="nøtter">
+                  <label class="styleBox" for="nøtter"></label><div class="cTekst">Nøtter</div><br>
               </label>
               <label class="container">
-                <input type="checkbox" name="egg" id="egg" class="cCheck"><label for="egg">Egg</label><br>
+                <input type="checkbox" name="egg" class="cCheck" id="egg">
+                  <label class="styleBox" for="egg"></label><div class="cTekst">Egg</div><br>
               </label>
               <label class="container">
-                <input type="checkbox" name="melk" id="melk" class="cCheck"><label for="melk">Melkeprodukter</label><br>
+                <input type="checkbox" name="melk" class="cCheck" id="melk">
+                  <label class="styleBox" for="melk"></label><div class="cTekst">Melkeprodukter</div><br>
               </label>
               <label class="container">
-                <input type="checkbox" name="annet" id="annet" class="cCheck"><label for="annet">Annet</label>
+                <input type="checkbox" name="annet"class="cCheck" id="annet">
+                  <label class="styleBox" for="annet"></label><div class="cTekst">Annet</div><br>
               </label>
               <br>
               <input type="submit" value="Submit" id="cSubmit">

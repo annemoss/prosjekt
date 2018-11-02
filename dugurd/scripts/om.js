@@ -12,7 +12,7 @@ function addListeners() {
   for (var i = 0; i < containers.length; i++) {
     tempPic = containers[i];
 
-    if(window.innerWidth > 600){
+    if(window.innerWidth > 800){
       document.getElementById(tempPic).addEventListener("mouseover", function() {
         picDarken(this.id);
       });
