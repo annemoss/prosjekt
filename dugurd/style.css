@@ -56,6 +56,176 @@ h1 {
 }
 /*1 navbar til index*/
 
+/*ny*/
+.navIndex {
+  background-color: black;
+  font-family: "FjallaOne", "Verdana", sans-serif;
+  font-size: 24pt;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 1;
+}
+
+.navIndex ul {
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  margin-left: 40px;
+  padding: 0;
+  width: 100%;
+  /*overflow: hidden;*/
+  /*margin-top: 0px;*/
+}
+
+.navIndex li {
+  float: left;
+  /*padding-bottom: 24px;
+  padding-top: 10px;*/
+  /*padding: 20px 20px;*/
+}
+
+.navIndex li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 38.8px;
+}
+/*
+.navUl > li {
+  display: inline;
+  */ /*padding: browser width / menyknapper*/
+/*padding-right: 40px;*/ /*
+  padding: 5px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+}
+
+.navUl > li > #aJobb {
+  padding-right: 0;
+}
+
+.navUl {
+  position: absolute;
+  left: 100px;
+  top: 7px;
+}*/
+
+
+.logoHeaderIndex {
+  width: 175px;
+  height: 175px;
+  position: relative;
+}
+
+.dropdownIndex {
+  position: relative;
+  display: inline-block;
+  /*display: block;*/
+  color: white;
+  text-align: center;
+  padding: 20px 38.8px;
+  text-decoration: none;
+}
+
+.dropdownIndex ul {
+  margin-left: 0px;
+  width: 192px;
+}
+
+.dropdownIndex ul a {
+  padding: 20px;
+}
+
+.dropdownIndex ul li:last-of-type {
+  padding-right: 37px;
+}
+
+.dropdown-contentIndex {
+  display: none;
+  position: absolute;
+  background-color: black;
+  z-index: 2;
+  margin-block-start: 20px;
+  list-style-type: none;
+  top: 80px;
+  left: 0;
+}
+
+.dropdown-contentIndex a {
+  display: block;
+}
+
+.dropdown-contentIndex a:hover {
+  background-color: rgb(157, 110, 91);
+  color: white;
+}
+
+.dropdownIndex:hover .dropdown-contentIndex {
+  display: block;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+li:hover {
+  background-color: rgb(157, 110, 91);
+  color: white;
+}
+
+li a:hover {
+  color: white;
+}
+
+.navIndex .iconMobil {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .navIndex {
+    font-size: 20pt;
+  }
+
+  .navIndex li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 23px 25.5px;
+  }
+
+  .dropdownIndex {
+    padding: 23px 25.5px;
+  }
+
+  .dropdownIndex ul {
+    width: 165%;
+  }
+  /*
+  .navUl {
+    position: absolute;
+    top: -30px;
+  }*/
+  /*
+  .navUl > li {
+    padding-bottom: 24px;
+    padding-top: 30px;
+    padding-right: 1.4%;
+    padding-left: 1.4%;
+  }*/
+  /*
+  .navUl > li > #aJobb {
+    padding-right: 0;
+  }*/
+}
+/*gammel
+
 .navIndex {
   background-color: black;
   font-family: "FjallaOne", "Verdana", sans-serif;
@@ -70,7 +240,7 @@ h1 {
 .navUlIndex > li {
   display: inline;
   /*padding: browser width / menyknapper*/
-  padding: 5px;
+  /*padding: 5px;
   padding-bottom: 20px;
   padding-top: 30px;
   padding-right: 1.5%;
@@ -102,7 +272,7 @@ h1 {
   margin-block-start: 20px;
   list-style-type: none;
   padding: 0px;
-}
+}*/
 
 
 
