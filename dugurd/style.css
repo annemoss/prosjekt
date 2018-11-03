@@ -867,6 +867,27 @@ li a:hover {
   .dropdown ul {
     width: 165%;
   }
+
+
+  .navIndex {
+    font-size: 20pt;
+  }
+
+  .navIndex li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 23px 25.5px;
+  }
+
+  .dropdownIndex {
+    padding: 23px 25.5px;
+  }
+
+  .dropdownIndex ul {
+    width: 165%;
+  }
   /*
   .navUl {
     position: absolute;
@@ -887,6 +908,66 @@ li a:hover {
 
 /* When the screen is less than 800 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 800px) {
+
+/* Index navbar styling */
+
+  .navIndex li {
+    display: none;
+  }
+
+  .navUlIndex {
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    width: 100%;
+  }
+
+  .navIndex a.iconMobil {
+    float: right;
+    display: block;
+    color: white;
+  }
+
+  .menymenyIndex {
+    width: 160px;
+  }
+
+  .menymenyIndex a {
+    background-color: black;
+    width: 160px;
+  }
+
+  
+
+  .navIndex.responsive {
+    background-color: black;
+    position: relative;
+  }
+
+  .navIndex.responsive ul {
+    width: 100%;
+    background-color: black;
+  }
+
+  .navIndex.responsive li {
+    display: block;
+    float: left;
+  }
+
+  .navIndex.responsive a.iconMobil {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navIndex.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+
+
+
 
   .nav li {
     display: none;
