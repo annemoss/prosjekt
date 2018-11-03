@@ -318,7 +318,7 @@ li a:hover {
   }
 }
 #flyteguri {
-  float: left;
+  overflow:hidden;
   top: 0;
 }
 
@@ -922,7 +922,7 @@ li a:hover {
   margin-top:30px;
   width:100%;
   bottom:0;
-  height:180px;
+  height:auto;
   position:absolute;
 }
 
@@ -937,4 +937,16 @@ li a:hover {
 
 #footer3 {
   width:34%;
+}
+@media only screen and (max-width: 800px) {
+  .footerDiv, #footer3 {
+    float:none;
+    width:100%;
+  }
+  #footerBox {
+    position:static;
+  }
+  body {
+    padding-bottom:0;
+  }
 }
