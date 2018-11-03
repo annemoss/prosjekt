@@ -59,7 +59,8 @@ leggInnKontaktInfo.style.display = 'none';
 
 let tillfeldigTall = Math.random()*10
 //HVORDAN APPENDE VERDI TIL CLASS
-btn.onclick = function LedigBord(event) {
+//btn.onclick = 
+function LedigBord(event) {
   if ((inputAntall.checkValidity()) && (inputDato.value.checkValidity())&&//SJEKKER IKKE DATO OG KLOKKESLETT
 (inputKlokkeslett.value.checkValidity())){
       console.log("hei");
