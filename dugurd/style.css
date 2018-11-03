@@ -18,6 +18,12 @@ body {
   margin-right: 0px;
   margin-bottom: 0px;
   padding:0;
+  height:100%;
+}
+html {
+  height:100%;
+  margin:0;
+  padding:0;
 }
 
 .textbox {
@@ -743,18 +749,14 @@ li a:hover {
 }
 
 /* 10 footer - add.js */
-#footerBox {
-  background-color: black;
-  position:absolute;
-  margin-top:20px;
-  margin-bottom:0px;
-  padding-bottom:0px;
-  height: auto;
-  bottom:0;
-  width:100%;
-}
 .footerDiv {
+  background-color: black;
+  opacity:0.92;
+  position:static;
   float:left;
   width:33%;
   text-align:center;
+  bottom:0;
+  height:auto;
+  margin-top:20px;
 }
