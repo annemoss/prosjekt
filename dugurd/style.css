@@ -16,6 +16,8 @@ body {
   font-family: "FjallaOne", "Verdana", sans-serif;
   margin-left: 0px;
   margin-right: 0px;
+  margin-bottom: 0px;
+  padding:0;
 }
 
 .textbox {
@@ -31,6 +33,7 @@ body {
   font-size: 18pt;
   margin-top: 100px;
   z-index: 0;
+  margin-bottom:150px;
   /*min-height: 550px;*/
 }
 
@@ -436,13 +439,6 @@ li a:hover {
 }
 
 #cSubmit {
-  float: right;
-}
-
-@media only screen and (max-width: 768px) {
-  .cInput,.cRight,.cLeft {
-    width:100%;
-  }
   position: relative;
   padding: 10px;
   margin-top: 20px;
@@ -455,12 +451,11 @@ li a:hover {
 }
 
 @media only screen and (max-width: 800px) {
-  .cInput,
-  .cRight,
-  .cLeft {
-    width: 100%;
+  .cInput,.cRight,.cLeft {
+  width:100%;
   }
 }
+
 .cTekst {
   display: inline;
   position: absolute;
@@ -915,4 +910,21 @@ li a:hover {
     display: block;
     text-align: left;
   }
+}
+
+/* 10 footer - add.js */
+#footerBox {
+  background-color: black;
+  position:absolute;
+  margin-top:20px;
+  margin-bottom:0px;
+  padding-bottom:0px;
+  height: auto;
+  bottom:0;
+  width:100%;
+}
+.footerDiv {
+  float:left;
+  width:33%;
+  text-align:center;
 }

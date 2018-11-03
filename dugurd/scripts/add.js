@@ -21,5 +21,35 @@ document.addEventListener("DOMContentLoaded", function(e) {
     "</div>";
 
   const footer = document.querySelector("footer");
-  //footer.innerHTML = "footer";
+  footer.innerHTML = '<div id="footerBox">' +
+    '<div class="footerDiv">' +
+    '<p>Åpningstider</p>' +
+    '<p>Mandag-Torsdag: 11-20</p>' +
+    '<p>Fredag-Søndag: 11-22</p>' +
+    '</div>' +
+    '<div class="footerDiv">' +
+    '<p>Email: kontakt@dugurd.no</p>' +
+    '<p>Telefon: +47 483 56 782</p>' +
+    '<p>Adresse: Skadvinvegen 14, 3560 Hemsedal</p>' +
+    '</div>' +
+    '<div class="footerDiv">' +
+    '<p>Siden er utviklet av Sarunas Juskenas,</p>' +
+    '<p>Vidar Michaelsen, Anne Mosvold Ørke,</p>' +
+    '<p>Gunvor Huso og Emilie Kalleberg</p>' +
+    '</div>' +
+    '</div>'
 });
+
+//<!--<div>
+//  <div class="footerDiv">
+//  <p> Åpningstider: Grand opening på julaften</p>
+//    <p>Mail: @dugurd.no</p>
+//  </div>
+//  <div>
+//    <p>Addresse: Skadvinvegen 14, 3560 Hemsedal</p>
+//    <p>Telefonnummer: 48356782</p>
+//  </div>
+//  <div>
+//    <p>Siden er utviklet av SVAGE </p>
+//  </div>
+//</div> -->
