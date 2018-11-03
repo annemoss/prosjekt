@@ -35,6 +35,7 @@ html {
   margin-top: 100px;
   z-index: 0;
   margin-bottom:30px;
+  overflow:hidden;
   /*min-height: 550px;*/
 }
 
@@ -308,15 +309,10 @@ li a:hover {
   #flyteguri #right,
   #left {
     float: none;
-  }
-  #right,
-  #left {
-    text-align: center;
-    clear: none;
-    width: 100%;
-    margin-left: 0px;
+    width:100%;
   }
 }
+
 #flyteguri {
   overflow:hidden;
   top: 0;
@@ -352,13 +348,16 @@ li a:hover {
   margin-left: 10px;
 }
 
-
-
-
 #right p {
   margin-bottom: 30px;
 }
 
+@media only screen and (max-width: 800px) {
+  #right, #left {
+    width:100%;
+    margin:0;
+  }
+}
 /*4 BESTILL BORD*/
 .bestillBordForm {
   padding: 25px;
@@ -918,6 +917,7 @@ li a:hover {
   text-align:center;
   height:auto;
   background-color:black;
+  opacity:0.93;
   overflow:hidden;
   margin-top:30px;
   width:100%;

@@ -20,7 +20,7 @@
 .textbox {
   font-family: Verdana;
   font-size: 0.9vw;
-  float: left;
+  overflow:hidden;
 }
 
 #contentHeader {
@@ -54,7 +54,7 @@
   .textbox {
     font-family: Verdana;
     font-size: 2.5vw;
-    float: left;
+    overflow:hidden;
   }
 
   .innerHeader {
