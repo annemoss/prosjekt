@@ -1,5 +1,6 @@
 /* BESTILL BORD*/
 
+
 /*dato*/
 const datoen = document.querySelector('#dato');
 var today = new Date();
@@ -16,9 +17,9 @@ today = yyyy+'-'+mm+'-'+dd;
 datoen.setAttribute("min", today);
 
 /*klokkeslett*/
-const time = document.querySelector('#klokkeslett')
-var weekday = datoen.value
-console.log(weekday)
+const time = document.querySelector('#klokkeslett');
+var weekday = datoen.value;
+
 /*FRE-LØR*/
 if (weekday == 0 || weekday == 6 || weekday == 5){
   time.setAttribute('min', '11:00:00');
@@ -57,12 +58,21 @@ ikkeLedig.style.display = 'none';
 reservasjonFullfort.style.display = 'none';
 leggInnKontaktInfo.style.display = 'none';
 
+
+// QUESTION: HVORDAN APPENDE VERDI TIL CLASS?
+// QUESTION: HVORDAN HENTE UT DATO VERDI OG TID VERDI???
 let tillfeldigTall = Math.random()*10
-//HVORDAN APPENDE VERDI TIL CLASS
-//btn.onclick = 
-function LedigBord(event) {
-  if ((inputAntall.checkValidity()) && (inputDato.value.checkValidity())&&//SJEKKER IKKE DATO OG KLOKKESLETT
-(inputKlokkeslett.value.checkValidity())){
+btn.onclick = function LedigBord(event) {
+  inputAntallVerdi = inputAntall.value;
+  inputDatoVerdi = inputDato.value;
+  inputKlokkeslettVerdi = inputKlokkeslett.value;
+  /*APPENDER INPUTVERDEÌER TIL CLASS*/
+  spanAntall.append(inputAntallVerdi);
+  spanDato.append(inputDatoVerdi);
+  spanTid.append(inputKlokkeslettVerdi);
+
+  if ((inputAntall.checkValidity()) /*&& (inputDato.value.length !== 0) //SJEKKER IKKE DATO OG KLOKKESLETT
+   && (inputKlokkeslett.value.length !== 0)*/){
       console.log("hei");
       if (tillfeldigTall > 0){
         event.preventDefault()
@@ -77,25 +87,23 @@ function LedigBord(event) {
 
   }
 
-  else {
-
-  }
 }
 
 btn2.onclick = function KomplettReservasjon(event) {
-  if ((inputFornavn.value!== '') && (inputEtternavn.value !== '')
-      && (inputMobil.value !== '')&& (inputEpost.value !=='')){
+  //if ((inputFornavn.value!== '') && (inputEtternavn.value !== '')
+  //    /*&& (inputMobil.value !== '')*/&& (inputEpost.value !=='')){
     event.preventDefault()
     leggInnKontaktInfo.style.display='none';
     reservasjonFullfort.style.display='block';
-  }
+
+/*APPENDER INPUTVERDI TIL CLASS*/
+    spanMail.append(inputEpost.value);
+
+
+//  }
 
 }
-/*
-spanAntall.append(inputAntall.value);
-spanDato.append(inputDato.value);
-spanTid.append(inputKlokkeslett.value);
-spanMail.append(inputMail.value);*/
+
 
   /*spanAntall.append(inputAntall.value);
   spanDato.append(inputDato.value);

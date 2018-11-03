@@ -13,33 +13,10 @@
 
             <div id="reservasjonen">
               <h1>Informasjon om bordreservasjon</h1>
-              <p>Velg fra hurtigvelgeren, hvis du ønsker flere benytt den manuelle
-                og trykk pluss for å øke antallet du ønsker å reservere bord for, og
-                minus for å minke antallet</p>
 
-
-              <form class='bestillBordForm' method="post">
+              <form class='bestillBordForm' action='bestillBord.html' method="post">
                 <p>Velg hvor mange du ønsker å reservere bord til:</p>
-              <!--<table>
 
-              <tr>
-                <td><label for="en"> 1 </label></td>
-                <td><label for="to"> 2 </label></td>
-                <td><label for="tre"> 3 </label></td>
-                <td><label for="fire"> 4 </label></td>
-                <td><label for="fem"> 5 </label></td>
-                <td><label for="seks"> 6 </label></td>
-              </tr>
-
-              <tr>
-              <td><input type="radio" name="antall" value="1" id="en" required></td>
-              <td><input type="radio" name="antall" value="2" id="to" required></td>
-              <td><input type="radio" name="antall" value="3" id="tre" required></td>
-              <td><input type="radio" name="antall" value="4" id="fire" required></td>
-              <td><input type="radio" name="antall" value="5" id="fem" required></td>
-              <td><input type="radio" name="antall" value="6" id="seks" required></td>
-              </tr>
-            </table>-->
               <label for="antall_manuell"> </label> <br>
                 <input type="number" name="antall" id="antall_manuell" min="1" max="99" required>
 
@@ -62,9 +39,9 @@
             <p>Vi har funnet et ledig bord til <span class="bordAntallPersoner"></span> personer den <span class="reservertDato"></span> klokken
                    <span class="reservertKlokkeslett"></span>. Fyll ut kontaktinformasjonen din i skjemaet til venstre slik
                    at vi kan sende deg bekreftelsen på din reservasjon.</p>
-              <form class="bestillBordForm" action="index.html" method="post">
+              <form class="bestillBordForm" action="bestillBord.html" method="post">
                 <label for="fornavn">Fornavn:* </label> <br>
-                <input type="text" id="fornavn" placeholder="Skriv inn fornavn..." required>
+                <input type="text" id="fornavn" placeholder="Skriv inn fornavn..." required><br>
                 <br>
                 <label for="etternavn">Etternavn:* </label> <br>
                 <input type="text" id="etternavn" placeholder="Skriv inn etternavn..." required>
@@ -87,7 +64,7 @@
                 </table>
                 <br>
                 <label for="telefonnummer">Telefonnummer: </label> <br>
-                <input type="tel" id="telefonnummer" placeholder="Skriv inn ditt telefonnummer...">
+                <input type="tel" id="telefonnummer" placeholder="Skriv inn ditt telefonnummer..."> <br>
                 <br>
                 <label for="epost">E-post:* </label> <br>
                 <input type="email" id="epost" placeholder="Skriv inn e-post..." required>
@@ -105,7 +82,7 @@
               <h1>Takk for din reservasjon!</h1>
               <p>
                 Du har nå reservert bord klokka <span class="reservertKlokkeslett"></span>den <span class="reservertDato"></span>, for <span class="bordAntallPersoner"></span>
-                 personer. En bekreftelse vil sendes til deg på e-post: <span class="mailBekreftelse"></span>. <br><br>
+                 personer. En bekreftelse vil sendes til deg på e-post: <span class="mailBekreftelse"></span> <br><br>
               </p>
               </div>
 
