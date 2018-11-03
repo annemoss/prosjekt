@@ -761,3 +761,16 @@ li a:hover {
     text-align: left;
   }
 }
+
+/* 10 footer.html */
+#footerBox {
+  background-color: black;
+  position:sticky;
+  margin-top:20px;
+  height: 155px;
+}
+.footerDiv {
+  float:left;
+  width:33%;
+  text-align:center;
+}
