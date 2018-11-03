@@ -266,7 +266,15 @@ h1 {
 }
 
 #cSubmit {
-  float: right;
+  position: relative;
+  padding: 10px;
+  margin-top: 20px;
+  left: 65%;
+  top: 0%;
+  font-size: 15px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: white;
 }
 
 @media only screen and (max-width: 768px) {
