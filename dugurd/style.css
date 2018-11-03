@@ -887,19 +887,49 @@ li a:hover {
 
 /* When the screen is less than 800 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 800px) {
+
   .nav li {
     display: none;
   }
+
+  .navUl {
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    width: 100%;
+  }
+
   .nav a.iconMobil {
     float: right;
     display: block;
     color: white;
   }
 
+  .menymeny {
+    width: 160px;
+  }
+
+  .menymeny a {
+    background-color: black;
+    width: 160px;
+  }
+
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   .nav.responsive {
+    background-color: black;
     position: relative;
   }
+
+  .nav.responsive ul {
+    width: 100%;
+    background-color: black;
+  }
+
+  .nav.responsive li {
+    display: block;
+    float: left;
+  }
+
   .nav.responsive a.iconMobil {
     position: absolute;
     right: 0;
