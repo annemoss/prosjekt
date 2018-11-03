@@ -13,11 +13,11 @@
     <div class="textbox"> <!--legg til alt av kode inni her-->
       <div id='soknad'>
         <h1>Vil du jobbe hos oss?</h1>
-        <form action="index.html" method="post"><!--FINN UT HVOR DET SKAL SENDES -->
+        <form action="jobb.html" method="post"><!--FINN UT HVOR DET SKAL SENDES -->
 
             <p>Hva vil du jobbe med?</p>
             <select required id="velgStilling" autofocus>
-              <option value="" disabled selected hidden> Velg en stilling...</option>
+              <option value="" disabled selected hidden id="ikkeEnStilling"> Velg en stilling...</option>
               <option value="kokk" > Kokk</option>
               <option value="hovmester"> Hovmester</option>
               <option value="vaskepersonell"> Vaskepersonell</option>
@@ -56,14 +56,14 @@
           <br>
 
           <label for="submit"></label>
-          <input type="submit" name="submit" value="Send inn søknad" id="submit" onsubmit="return false;">
+          <input type="submit" name="submit" value="Send inn søknad" id="submit">
           <br>
           <br>
 
           </form>
         </div>
 
-          <p id="confirmation" display="none"> Takk for din søknad, <span id='bekreftelseNavn'></span>! <br>
+          <p id="confirmation"> Takk for din søknad, <span id='bekreftelseNavn'></span>! <br>
             Du vil høre fra oss snart!</p>
 
       </div>

@@ -14,23 +14,24 @@
           <div>På denne siden kan du bestille catering hos oss. Bare skriv inn kontaktinformasjonen din og så skal vi ta kontakt med deg så snart som mulig.
           Hvis du ikke er kjent med catering-menyen vår, kan du sjekke den <a href="../dugurd/cMeny.html" class="hyperlink">her</a></div>
           <br>
-          <form id="cForm">
+          <form id="cForm" method="post" onsubmit="cFormSvar()">
             <div class="cLeft">
               Navn:<br>
-              <input type="text" name="navn" class="cInput" placeholder="Skriv inn ditt navn...">
+              <input type="text" name="navn" class="cInput" placeholder="Skriv inn ditt navn..." required>
               <br><br>
               E-post:
               <br>
-              <input type="email" name="email" class="cInput" placeholder="Skriv inn din e-post">
+              <input type="email" name="email" class="cInput" placeholder="Skriv inn din e-post" required>
               <br><br>
               Adresse:
               <br>
-              <input type="text" name="adresse" class="cInput" placeholder="Skriv inn din adresse">
+              <input type="text" name="adresse" class="cInput" placeholder="Skriv inn din adresse" required>
             </div>
             <div class="cRight">
               <br>
               Ønskede pakke:<br>
-              <select class="cSelect">
+              <select class="cSelect" required>
+                <option value="" disabled selected hidden id="ikkeEnStilling">Velg pakke</option>
                 <option value="1">Pakke 1</option>
                 <option value="2">Pakke 2</option>
                 <option value="3">Pakke 3</option>
@@ -41,26 +42,36 @@
               Allergener:<br>
               <br>
               <label class="container">
-                <input type="checkbox" name="nøtter" class="cCheck" id="nøtter"><label class="styleBox" for="nøtter"></label>Nøtter<br>
+                <input type="checkbox" name="nøtter" class="cCheck" id="nøtter">
+                  <span class="styleBox"></span>
+                  <a class="cTekst">Nøtter</a><br>
               </label>
               <label class="container">
-                <input type="checkbox" name="egg" class="cCheck" id="egg"><label class="styleBox" for="egg"></label>Egg<br>
+                <input type="checkbox" name="egg" class="cCheck" id="egg">
+                <span class="styleBox"></span>
+                <a class="cTekst">Egg</a><br>
               </label>
               <label class="container">
-                <input type="checkbox" name="melk" class="cCheck" id="melk"><label class="styleBox" for="melk"></label>Melkeprodukter<br>
+                <input type="checkbox" name="melk" class="cCheck" id="melk">
+                  <span class="styleBox"></span>
+                  <a class="cTekst">Melkeprodukter</a><br>
               </label>
               <label class="container">
-                <input type="checkbox" name="annet"class="cCheck" id="annet"><label class="styleBox" for="annet"></label>Annet<br>
+                <input type="checkbox" name="annet" class="cCheck" id="annet">
+                  <span class="styleBox"></span>
+                  <a class="cTekst">Annet</a><br>
               </label>
               <br>
-              <input type="submit" value="Submit" id="cSubmit">
             </div>
-
           </form>
-          <div class="clearchild"> </div>
-        </div>
 
+          <div class="clearchild">
+            <button type="submit" value="Submit" id="cSubmit" form="cForm">Bestill catering</button>
+          </div>
+          <br>
+        </div>
         <footer></footer>
-        <script type="text/javascript" src="scripts/add.js"></script>
+        <script src="scripts/add.js"> </script>
+        <script src="scripts/cateringKnapp.js"> </script>
     </body>
 </html>

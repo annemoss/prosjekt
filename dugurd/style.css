@@ -8,7 +8,6 @@
   src: url(../Lobster/Lobster-Regular.ttf);
 }
 
-
 body {
   background-image: url("../img/wood.jpg");
   background-attachment: fixed;
@@ -35,7 +34,7 @@ body {
   /*min-height: 550px;*/
 }
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width: 800px) {
   .textbox {
     font-size: 14pt;
     margin-left: 5%;
@@ -48,9 +47,60 @@ h1 {
 }
 /*1 navbar til index*/
 
+.navIndex {
+  background-color: black;
+  font-family: "FjallaOne", "Verdana", sans-serif;
+  font-size: 24pt;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 1;
+}
+
+.navUlIndex > li {
+  display: inline;
+  /*padding: browser width / menyknapper*/
+  padding: 5px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+}
+
+.navUlIndex {
+  position: absolute;
+  left: 50px;
+  top: -12px;
+}
+
+.logoHeaderIndex {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+}
+
+.dropdownIndex {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-contentIndex {
+  display: none;
+  position: absolute;
+  background-color: black;
+  z-index: 2;
+  margin-block-start: 20px;
+  list-style-type: none;
+  padding: 0px;
+}
+
+
 
 /*slideshow*/
-* {box-sizing: border-box}
+* {
+  box-sizing: border-box;
+}
 
 .slideshow {
   width: 100%;
@@ -59,7 +109,6 @@ h1 {
 
 .slides {
   display: none;
-
 }
 
 #uscroll {
@@ -81,6 +130,19 @@ h1 {
 }
 
 /*2 rMeny */
+@media only screen and (max-width: 800px) {
+  #flyteguri #right,
+  #left {
+    float: none;
+  }
+  #right,
+  #left {
+    text-align: center;
+    clear: none;
+    width: 100%;
+    margin-left: 0px;
+  }
+}
 #flyteguri {
   float: left;
   top: 0;
@@ -92,6 +154,7 @@ h1 {
   display: inline-block;
   float: left;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .rett {
@@ -117,6 +180,11 @@ h1 {
 
 
 
+
+#right p {
+  margin-bottom: 30px;
+}
+
 /*4 BESTILL BORD*/
 .bestillBordForm {
   padding: 25px;
@@ -137,7 +205,7 @@ h1 {
   background-color: rgba(255, 255, 255, 0.7);
   color: white;
 }
-.bestillBordForm input{
+.bestillBordForm input {
   padding: 3%;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
@@ -156,117 +224,164 @@ h1 {
   text-align: center;
 }
 
-.bestillBordForm table{
+.bestillBordForm table {
   margin: auto;
 }
-.bestillBordForm input[type=radio]{
-    width: 20px;
-    background-color: orange;}
+.bestillBordForm input[type="radio"] {
+  width: 20px;
+  background-color: orange;
+}
 
+#ikkeLedigReservasjon, #reservasjonFullfort { /*KAN KOPLES SAMMEN MED JOBB*/
+  padding-top: 20%;
+  padding-bottom: 30%;
+  text-align: center;
+  font-size: 20pt;
+}
 
 /*5 Catering*/
 .hyperlink {
-    color: rgb(157, 110, 91);
+  color: rgb(157, 110, 91);
 }
 
 .cRight {
-  width:45%;
-  float:left;
-  margin-right:10px;
+  width: 45%;
+  float: left;
+  margin-right: 10px;
 }
 .cLeft {
-  width:50%;
-  float:left;
+  width: 50%;
+  float: left;
 }
 #runneth {
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .cInput {
-  width:100%;
-  padding:8px 10px;
+  width: 100%;
+  padding: 8px 10px;
 }
 #cForm {
-  width:100%;
+  width: 100%;
 }
+
 #cSubmit {
   float: right;
-
 }
+
 @media only screen and (max-width: 768px) {
   .cInput,.cRight,.cLeft {
     width:100%;
   }
+  position: relative;
+  padding: 10px;
+  margin-top: 20px;
+  left: 65%;
+  top: 0%;
+  font-size: 15px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: white;
 }
-div label p{
-  white-space:nowrap;
 
+@media only screen and (max-width: 800px) {
+  .cInput,
+  .cRight,
+  .cLeft {
+    width: 100%;
+  }
 }
-.cTekst{
-  position:relative;
-  right:100px;
+.cTekst {
+  display: inline;
+  position: absolute;
+  left: 30px;
 }
 /* Checkbox, tatt fra https://paulund.co.uk/how-to-style-a-checkbox-with-css fordi å style checkbox er nært umulig */
 .cCheck {
-  visibility:hidden;
+  visibility: hidden;
 }
 .container {
-    width: 25px;
-    margin: 20px 0px;
-    position: relative;
+  width: 25px;
+  margin: 20px 0px;
+  position: relative;
 }
-.container label {
-    cursor: pointer;
-    position:absolute;
-    width: 25px;
-    height: 25px;
-    left:0px;
-    background: #eee;
-    border:1px solid #ddd;
-}
-
-.container label:after {
-     content: '';
-     opacity: 0.2;
-     content:"";
-     position: absolute;
-     width: 9px;
-     height: 5px;
-     background: transparent;
-     top: 6px;
-     left: 7px;
-     border: 3px solid #333;
-     border-top: none;
-     border-right: none;
-
-     transform: rotate(-45deg);
-}
-.container label:hover::after {
-    opacity: 0.5;
+.container span {
+  cursor: pointer;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 0px;
+  background: #eee;
+  border: 1px solid #ddd;
 }
 
-.container input[type=checkbox]:checked + label:after {
-    opacity: 1;
+.container span:after {
+  content: "";
+  opacity: 0.2;
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  background: transparent;
+  top: 6px;
+  left: 7px;
+  border: 3px solid #333;
+  border-top: none;
+  border-right: none;
+
+  transform: rotate(-45deg);
 }
+.container span:hover::after {
+  opacity: 0.7;
+}
+
+.container input[type="checkbox"]:checked + span:after {
+  opacity: 1;
+}
+
 /*7 Kontakt oss*/
+
 .icon {
   height: 50px;
-  /*display:inline;*/
+}
+
+.iconDiv {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.infoDiv {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: inline-block;
+  width: 70%;
+  vertical-align: middle;
 }
 
 .infoT {
   display: inline;
+  text-align: center;
+}
+
+.infoPart {
+  height: 50px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 #tider p {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+#tider p:last-of-type {
+  margin-bottom: 30px;
+}
+
 .buttonKontakt {
   /*position: absolute;*/
   padding: 15px;
   /*margin-top: 25px;*/
-  left: 0;
+  /*left: 0;*/
   border: none;
   outline: none;
   background-color: rgba(0, 0, 0, 0.9);
@@ -277,9 +392,16 @@ div label p{
   top: 10px;
 }
 
-.formKontakt {
-  display: inline;
+.divForm {
+  display: inline-block;
+  font-size: 15pt;
+  top: 10px;
 }
+
+#infoMap {
+  margin-top: 18px;
+}
+
 .buttonKontakt:hover {
   background-color: rgb(157, 110, 91);
 }
@@ -288,6 +410,9 @@ div label p{
   /*position: absolute;*/
   width: 50%;
   top: 0px;
+  display: inline-block;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 #info a {
@@ -295,29 +420,55 @@ div label p{
   text-decoration: none;
 }
 .map-responsive {
-  /*position: absolute;*/
+  display: inline-block;
   overflow: hidden;
-  padding-bottom: 36.25%;
-  /*height: 100px;*/
-  width: 100px;
-  margin-right: 0px;
+  width: 50%;
+  height: 300px;
+  float: right;
+  margin-top: 15px;
 }
 
 .map-responsive iframe {
-  position: absolute;
   height: 100%;
   width: 100%;
-  right: 0;
 }
 
 @media screen and (max-width: 800px) {
   .map-responsive {
     float: none;
     margin-top: 5px;
+    width: 70%;
+    padding-bottom: 20px;
   }
 
   .infoPart:last-of-type {
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .iconDiv {
+    display: block;
+  }
+
+  .infoDiv {
+    display: block;
+  }
+
+  .infoPart {
+    margin-top: 40px;
+  }
+
+  .infoPart:first-of-type {
+    margin-top: 0px;
+  }
+
+  .infoPart:last-of-type {
+    margin-bottom: 30px;
+  }
+
+  #infoMap {
+    margin-top: 0px;
   }
 }
 
@@ -348,7 +499,7 @@ div label p{
 
 input[placeholder],
 #whybox,
-select{
+select {
   padding: 3%;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
@@ -357,11 +508,11 @@ select{
   width: 50%;
   text-align: center;
 }
-.cInput{
-  width:100%;
+.cInput {
+  width: 100%;
 }
 
-select{
+select {
   width: 30%;
 }
 
@@ -372,7 +523,7 @@ select{
 input,
 #whybox,
 .button,
-select{
+select {
   outline-color: rgb(157, 110, 91);
 }
 
@@ -399,6 +550,7 @@ select {
 }
 
 /*9 nav.html*/
+
 .nav {
   background-color: black;
   font-family: "FjallaOne", "Verdana", sans-serif;
@@ -410,10 +562,36 @@ select {
   z-index: 1;
 }
 
+.nav ul {
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  margin-left: 100px;
+  padding: 0;
+  width: 100%;
+  /*overflow: hidden;*/
+  /*margin-top: 0px;*/
+}
+
+.nav li {
+  float: left;
+  /*padding-bottom: 24px;
+  padding-top: 10px;*/
+  /*padding: 20px 20px;*/
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 38.8px;
+}
+/*
 .navUl > li {
   display: inline;
-  /*padding: browser width / menyknapper*/
-  /*padding-right: 40px;*/
+  */ /*padding: browser width / menyknapper*/
+/*padding-right: 40px;*/ /*
   padding: 5px;
   padding-bottom: 20px;
   padding-top: 30px;
@@ -427,20 +605,39 @@ select {
 
 .navUl {
   position: absolute;
-  left: 50px;
-  top: -12px;
-}
+  left: 100px;
+  top: 7px;
+}*/
 
 .logoHeader {
   width: 80px;
   height: 80px;
   position: absolute;
   float: left;
+  left: 10px;
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
+  /*display: block;*/
+  color: white;
+  text-align: center;
+  padding: 20px 38.8px;
+  text-decoration: none;
+}
+
+.dropdown ul {
+  margin-left: 0px;
+  width: 192px;
+}
+
+.dropdown ul a {
+  padding: 20px;
+}
+
+.dropdown ul li:last-of-type {
+  padding-right: 37px;
 }
 
 .dropdown-content {
@@ -450,12 +647,12 @@ select {
   z-index: 2;
   margin-block-start: 20px;
   list-style-type: none;
-  padding: 0px;
+  top: 80px;
+  left: 0;
 }
 
 .dropdown-content a {
   display: block;
-  padding: 10px;
 }
 
 .dropdown-content a:hover {
@@ -482,7 +679,7 @@ li a:hover {
 }
 
 .nav .iconMobil {
-    display: none;
+  display: none;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -490,33 +687,54 @@ li a:hover {
     font-size: 20pt;
   }
 
-  .navUl {
-    position: absolute;
-    top: -5px;
+  .nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 23px 25.5px;
   }
 
+  .dropdown {
+    padding: 23px 25.5px;
+  }
+
+  .dropdown ul {
+    width: 165%;
+  }
+  /*
+  .navUl {
+    position: absolute;
+    top: -30px;
+  }*/
+  /*
   .navUl > li {
     padding-bottom: 24px;
     padding-top: 30px;
     padding-right: 1.4%;
     padding-left: 1.4%;
-  }
-
+  }*/
+  /*
   .navUl > li > #aJobb {
     padding-right: 0;
-  }
+  }*/
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/* When the screen is less than 800 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 800px) {
-  .nav a:not(:first-child) {display: none;}
+  .nav li {
+    display: none;
+  }
   .nav a.iconMobil {
     float: right;
     display: block;
+    color: white;
   }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  .nav.responsive {position: relative;}
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  .nav.responsive {
+    position: relative;
+  }
   .nav.responsive a.iconMobil {
     position: absolute;
     right: 0;

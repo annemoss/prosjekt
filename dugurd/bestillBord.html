@@ -18,7 +18,7 @@
                 minus for å minke antallet</p>
 
 
-              <form class='bestillBordForm' action="index.html" method="post">
+              <form class='bestillBordForm' method="post">
                 <p>Velg hvor mange du ønsker å reservere bord til:</p>
               <!--<table>
 
@@ -70,11 +70,9 @@
                 <input type="text" id="etternavn" placeholder="Skriv inn etternavn..." required>
                 <br>
                 <p>Velg kjønn: </p>
-                <table>
 
+                <table id="kjonn">
               <tr>
-
-
                 <td><label for="female">Kvinne: </label></td>
                 <td> <input type="radio" name="gender" value="female" id="female" required></td>
               </tr>
@@ -94,12 +92,13 @@
                 <label for="epost">E-post:* </label> <br>
                 <input type="email" id="epost" placeholder="Skriv inn e-post..." required>
                 <br>
-                <button type="submit" name="neste" class="bestillBordButton"> Neste –> </button>
+                <button type="submit" name="neste" class="bestillBordButton" id="kontaktinfoButton"> Neste –> </button>
               </form>
+              </div>
 
               <div id="ikkeLedigReservasjon">
-              <p> Vi har dessverre ikke noe ledig bord for <span class='reservertDato'></span> personer den <span class="bordAntallPersoner"></span>
-                    klokka <span class="reservertKlokkeslett"></span>. Du kan forsøke å endre klokkeslett eller dato og
+              <p> Vi har dessverre ikke noe ledig bord for <span class='reservertDato'> </span> personer den <span class="bordAntallPersoner"> </span>
+                    klokka <span class="reservertKlokkeslett"> </span>. Du kan forsøke å endre klokkeslett eller dato og
                     forsøke på nytt. </p>
               </div>
               <div id="reservasjonFullfort">
@@ -109,7 +108,7 @@
                  personer. En bekreftelse vil sendes til deg på e-post: <span class="mailBekreftelse"></span>. <br><br>
               </p>
               </div>
-            </div>
+
 
 
         </div>
