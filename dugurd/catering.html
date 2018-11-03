@@ -14,7 +14,7 @@
           <div>På denne siden kan du bestille catering hos oss. Bare skriv inn kontaktinformasjonen din og så skal vi ta kontakt med deg så snart som mulig.
           Hvis du ikke er kjent med catering-menyen vår, kan du sjekke den <a href="../dugurd/cMeny.html" class="hyperlink">her</a></div>
           <br>
-          <form id="cForm">
+          <form id="cForm" method="post" onsubmit="cFormSvar()">
             <div class="cLeft">
               Navn:<br>
               <input type="text" name="navn" class="cInput" placeholder="Skriv inn ditt navn..." required>
@@ -30,7 +30,7 @@
             <div class="cRight">
               <br>
               Ønskede pakke:<br>
-              <select class="cSelect">
+              <select class="cSelect" required>
                 <option value="" disabled selected hidden id="ikkeEnStilling">Velg pakke</option>
                 <option value="1">Pakke 1</option>
                 <option value="2">Pakke 2</option>
@@ -62,14 +62,16 @@
                   <a class="cTekst">Annet</a><br>
               </label>
               <br>
-              <input type="submit" value="Submit" id="cSubmit">
             </div>
-
           </form>
-          <div class="clearchild"> </div>
-        </div>
 
+          <div class="clearchild">
+            <button type="submit" value="Submit" id="cSubmit" form="cForm">Bestill catering</button>
+          </div>
+          <br>
+        </div>
         <footer></footer>
-        <script type="text/javascript" src="scripts/add.js"></script>
+        <script src="scripts/add.js"> </script>
+        <script src="scripts/cateringKnapp.js"> </script>
     </body>
 </html>
