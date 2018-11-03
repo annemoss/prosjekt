@@ -46,6 +46,7 @@ h1 {
   font-size: 27pt;
 }
 /*1 navbar til index*/
+
 .navIndex {
   background-color: black;
   font-family: "FjallaOne", "Verdana", sans-serif;
@@ -94,33 +95,7 @@ h1 {
   padding: 0px;
 }
 
-.dropdown-contentIndex a {
-  display: block;
-  padding: 10px;
-}
 
-.dropdown-contentIndex a:hover {
-  background-color: rgb(157, 110, 91);
-  color: white;
-}
-
-.dropdownIndex:hover .dropdown-contentIndex {
-  display: block;
-}
-
-li a {
-  text-decoration: none;
-  color: white;
-}
-
-li:hover {
-  background-color: rgb(157, 110, 91);
-  color: white;
-}
-
-li a:hover {
-  color: white;
-}
 
 /*slideshow*/
 * {
@@ -202,6 +177,9 @@ li a:hover {
   width: 48%;
   margin-left: 10px;
 }
+
+
+
 
 #right p {
   margin-bottom: 30px;
@@ -288,6 +266,13 @@ li a:hover {
 }
 
 #cSubmit {
+  float: right;
+}
+
+@media only screen and (max-width: 768px) {
+  .cInput,.cRight,.cLeft {
+    width:100%;
+  }
   position: relative;
   padding: 10px;
   margin-top: 20px;
