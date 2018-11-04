@@ -36,7 +36,6 @@ html {
   z-index: 0;
   margin-bottom: 30px;
   overflow: hidden;
-  /*min-height: 550px;*/
 }
 
 @media only screen and (max-width: 800px) {
@@ -565,6 +564,7 @@ li a:hover {
 
 #infoMap {
   margin-top: 18px;
+  padding-bottom: 0px;
 }
 
 .buttonKontakt:hover {
@@ -602,7 +602,6 @@ li a:hover {
     float: none;
     margin-top: 5px;
     width: 70%;
-    padding-bottom: 20px;
   }
 
   .infoPart:last-of-type {
