@@ -1,3 +1,5 @@
 function cFormSvar() {
-  document.getElementById("runneth").innerHTML = "<p>Takk for din bestilling! Vi vil kontakte deg så snart som mulig.</p><br>"
+  event.preventDefault();
+  document.getElementById("cateringDiv").style.display = "none";
+  document.getElementById("cateringConfirmation").style.display = "block";
 }
