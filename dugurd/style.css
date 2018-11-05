@@ -14,23 +14,18 @@ body {
   background-size: cover;
   color: white;
   font-family: "FjallaOne", "Verdana", sans-serif;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  padding:0;
-  height:100%;
+  margin: 0;
+  padding-bottom: 180px;
+  height: 100%;
 }
 html {
-  height:100%;
-  margin:0;
-  padding:0;
+  position: relative;
+  min-height: 100%;
 }
 
 .textbox {
   position: relative;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 30px;
+  padding: 30px 30px 30px 30px;
   color: white;
   margin-left: 15%;
   margin-right: 15%;
@@ -39,8 +34,8 @@ html {
   font-size: 18pt;
   margin-top: 100px;
   z-index: 0;
-  margin-bottom:150px;
-  /*min-height: 550px;*/
+  margin-bottom: 30px;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 800px) {
@@ -238,6 +233,7 @@ li a:hover {
 }
 
 
+
 /*slideshow*/
 * {
   box-sizing: border-box;
@@ -275,17 +271,12 @@ li a:hover {
   #flyteguri #right,
   #left {
     float: none;
-  }
-  #right,
-  #left {
-    text-align: center;
-    clear: none;
     width: 100%;
-    margin-left: 0px;
   }
 }
+
 #flyteguri {
-  float: left;
+  overflow: hidden;
   top: 0;
 }
 
@@ -319,13 +310,17 @@ li a:hover {
   margin-left: 10px;
 }
 
-
-
-
 #right p {
   margin-bottom: 30px;
 }
 
+@media only screen and (max-width: 800px) {
+  #right,
+  #left {
+    width: 100%;
+    margin: 0;
+  }
+}
 /*4 BESTILL BORD*/
 .bestillBordForm {
   padding: 25px;
@@ -335,17 +330,30 @@ li a:hover {
   margin: auto;
 }
 .bestillBordButton {
-  position: relative;
+  /*position: relative;*/
+  left: 35%;
   margin: auto;
   position: relative;
   padding: 10px;
   margin-top: 20px;
-  left: 35%;
   font-size: 15px;
   outline: none;
-  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bestillBordButton:hover {
+  background-color: rgb(157, 110, 91);
   color: white;
 }
+
+span {
+  color: rgb(157, 110, 91);
+}
+
 .bestillBordForm input {
   padding: 3%;
   background-color: rgba(0, 0, 0, 0.8);
@@ -373,7 +381,9 @@ li a:hover {
   background-color: orange;
 }
 
-#ikkeLedigReservasjon, #reservasjonFullfort { /*KAN KOPLES SAMMEN MED JOBB*/
+#ikkeLedigReservasjon,
+#reservasjonFullfort {
+  /*KAN KOPLES SAMMEN MED JOBB*/
   padding-top: 20%;
   padding-bottom: 30%;
   text-align: center;
@@ -408,19 +418,28 @@ li a:hover {
 
 #cSubmit {
   position: relative;
-  padding: 10px;
   margin-top: 20px;
   left: 65%;
   top: 0%;
-  font-size: 15px;
+  padding: 15px;
+  border: none;
   outline: none;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
   color: white;
+  font-family: "FjallaOne", "Verdana", sans-serif;
+  font-size: 15pt;
+  cursor: pointer;
+}
+
+#cSubmit:hover {
+  background-color: rgb(157, 110, 91);
 }
 
 @media only screen and (max-width: 800px) {
-  .cInput,.cRight,.cLeft {
-  width:100%;
+  .cInput,
+  .cRight,
+  .cLeft {
+    width: 100%;
   }
 }
 
@@ -511,10 +530,7 @@ li a:hover {
 }
 
 .buttonKontakt {
-  /*position: absolute;*/
   padding: 15px;
-  /*margin-top: 25px;*/
-  /*left: 0;*/
   border: none;
   outline: none;
   background-color: rgba(0, 0, 0, 0.9);
@@ -523,6 +539,7 @@ li a:hover {
   display: inline;
   font-size: 15pt;
   top: 10px;
+  cursor: pointer;
 }
 
 .divForm {
@@ -533,6 +550,7 @@ li a:hover {
 
 #infoMap {
   margin-top: 18px;
+  padding-bottom: 0px;
 }
 
 .buttonKontakt:hover {
@@ -540,7 +558,6 @@ li a:hover {
 }
 
 #info {
-  /*position: absolute;*/
   width: 50%;
   top: 0px;
   display: inline-block;
@@ -571,7 +588,6 @@ li a:hover {
     float: none;
     margin-top: 5px;
     width: 70%;
-    padding-bottom: 20px;
   }
 
   .infoPart:last-of-type {
@@ -613,21 +629,20 @@ li a:hover {
   left: 35%;
   font-size: 15px;
   outline: none;
-  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  background-color: rgba(0, 0, 0, 0.9);
   color: white;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: rgb(157, 110, 91);
 }
 
 #soknad {
   position: relative;
   margin: auto;
   text-align: center;
-}
-
-#whybox {
-  resize: none;
-  overflow: auto;
-  width: 300px;
-  height: 200px;
 }
 
 input[placeholder],
@@ -641,6 +656,14 @@ select {
   width: 50%;
   text-align: center;
 }
+
+#whybox {
+  text-align: left;
+  resize: none;
+  overflow: auto;
+  height: 200px;
+}
+
 .cInput {
   width: 100%;
 }
@@ -658,10 +681,6 @@ input,
 .button,
 select {
   outline-color: rgb(157, 110, 91);
-}
-
-.button:active {
-  background-color: rgb(157, 110, 91);
 }
 
 #velgStilling option:first-child {
@@ -702,15 +721,10 @@ select {
   margin-left: 100px;
   padding: 0;
   width: 100%;
-  /*overflow: hidden;*/
-  /*margin-top: 0px;*/
 }
 
 .nav li {
   float: left;
-  /*padding-bottom: 24px;
-  padding-top: 10px;*/
-  /*padding: 20px 20px;*/
 }
 
 .nav li a {
@@ -718,29 +732,18 @@ select {
   color: white;
   text-align: center;
   text-decoration: none;
-  padding: 20px 38.8px;
-}
-/*
-.navUl > li {
-  display: inline;
-  */ /*padding: browser width / menyknapper*/
-/*padding-right: 40px;*/ /*
-  padding: 5px;
-  padding-bottom: 20px;
-  padding-top: 30px;
-  padding-right: 1.5%;
-  padding-left: 1.5%;
+  padding: 20px 16px;
 }
 
-.navUl > li > #aJobb {
-  padding-right: 0;
+.dropdown {
+  position: relative;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  cursor: default;
 }
-
-.navUl {
-  position: absolute;
-  left: 100px;
-  top: 7px;
-}*/
 
 .logoHeader {
   width: 80px;
@@ -748,16 +751,6 @@ select {
   position: absolute;
   float: left;
   left: 10px;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  /*display: block;*/
-  color: white;
-  text-align: center;
-  padding: 20px 38.8px;
-  text-decoration: none;
 }
 
 .dropdown ul {
@@ -778,7 +771,6 @@ select {
   position: absolute;
   background-color: black;
   z-index: 2;
-  margin-block-start: 20px;
   list-style-type: none;
   top: 80px;
   left: 0;
@@ -817,6 +809,52 @@ li a:hover {
 
 @media only screen and (max-width: 1000px) {
   .nav {
+    font-size: 22pt;
+  }
+
+  .nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 23px 13px;
+  }
+
+  .dropdown {
+    padding: 23px 13px;
+  }
+
+  .dropdown ul {
+    width: 145px;
+  }
+
+  .dropdown ul li:last-of-type {
+    padding-right: 31px;
+  }
+
+  .navIndex {
+    font-size: 20pt;
+  }
+
+  .navIndex li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 23px 25.5px;
+  }
+
+  .dropdownIndex {
+    padding: 23px 25.5px;
+  }
+
+  .dropdownIndex ul {
+    width: 165%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .nav {
     font-size: 20pt;
   }
 
@@ -825,49 +863,143 @@ li a:hover {
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 23px 25.5px;
+    padding: 23px 9px;
   }
 
   .dropdown {
-    padding: 23px 25.5px;
+    padding: 23px 9px;
   }
 
   .dropdown ul {
+    width: 145px;
+  }
+
+  .dropdown ul li:last-of-type {
+    padding-right: 31px;
+  }
+
+  .navIndex {
+    font-size: 20pt;
+  }
+
+  .navIndex li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 23px 25.5px;
+  }
+
+  .dropdownIndex {
+    padding: 23px 25.5px;
+  }
+
+  .dropdownIndex ul {
     width: 165%;
   }
-  /*
-  .navUl {
-    position: absolute;
-    top: -30px;
-  }*/
-  /*
-  .navUl > li {
-    padding-bottom: 24px;
-    padding-top: 30px;
-    padding-right: 1.4%;
-    padding-left: 1.4%;
-  }*/
-  /*
-  .navUl > li > #aJobb {
-    padding-right: 0;
-  }*/
 }
 
 /* When the screen is less than 800 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 800px) {
-  .nav li {
+  /* Index navbar styling */
+
+  .navIndex li {
     display: none;
   }
-  .nav a.iconMobil {
+
+  .navUlIndex {
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    width: 100%;
+  }
+
+  .navIndex a.iconMobil {
     float: right;
     display: block;
     color: white;
   }
 
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  .nav.responsive {
+  .menymenyIndex {
+    width: 160px;
+  }
+
+  .menymenyIndex a {
+    background-color: black;
+    width: 160px;
+  }
+
+  .navIndex.responsive {
+    background-color: black;
     position: relative;
   }
+
+  .navIndex.responsive ul {
+    width: 100%;
+    background-color: black;
+  }
+
+  .navIndex.responsive li {
+    display: block;
+    float: left;
+  }
+
+  .navIndex.responsive a.iconMobil {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    margin-top: 10px;
+  }
+  .navIndex.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .nav li {
+    display: none;
+  }
+
+  .navUl {
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    width: 100%;
+  }
+
+  .nav a.iconMobil {
+    float: right;
+    display: block;
+    color: white;
+    margin-top: 3px;
+    margin-right: 10px;
+  }
+
+  .menymeny {
+    width: 160px;
+  }
+
+  .menymeny a {
+    background-color: black;
+    width: 160px;
+  }
+
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  .nav.responsive {
+    background-color: black;
+    position: relative;
+  }
+
+  .nav.responsive ul {
+    width: 100%;
+    background-color: black;
+  }
+
+  .nav.responsive li {
+    display: block;
+    float: left;
+  }
+
   .nav.responsive a.iconMobil {
     position: absolute;
     right: 0;
@@ -881,14 +1013,45 @@ li a:hover {
 }
 
 /* 10 footer - add.js */
-.footerDiv {
+#footerBox {
+  text-align: center;
+  height: auto;
   background-color: black;
-  opacity:0.92;
-  position:static;
-  float:left;
-  width:33%;
-  text-align:center;
-  bottom:0;
-  height:auto;
-  margin-top:20px;
+  opacity: 0.93;
+  overflow: hidden;
+  margin-top: 30px;
+  width: 100%;
+  bottom: 0;
+  height: auto;
+  position: absolute;
+}
+
+.footerDiv {
+  position: relative;
+  float: left;
+  width: 33%;
+  text-align: center;
+  height: auto;
+  top: 0;
+}
+
+#footer3 {
+  width: 34%;
+}
+@media only screen and (max-width: 800px) {
+  .footerDiv,
+  #footer3 {
+    float: none;
+    width: 100%;
+  }
+  #footer2,
+  #footer3 {
+    margin-top: 50px;
+  }
+  #footerBox {
+    position: static;
+  }
+  body {
+    padding-bottom: 0;
+  }
 }

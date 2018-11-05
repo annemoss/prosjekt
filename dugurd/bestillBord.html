@@ -12,43 +12,20 @@
         <div class="textbox"> <!--Legg inn all kode her-->
 
             <div id="reservasjonen">
-              <h1>Informasjon om bordreservasjon</h1>
-              <p>Velg fra hurtigvelgeren, hvis du ønsker flere benytt den manuelle
-                og trykk pluss for å øke antallet du ønsker å reservere bord for, og
-                minus for å minke antallet</p>
+              <h1>Bordreservasjon</h1>
 
-
-              <form class='bestillBordForm' method="post">
+              <form class='bestillBordForm' action='bestillBord.html' method="post" onsubmit='ledigBord()'>
                 <p>Velg hvor mange du ønsker å reservere bord til:</p>
-              <!--<table>
 
-              <tr>
-                <td><label for="en"> 1 </label></td>
-                <td><label for="to"> 2 </label></td>
-                <td><label for="tre"> 3 </label></td>
-                <td><label for="fire"> 4 </label></td>
-                <td><label for="fem"> 5 </label></td>
-                <td><label for="seks"> 6 </label></td>
-              </tr>
-
-              <tr>
-              <td><input type="radio" name="antall" value="1" id="en" required></td>
-              <td><input type="radio" name="antall" value="2" id="to" required></td>
-              <td><input type="radio" name="antall" value="3" id="tre" required></td>
-              <td><input type="radio" name="antall" value="4" id="fire" required></td>
-              <td><input type="radio" name="antall" value="5" id="fem" required></td>
-              <td><input type="radio" name="antall" value="6" id="seks" required></td>
-              </tr>
-            </table>-->
               <label for="antall_manuell"> </label> <br>
-                <input type="number" name="antall" id="antall_manuell" min="1" max="99" required>
+                <input type="number" name="antall" id="antall_manuell" min="1" max="50" autofocus required>
 
                 <!--KontaktINFO-->
               <p> Velg dato og klokkeslett for når du ønsker bordreservasjonen, så skal
                   vi sjekke om vi har noe ledig. </p>
 
               <label for="dato">Dato: </label> <br>
-              <input type="date" id="dato" required>
+              <input type="date" id="dato" required> <br>
               <br>
               <label for="klokkeslett">klokkeslett: </label> <br>
               <input type="time" id="klokkeslett" required>
@@ -59,35 +36,31 @@
             </div>
 
             <div id="leggInnKontaktInfo">
-            <p>Vi har funnet et ledig bord til <span class="bordAntallPersoner"></span> personer den <span class="reservertDato"></span> klokken
-                   <span class="reservertKlokkeslett"></span>. Fyll ut kontaktinformasjonen din i skjemaet til venstre slik
+            <p>Vi har funnet et ledig bord til <span id="bordAntallPersoner"></span> personer den <span id="reservertDato"></span> klokken
+                   <span id="reservertKlokkeslett"></span>. Fyll ut kontaktinformasjonen din i skjemaet til venstre slik
                    at vi kan sende deg bekreftelsen på din reservasjon.</p>
-              <form class="bestillBordForm" action="index.html" method="post">
+              <form class="bestillBordForm" action="bestillBord.html" method="post" onsubmit="kompelettReservasjon()">
                 <label for="fornavn">Fornavn:* </label> <br>
-                <input type="text" id="fornavn" placeholder="Skriv inn fornavn..." required>
+                <input type="text" id="fornavn" placeholder="Skriv inn fornavn..." required><br>
                 <br>
                 <label for="etternavn">Etternavn:* </label> <br>
                 <input type="text" id="etternavn" placeholder="Skriv inn etternavn..." required>
                 <br>
-                <p>Velg kjønn: </p>
+                <p>Behov for barnestol: </p>
 
-                <table id="kjonn">
+                <table id="barnestol">
               <tr>
-                <td><label for="female">Kvinne: </label></td>
-                <td> <input type="radio" name="gender" value="female" id="female" required></td>
+                <td><label for="yes">Ja: </label></td>
+                <td> <input type="radio" name="barnestol" value="yes" id="yes" required></td>
               </tr>
               <tr>
-                <td> <label for="male">Mann: </label> </td>
-                <td> <input type="radio" name="gender" value="male" id="male" required> </td>
-              </tr>
-              <tr>
-                <td> <label for="other">Annet: </label> </td>
-                <td> <input type="radio" name="gender" value="other" id="other" required> </td>
+                <td> <label for="no">Nei: </label> </td>
+                <td> <input type="radio" name="barnestol" value="nei" id="no" required> </td>
               </tr>
                 </table>
                 <br>
                 <label for="telefonnummer">Telefonnummer: </label> <br>
-                <input type="tel" id="telefonnummer" placeholder="Skriv inn ditt telefonnummer...">
+                <input type="tel" id="telefonnummer" placeholder="Skriv inn ditt telefonnummer..."> <br>
                 <br>
                 <label for="epost">E-post:* </label> <br>
                 <input type="email" id="epost" placeholder="Skriv inn e-post..." required>
@@ -97,15 +70,17 @@
               </div>
 
               <div id="ikkeLedigReservasjon">
-              <p> Vi har dessverre ikke noe ledig bord for <span class='reservertDato'> </span> personer den <span class="bordAntallPersoner"> </span>
-                    klokka <span class="reservertKlokkeslett"> </span>. Du kan forsøke å endre klokkeslett eller dato og
+              <p> Vi har dessverre ikke noe ledig bord for <span id="bordAntallPersoner2"> </span> personer den <span id='reservertDato2'> </span>
+                    klokka <span id="reservertKlokkeslett2"> </span>. Du kan forsøke å endre klokkeslett eller dato og
                     forsøke på nytt. </p>
+
+                      <a href="bestillBord.html" class="bestillBordButton">  Prøv på nytt -> </a>
               </div>
               <div id="reservasjonFullfort">
               <h1>Takk for din reservasjon!</h1>
               <p>
-                Du har nå reservert bord klokka <span class="reservertKlokkeslett"></span>den <span class="reservertDato"></span>, for <span class="bordAntallPersoner"></span>
-                 personer. En bekreftelse vil sendes til deg på e-post: <span class="mailBekreftelse"></span>. <br><br>
+                Du har nå reservert bord klokka <span id="reservertKlokkeslett3"></span> den <span id="reservertDato3"></span>, for <span id="bordAntallPersoner3"></span>
+                 personer. En bekreftelse vil sendes til deg på e-post: <span id="mailBekreftelse"></span> <br><br>
               </p>
               </div>
 
@@ -115,6 +90,7 @@
         <footer></footer>
         <script src="scripts/add.js"> </script>
         <script src="scripts/bestillBordKnapp.js"> </script>
+        <script type="text/javascript" src="scripts/responsive.js"></script>
     </body>
 </html>
 

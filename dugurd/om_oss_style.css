@@ -80,7 +80,7 @@ h1{
     padding: 20px;
     font-family: Verdana;
     font-size: 0.9vw;
-    float: left;
+    overflow:hidden;
 }
 
 @media only screen and (max-width: 800px){
@@ -151,7 +151,7 @@ h1{
         float: left;
         max-width: 100%;
         }
-    
+
     #container3_text{
         position: relative;
         margin-top: 5%;
