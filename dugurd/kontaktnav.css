@@ -38,10 +38,7 @@
 }
 
 .buttonKontakt {
-  /*position: absolute;*/
   padding: 15px;
-  /*margin-top: 25px;*/
-  /*left: 0;*/
   border: none;
   outline: none;
   background-color: rgba(0, 0, 0, 0.9);
@@ -60,6 +57,7 @@
 
 #infoMap {
   margin-top: 18px;
+  padding-bottom: 0px;
 }
 
 .buttonKontakt:hover {
@@ -67,7 +65,6 @@
 }
 
 #info {
-  /*position: absolute;*/
   width: 50%;
   top: 0px;
   display: inline-block;
@@ -98,7 +95,6 @@
     float: none;
     margin-top: 5px;
     width: 70%;
-    padding-bottom: 20px;
   }
 
   .infoPart:last-of-type {
@@ -131,116 +127,6 @@
     margin-top: 0px;
   }
 }
-
-/*9 nav.html*/
-.nav {
-  background-color: black;
-  font-family: "FjallaOne", "Verdana", sans-serif;
-  font-size: 24pt;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 80px;
-  z-index: 1;
-}
-
-.navUl > li {
-  display: inline;
-  /*padding: browser width / menyknapper*/
-  /*padding-right: 40px;*/
-  padding: 5px;
-  padding-bottom: 20px;
-  padding-top: 30px;
-  padding-right: 1.5%;
-  padding-left: 1.5%;
-}
-
-.navUl > li > #aJobb {
-  padding-right: 0;
-}
-
-.navUl {
-  position: absolute;
-  left: 50px;
-  top: -12px;
-}
-
-.logoHeader {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  float: left;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: black;
-  z-index: 2;
-  margin-block-start: 20px;
-  list-style-type: none;
-  padding: 0px;
-}
-
-.dropdown-content a {
-  display: block;
-  padding: 10px;
-}
-
-.dropdown-content a:hover {
-  background-color: rgb(157, 110, 91);
-  color: white;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-li a {
-  text-decoration: none;
-  color: white;
-}
-
-li:hover {
-  background-color: rgb(157, 110, 91);
-  color: white;
-}
-
-li a:hover {
-  color: white;
-}
-
-.nav .iconMobil {
-  display: none;
-}
-
-@media only screen and (max-width: 1000px) {
-  .nav {
-    font-size: 20pt;
-  }
-
-  .navUl {
-    position: absolute;
-    top: -5px;
-  }
-
-  .navUl > li {
-    padding-bottom: 24px;
-    padding-top: 30px;
-    padding-right: 1.4%;
-    padding-left: 1.4%;
-  }
-
-  .navUl > li > #aJobb {
-    padding-right: 0;
-  }
-}
-
 /*9 nav.html*/
 
 .nav {
@@ -261,15 +147,10 @@ li a:hover {
   margin-left: 100px;
   padding: 0;
   width: 100%;
-  /*overflow: hidden;*/
-  /*margin-top: 0px;*/
 }
 
 .nav li {
   float: left;
-  /*padding-bottom: 24px;
-  padding-top: 10px;*/
-  /*padding: 20px 20px;*/
 }
 
 .nav li a {
@@ -277,29 +158,17 @@ li a:hover {
   color: white;
   text-align: center;
   text-decoration: none;
-  padding: 20px 38.8px;
-}
-/*
-.navUl > li {
-  display: inline;
-  */ /*padding: browser width / menyknapper*/
-/*padding-right: 40px;*/ /*
-  padding: 5px;
-  padding-bottom: 20px;
-  padding-top: 30px;
-  padding-right: 1.5%;
-  padding-left: 1.5%;
+  padding: 20px 16px;
 }
 
-.navUl > li > #aJobb {
-  padding-right: 0;
+.dropdown {
+  position: relative;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
 }
-
-.navUl {
-  position: absolute;
-  left: 100px;
-  top: 7px;
-}*/
 
 .logoHeader {
   width: 80px;
@@ -307,16 +176,6 @@ li a:hover {
   position: absolute;
   float: left;
   left: 10px;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  /*display: block;*/
-  color: white;
-  text-align: center;
-  padding: 20px 38.8px;
-  text-decoration: none;
 }
 
 .dropdown ul {
@@ -337,7 +196,6 @@ li a:hover {
   position: absolute;
   background-color: black;
   z-index: 2;
-  margin-block-start: 20px;
   list-style-type: none;
   top: 80px;
   left: 0;
@@ -384,30 +242,38 @@ li a:hover {
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 23px 25.5px;
+    padding: 23px 9px;
   }
 
   .dropdown {
-    padding: 23px 25.5px;
+    padding: 23px 9px;
   }
 
   .dropdown ul {
+    width: 145px;
+  }
+
+  .dropdown ul li:last-of-type {
+    padding-right: 31px;
+  }
+
+  .navIndex {
+    font-size: 20pt;
+  }
+
+  .navIndex li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 23px 25.5px;
+  }
+
+  .dropdownIndex {
+    padding: 23px 25.5px;
+  }
+
+  .dropdownIndex ul {
     width: 165%;
   }
-  /*
-  .navUl {
-    position: absolute;
-    top: -30px;
-  }*/
-  /*
-  .navUl > li {
-    padding-bottom: 24px;
-    padding-top: 30px;
-    padding-right: 1.4%;
-    padding-left: 1.4%;
-  }*/
-  /*
-  .navUl > li > #aJobb {
-    padding-right: 0;
-  }*/
 }
