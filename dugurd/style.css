@@ -1023,6 +1023,10 @@ li a:hover {
     float: none;
     width: 100%;
   }
+  #footer2,
+  #footer3 {
+    margin-top: 50px;
+  }
   #footerBox {
     position: static;
   }
