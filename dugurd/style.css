@@ -397,6 +397,7 @@ span {
   color: white;
   font-family: "FjallaOne", "Verdana", sans-serif;
   font-size: 15pt;
+  cursor: pointer;
 }
 
 #cSubmit:hover {
@@ -507,6 +508,7 @@ span {
   display: inline;
   font-size: 15pt;
   top: 10px;
+  cursor: pointer;
 }
 
 .divForm {
