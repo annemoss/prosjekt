@@ -55,7 +55,6 @@ h1 {
   font-size: 27pt;
 }
 /*1 navbar til index*/
-
 /*ny*/
 .navIndex {
   background-color: black;
@@ -72,18 +71,13 @@ h1 {
   position: absolute;
   list-style-type: none;
   margin: 0;
-  margin-left: 100px;
+  margin-left: 170px;
   padding: 0;
   width: 100%;
-  /*overflow: hidden;*/
-  /*margin-top: 0px;*/
 }
 
 .navIndex li {
   float: left;
-  /*padding-bottom: 24px;
-  padding-top: 10px;*/
-  /*padding: 20px 20px;*/
 }
 
 .navIndex li a {
@@ -91,29 +85,8 @@ h1 {
   color: white;
   text-align: center;
   text-decoration: none;
-  padding: 20px 38.8px;
+  padding: 20px 20px;
 }
-/*
-.navUl > li {
-  display: inline;
-  */ /*padding: browser width / menyknapper*/
-/*padding-right: 40px;*/ /*
-  padding: 5px;
-  padding-bottom: 20px;
-  padding-top: 30px;
-  padding-right: 1.5%;
-  padding-left: 1.5%;
-}
-
-.navUl > li > #aJobb {
-  padding-right: 0;
-}
-
-.navUl {
-  position: absolute;
-  left: 100px;
-  top: 7px;
-}*/
 
 .logoHeaderIndex {
   width: 175px;
@@ -150,7 +123,6 @@ h1 {
   position: absolute;
   background-color: black;
   z-index: 2;
-  margin-block-start: 20px;
   list-style-type: none;
   top: 80px;
   left: 0;
@@ -187,9 +159,13 @@ li a:hover {
   display: none;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1400px) {
   .navIndex {
     font-size: 20pt;
+  }
+
+  .navIndex ul {
+    margin-left: 80px;
   }
 
   .navIndex li a {
@@ -197,83 +173,69 @@ li a:hover {
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 23px 25.5px;
+    padding: 20px 15px;
   }
-
   .dropdownIndex {
-    padding: 23px 25.5px;
+    padding: 20px 15px;
   }
-
   .dropdownIndex ul {
     width: 165%;
   }
-  /*
-  .navUl {
+}
+
+@media only screen and (max-width: 1100px) {
+  .navIndex {
+    font-size: 20pt;
+  }
+
+  .navIndex ul {
+    margin-left: 10px;
+  }
+
+  .navIndex li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 16px;
+  }
+
+  .dropdownIndex {
+    padding: 20px 16px;
+  }
+  .dropdownIndex ul {
+    width: 165%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .navIndex li {
+    display: none;
+  }
+
+  .navIndex a.iconMobil {
+    float: right;
+    display: block;
+    color: white;
+  }
+
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  .navIndex.responsive {
+    position: relative;
+  }
+
+  .navIndex.responsive a.iconMobil {
     position: absolute;
-    top: -30px;
-  }*/
-  /*
-  .navUl > li {
-    padding-bottom: 24px;
-    padding-top: 30px;
-    padding-right: 1.4%;
-    padding-left: 1.4%;
-  }*/
-  /*
-  .navUl > li > #aJobb {
-    padding-right: 0;
-  }*/
+    right: 0;
+    top: 0;
+  }
+
+  .navIndex.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
-/*gammel
-
-.navIndex {
-  background-color: black;
-  font-family: "FjallaOne", "Verdana", sans-serif;
-  font-size: 24pt;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 80px;
-  z-index: 1;
-}
-
-.navUlIndex > li {
-  display: inline;
-  /*padding: browser width / menyknapper*/
-  /*padding: 5px;
-  padding-bottom: 20px;
-  padding-top: 30px;
-  padding-right: 1.5%;
-  padding-left: 1.5%;
-}
-
-.navUlIndex {
-  position: absolute;
-  left: 50px;
-  top: -12px;
-}
-
-.logoHeaderIndex {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-}
-
-.dropdownIndex {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-contentIndex {
-  display: none;
-  position: absolute;
-  background-color: black;
-  z-index: 2;
-  margin-block-start: 20px;
-  list-style-type: none;
-  padding: 0px;
-}*/
-
 
 
 /*slideshow*/
