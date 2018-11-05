@@ -178,31 +178,6 @@ li a:hover {
   }
 }
 
-@media only screen and (max-width: 1100px) {
-  .navIndex {
-    font-size: 20pt;
-  }
-
-  .navIndex ul {
-    margin-left: 2%;
-  }
-
-  .navIndex li a {
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 20px 16px;
-  }
-
-  .dropdownIndex {
-    padding: 20px 16px;
-  }
-  .dropdownIndex ul {
-    width: 165%;
-  }
-}
-
 
 /*slideshow*/
 * {
@@ -227,7 +202,7 @@ li a:hover {
   color: #ffffff;
   font-size: 8em;
   padding: 8px 12px;
-  position: absolute;
+  position: fixed;
   top: 50%;
   right: auto;
   width: 100%;
