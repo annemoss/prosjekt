@@ -365,16 +365,16 @@ li a:hover {
   margin: auto;
 }
 .bestillBordButton {
-  position: relative;
+  /*position: relative;*/
+  left: 35%;
   margin: auto;
   position: relative;
   padding: 10px;
   margin-top: 20px;
-  left: 35%;
   font-size: 15px;
   outline: none;
   border: none;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(0,0,0,0.9);
   color: white;
   text-decoration: none;
   cursor: pointer
