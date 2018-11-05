@@ -154,7 +154,7 @@ li a:hover {
   display: none;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1300px) {
   .navIndex {
     font-size: 20pt;
   }
@@ -177,7 +177,6 @@ li a:hover {
     width: 165%;
   }
 }
-
 
 /*slideshow*/
 * {
@@ -208,7 +207,7 @@ li a:hover {
   width: 100%;
   text-align: center;
   font-family: "Lobster";
-  text-shadow: 3px 2px black;
+  text-shadow: 3px 3px black;
 }
 
 /*2 rMeny */
@@ -1198,8 +1197,8 @@ li a:hover {
     top: 0px;
     float: right;
   }
-  
-  
+
+
   .nav.responsive {
     background-color: black;
     position: relative;
