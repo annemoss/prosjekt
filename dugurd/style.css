@@ -303,14 +303,14 @@ li a:hover {
   left: 35%;
   margin: auto;
   position: relative;
-  padding: 10px;
+  padding: 15px;
   margin-top: 20px;
-  font-size: 15px;
+  font-size: 15pt;
   outline: none;
   border: none;
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
-  text-decoration: none;
+  font-family: "FjallaOne", "Verdana", sans-serif;
   cursor: pointer;
 }
 
@@ -593,15 +593,16 @@ span {
 /*8 JOBBSØKNAD*/
 #submit {
   position: relative;
-  padding: 10px;
+  padding: 15px;
   margin-top: 20px;
   left: 35%;
-  font-size: 15px;
+  font-size: 15pt;
   outline: none;
   border: none;
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
   cursor: pointer;
+  font-family: "FjallaOne", "Verdana", sans-serif;
 }
 
 #submit:hover {
