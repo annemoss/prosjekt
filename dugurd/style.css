@@ -291,6 +291,98 @@ li a:hover {
     margin: 0;
   }
 }
+
+
+/*3 Catering Meny*/
+
+#cFoodPic {
+  width: 70%;
+  margin-left: 10%;
+}
+
+#leftSide {
+  max-width: 45%;
+  float: left;
+}
+
+#rightSide {
+  max-width: 45%;
+  float: right;
+}
+
+.contentBox {
+  padding: 5%;
+}
+
+.textbox {
+  font-family: Verdana;
+  font-size: 0.9vw;
+  overflow:hidden;
+}
+
+#contentHeader {
+  font-size: 3vw;
+}
+#headerContainer {
+  max-height: 40%;
+}
+
+.innerHeader {
+  font-size: 1.25vw;
+  letter-spacing: 3px;
+}
+#contentContainerL {
+  margin-top: 6%;
+  margin-left: 5%;
+}
+
+#contentContainerR {
+  margin-top: -6%;
+  margin-right: 5%;
+}
+
+@media only screen and (max-width: 800px) {
+  #contentHeader {
+    font-size: 5vw;
+    text-align: left;
+    margin-left: 5%;
+  }
+
+  .textbox {
+    font-family: Verdana;
+    font-size: 2.5vw;
+    overflow:hidden;
+  }
+
+  .innerHeader {
+    font-size: 4vw;
+  }
+
+  #cFoodPic {
+    display: none;
+  }
+
+  #rightSide {
+    max-width: 100%;
+    float: left;
+    position: relative;
+    margin-bottom: 0%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  #leftSide {
+    max-width: 100%;
+    float: left;
+    position: relative;
+    margin-top: 0%;
+  }
+  .contentBox {
+    padding: 5%;
+  }
+}
+
+
 /*4 BESTILL BORD*/
 .bestillBordForm {
   padding: 25px;
@@ -470,6 +562,160 @@ span {
 .container input[type="checkbox"]:checked + span:after {
   opacity: 1;
 }
+
+
+/* 6 Om Oss */
+h1{
+  text-align: center;
+}
+#pic1_text {
+  display: none;
+  position: absolute;
+  margin-left: 10%;
+  margin-top: -25%;
+  max-width: 25%;
+}
+
+#inner_container1 {
+  float: left;
+  max-width: 50%;
+}
+
+#container1_text{
+  position: absolute;
+  margin-top: 0%;
+  margin-left: 50%;
+  max-width: 35%;
+  float: right;
+}
+
+#pic2_text{
+  display: none;
+  position: absolute;
+  margin-left: 10%;
+  margin-top: -25%;
+  max-width: 25%;
+}
+#inner_container2{
+  margin-top: 34%;
+  margin-right: -3%;
+  float: right;
+  max-width: 50%;
+}
+
+
+#container2_text{
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 30%;
+  max-width: 35%;
+  float: left;
+}
+
+#pic3_text{
+  display: none;
+  position: absolute;
+  margin-left: 10%;
+  margin-top: -25%;
+  max-width: 25%;
+}
+#inner_container3{
+  margin-top: 34%;
+  float: left;
+  max-width: 50%;
+  }
+
+#container3_text{
+  position: absolute;
+  margin-top: 65%;
+  margin-left: 55%;
+  max-width: 35%;
+  float: left;
+}
+
+.pic_container{
+  height: 50%;
+  margin: 5%;
+  font-size: 0.9vw;
+}
+
+.om_oss_pics{
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px){
+
+  .pic_container{
+      font-size: 2vw;
+  }
+
+  #inner_container1{
+      max-width: 100%;
+  }
+
+  #pic1_text {
+      display: none;
+      position: absolute;
+      margin-left: 10%;
+      margin-top: -50%;
+      max-width: 60%;
+  }
+
+  #container1_text{
+      position: relative;
+      margin-top: 5%;
+      margin-left: 15%;
+      max-width: 70%;
+      float: left;
+  }
+
+
+
+
+  #pic2_text{
+      display: none;
+      position: absolute;
+      margin-left: 10%;
+      margin-top: -50%;
+      max-width: 60%;
+  }
+  #inner_container2{
+      margin-top: 10%;
+      max-width: 100%;
+  }
+  #container2_text{
+      position: relative;
+      margin-top: 5%;
+      margin-left: 15%;
+      max-width: 70%;
+      float: left;
+  }
+
+
+
+  #pic3_text{
+      display: none;
+      position: absolute;
+      margin-left: 10%;
+      margin-top: -50%;
+      max-width: 60%;
+  }
+  #inner_container3{
+      margin-top: 10%;
+      float: left;
+      max-width: 100%;
+      }
+
+  #container3_text{
+      position: relative;
+      margin-top: 5%;
+      margin-right: 15%;
+      max-width: 80%;
+      float: left;
+  }
+
+}
+
 
 /*7 Kontakt oss*/
 
