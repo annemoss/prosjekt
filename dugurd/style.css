@@ -156,7 +156,7 @@ li a:hover {
   color: white;
 }
 
-#logoIndex:hover{
+#logoIndex:hover {
   background-color: rgba(255, 255, 255, 0.0001);
 }
 
@@ -1246,6 +1246,63 @@ li a:hover {
     float: none;
     display: block;
     text-align: left;
+  }
+
+  /*på index siden */
+  .dropdownIndex {
+    text-align: left;
+  }
+  .dropdown-contentIndex {
+    position: absolute;
+    left: 180px;
+    top: 0px;
+    float: right;
+  }
+
+  .navIndex.responsive {
+    background-color: black;
+    position: relative;
+  }
+
+  .navIndex.responsive ul {
+    width: 100%;
+    background-color: black;
+  }
+
+  .navIndex.responsive li {
+    display: block;
+    float: left;
+    width: 100%;
+  }
+
+  .navIndex.responsive a.iconMobil {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navIndex.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  #logoIndex {
+    display: none;
+  }
+
+  .navIndex a.iconMobil {
+    float: right;
+    display: block;
+    color: white;
+    margin-top: 3px;
+    margin-right: 10px;
+  }
+
+  .navUlIndex {
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    width: 100%;
   }
 }
 
