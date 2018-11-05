@@ -150,11 +150,15 @@ li a:hover {
   color: white;
 }
 
+#logoIndex:hover {
+  background-color: rgba(255, 255, 255, 0.0001);
+}
+
 .navIndex .iconMobil {
   display: none;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1300px) {
   .navIndex {
     font-size: 20pt;
   }
@@ -203,7 +207,6 @@ li a:hover {
   }
 }
 
-
 /*slideshow*/
 * {
   box-sizing: border-box;
@@ -227,13 +230,13 @@ li a:hover {
   color: #ffffff;
   font-size: 8em;
   padding: 8px 12px;
-  position: absolute;
+  position: fixed;
   top: 50%;
   right: auto;
   width: 100%;
   text-align: center;
   font-family: "Lobster";
-  text-shadow: 3px 2px black;
+  text-shadow: 3px 3px black;
 }
 
 /*2 rMeny */
@@ -292,7 +295,6 @@ li a:hover {
   }
 }
 
-
 /*3 Catering Meny*/
 
 #cFoodPic {
@@ -314,10 +316,10 @@ li a:hover {
   padding: 5%;
 }
 
-.textbox {
+#textboxOmoss {
   font-family: Verdana;
   font-size: 0.9vw;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 #contentHeader {
@@ -348,10 +350,10 @@ li a:hover {
     margin-left: 5%;
   }
 
-  .textbox {
+  #textboxOmoss {
     font-family: Verdana;
     font-size: 2.5vw;
-    overflow:hidden;
+    overflow: hidden;
   }
 
   .innerHeader {
@@ -381,7 +383,6 @@ li a:hover {
     padding: 5%;
   }
 }
-
 
 /*4 BESTILL BORD*/
 .bestillBordForm {
@@ -471,10 +472,10 @@ span {
 }
 
 #cateringDiv {
-  display:block;
+  display: block;
 }
 #cateringConfirmation {
-  display:none;
+  display: none;
   padding-top: 20%;
   padding-bottom: 30%;
   text-align: center;
@@ -563,9 +564,8 @@ span {
   opacity: 1;
 }
 
-
 /* 6 Om Oss */
-h1{
+#headerOmoss {
   text-align: center;
 }
 #pic1_text {
@@ -581,7 +581,7 @@ h1{
   max-width: 50%;
 }
 
-#container1_text{
+#container1_text {
   position: absolute;
   margin-top: 0%;
   margin-left: 50%;
@@ -589,22 +589,21 @@ h1{
   float: right;
 }
 
-#pic2_text{
+#pic2_text {
   display: none;
   position: absolute;
   margin-left: 10%;
   margin-top: -25%;
   max-width: 25%;
 }
-#inner_container2{
+#inner_container2 {
   margin-top: 34%;
   margin-right: -3%;
   float: right;
   max-width: 50%;
 }
 
-
-#container2_text{
+#container2_text {
   position: absolute;
   margin-left: 5%;
   margin-top: 30%;
@@ -612,20 +611,20 @@ h1{
   float: left;
 }
 
-#pic3_text{
+#pic3_text {
   display: none;
   position: absolute;
   margin-left: 10%;
   margin-top: -25%;
   max-width: 25%;
 }
-#inner_container3{
+#inner_container3 {
   margin-top: 34%;
   float: left;
   max-width: 50%;
-  }
+}
 
-#container3_text{
+#container3_text {
   position: absolute;
   margin-top: 65%;
   margin-left: 55%;
@@ -633,89 +632,81 @@ h1{
   float: left;
 }
 
-.pic_container{
+.pic_container {
   height: 50%;
   margin: 5%;
   font-size: 0.9vw;
 }
 
-.om_oss_pics{
+.om_oss_pics {
   width: 100%;
 }
 
-@media only screen and (max-width: 800px){
-
-  .pic_container{
-      font-size: 2vw;
+@media only screen and (max-width: 800px) {
+  .pic_container {
+    font-size: 2vw;
   }
 
-  #inner_container1{
-      max-width: 100%;
+  #inner_container1 {
+    max-width: 100%;
   }
 
   #pic1_text {
-      display: none;
-      position: absolute;
-      margin-left: 10%;
-      margin-top: -50%;
-      max-width: 60%;
+    display: none;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: -50%;
+    max-width: 60%;
   }
 
-  #container1_text{
-      position: relative;
-      margin-top: 5%;
-      margin-left: 15%;
-      max-width: 70%;
-      float: left;
+  #container1_text {
+    position: relative;
+    margin-top: 5%;
+    margin-left: 15%;
+    max-width: 70%;
+    float: left;
   }
 
-
-
-
-  #pic2_text{
-      display: none;
-      position: absolute;
-      margin-left: 10%;
-      margin-top: -50%;
-      max-width: 60%;
+  #pic2_text {
+    display: none;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: -50%;
+    max-width: 60%;
   }
-  #inner_container2{
-      margin-top: 10%;
-      max-width: 100%;
+  #inner_container2 {
+    margin-top: 10%;
+    max-width: 100%;
   }
-  #container2_text{
-      position: relative;
-      margin-top: 5%;
-      margin-left: 15%;
-      max-width: 70%;
-      float: left;
+  #container2_text {
+    position: relative;
+    margin-top: 5%;
+    margin-left: 15%;
+    max-width: 70%;
+    float: left;
   }
 
-
-
-  #pic3_text{
-      display: none;
-      position: absolute;
-      margin-left: 10%;
-      margin-top: -50%;
-      max-width: 60%;
+  #pic3_text {
+    display: none;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: -50%;
+    max-width: 60%;
   }
-  #inner_container3{
-      margin-top: 10%;
-      float: left;
-      max-width: 100%;
-      }
-
-  #container3_text{
-      position: relative;
-      margin-top: 5%;
-      margin-right: 15%;
-      max-width: 80%;
-      float: left;
+  #inner_container3 {
+    margin-top: 10%;
+    float: left;
+    max-width: 100%;
   }
 
+  #container3_text {
+    position: relative;
+    margin-top: 5%;
+    margin-right: 15%;
+    max-width: 80%;
+    float: left;
+  }
 }
-
 
 /*7 Kontakt oss*/
 
@@ -1217,14 +1208,13 @@ li a:hover {
   .dropdown {
     text-align: left;
   }
-  .dropdown-content{
+  .dropdown-content {
     position: absolute;
     left: 180px;
     top: 0px;
     float: right;
   }
-  
-  
+
   .nav.responsive {
     background-color: black;
     position: relative;
@@ -1250,6 +1240,63 @@ li a:hover {
     float: none;
     display: block;
     text-align: left;
+  }
+
+  /*på index siden */
+  .dropdownIndex {
+    text-align: left;
+  }
+  .dropdown-contentIndex {
+    position: absolute;
+    left: 180px;
+    top: 0px;
+    float: right;
+  }
+
+  .navIndex.responsive {
+    background-color: black;
+    position: relative;
+  }
+
+  .navIndex.responsive ul {
+    width: 100%;
+    background-color: black;
+  }
+
+  .navIndex.responsive li {
+    display: block;
+    float: left;
+    width: 100%;
+  }
+
+  .navIndex.responsive a.iconMobil {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navIndex.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  #logoIndex {
+    display: none;
+  }
+
+  .navIndex a.iconMobil {
+    float: right;
+    display: block;
+    color: white;
+    margin-top: 3px;
+    margin-right: 10px;
+  }
+
+  .navUlIndex {
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    width: 100%;
   }
 }
 
