@@ -377,7 +377,7 @@ li a:hover {
   background-color: rgba(255, 255, 255, 0.7);
   color: white;
   text-decoration: none;
-  cursor: default;
+  cursor: pointer
 }
 
 .bestillBordButton:hover{
@@ -461,6 +461,7 @@ span {
   outline: none;
   background-color: rgba(255, 255, 255, 0.7);
   color: white;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 800px) {
@@ -567,6 +568,7 @@ span {
   display: inline;
   font-size: 15pt;
   top: 10px;
+  cursor: pointer;
 }
 
 .divForm {
@@ -659,6 +661,7 @@ span {
   border: none;
   background-color: rgba(255, 255, 255, 0.7);
   color: white;
+  cursor: pointer;
 }
 
 #submit:hover {
@@ -760,7 +763,9 @@ select {
   text-decoration: none;
   padding: 20px 16px;
 }
-
+#navMeny {
+  cursor:default;
+}
 .dropdown {
   position: relative;
   display: inline-block;

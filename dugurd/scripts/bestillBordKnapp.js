@@ -1,8 +1,6 @@
 /* BESTILL BORD*/
 // QUESTION: ENDRE DATOFORM
-// QUESTION: SETTE KLOKKESLETT
-
-
+// QUESTION: Starte på toppen
 /*dato*/
 const datoen = document.querySelector('#dato');
 var today = new Date();
@@ -37,7 +35,6 @@ else {
 /*funksjonene for knapp*/
 const inputAntall = document.querySelector('#antall_manuell');
 const inputDato = document.querySelector('#dato');
-//const inputDatoVerdi = moment(inputDato.value).format('DD/MM/YYYY');
 const inputKlokkeslett = document.querySelector('#klokkeslett');
 const inputMail = document.querySelector('#epost');
 const inputFornavn = document.querySelector('#fornavn');
@@ -72,11 +69,7 @@ leggInnKontaktInfo.style.display = 'none';
 let tillfeldigTall = Math.random()*10
 
 
-btn.onclick = function LedigBord(event) {
-
-if ((inputAntall.checkValidity()) && (inputDato.value !== '') //SJEKKER IKKE DATO OG KLOKKESLETT
-   && (inputKlokkeslett.value !== '')){
-// QUESTION: KLOKKESLETT ????
+function ledigBord()  {
 
       if (tillfeldigTall < 8){
         event.preventDefault()
@@ -86,6 +79,8 @@ if ((inputAntall.checkValidity()) && (inputDato.value !== '') //SJEKKER IKKE DAT
         spanAntall.append(inputAntall.value);
         spanDato.innerHTML = inputDato.value;
         spanTid.append(inputKlokkeslett.value);
+        window.scrollTo(0,0);
+
       }
         else {
           event.preventDefault()
@@ -94,14 +89,11 @@ if ((inputAntall.checkValidity()) && (inputDato.value !== '') //SJEKKER IKKE DAT
           spanAntall2.append(inputAntall.value);
           spanDato2.innerHTML = inputDato.value;
           spanTid2.append(inputKlokkeslett.value);
-
+          window.scrollTo(0,0);
       }
-  }
 }
 
-btn2.onclick = function KomplettReservasjon(event) {
-  if ((inputFornavn.value!== '') && (inputEtternavn.value !== '')
-  && (inputMail.value !=='')){
+function kompelettReservasjon()  {
 
     /*APPENDER INPUTVERDI TIL CLASS*/
         spanAntall3.append(inputAntall.value);
@@ -112,5 +104,5 @@ btn2.onclick = function KomplettReservasjon(event) {
     event.preventDefault()
     leggInnKontaktInfo.style.display='none';
     reservasjonFullfort.style.display='block';
-  }
+    window.scrollTo(0,0);
 }

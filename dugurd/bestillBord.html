@@ -14,7 +14,7 @@
             <div id="reservasjonen">
               <h1>Bordreservasjon</h1>
 
-              <form class='bestillBordForm' action='bestillBord.html' method="post">
+              <form class='bestillBordForm' action='bestillBord.html' method="post" onsubmit='ledigBord()'>
                 <p>Velg hvor mange du ønsker å reservere bord til:</p>
 
               <label for="antall_manuell"> </label> <br>
@@ -36,10 +36,10 @@
             </div>
 
             <div id="leggInnKontaktInfo">
-            <p onload="settFokus">Vi har funnet et ledig bord til <span id="bordAntallPersoner"></span> personer den <span id="reservertDato"></span> klokken
+            <p>Vi har funnet et ledig bord til <span id="bordAntallPersoner"></span> personer den <span id="reservertDato"></span> klokken
                    <span id="reservertKlokkeslett"></span>. Fyll ut kontaktinformasjonen din i skjemaet til venstre slik
                    at vi kan sende deg bekreftelsen på din reservasjon.</p>
-              <form class="bestillBordForm" action="bestillBord.html" method="post">
+              <form class="bestillBordForm" action="bestillBord.html" method="post" onsubmit="kompelettReservasjon()">
                 <label for="fornavn">Fornavn:* </label> <br>
                 <input type="text" id="fornavn" placeholder="Skriv inn fornavn..." required><br>
                 <br>
