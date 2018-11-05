@@ -52,8 +52,6 @@ h1 {
 /*1 navbar til index*/
 /*ny*/
 #minilogoIndex {
-  width: 80px;
-  height: 80px;
   display: none;
 }
 
@@ -1127,6 +1125,12 @@ li a:hover {
 /* When the screen is less than 800 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 800px) {
   /* Index navbar styling */
+  #minilogoIndex {
+    display: inline-block;
+    width: 155px;
+    height: 155px;
+    margin-right: 20%;
+  }
 
   .navIndex li {
     display: none;
