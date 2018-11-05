@@ -1204,15 +1204,27 @@ li a:hover {
   }
 
   .menymeny {
-    width: 160px;
+    text-align: right;
+    width: 100%;
   }
 
   .menymeny a {
     background-color: black;
-    width: 160px;
+    width: 100%;
   }
 
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  .dropdown {
+    text-align: left;
+  }
+  .dropdown-content{
+    position: absolute;
+    left: 180px;
+    top: 0px;
+    float: right;
+  }
+  
+  
   .nav.responsive {
     background-color: black;
     position: relative;
@@ -1226,6 +1238,7 @@ li a:hover {
   .nav.responsive li {
     display: block;
     float: left;
+    width: 100%;
   }
 
   .nav.responsive a.iconMobil {
