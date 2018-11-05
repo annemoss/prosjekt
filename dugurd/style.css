@@ -375,9 +375,22 @@ li a:hover {
   left: 35%;
   font-size: 15px;
   outline: none;
+  border: none;
   background-color: rgba(255, 255, 255, 0.7);
   color: white;
+  text-decoration: none;
+  cursor: default;
 }
+
+.bestillBordButton:hover{
+  background-color: rgb(157, 110, 91);
+  color: white;
+}
+
+span {
+  color: rgb(157, 110, 91);
+}
+
 .bestillBordForm input {
   padding: 3%;
   background-color: rgba(0, 0, 0, 0.8);
@@ -645,21 +658,19 @@ li a:hover {
   left: 35%;
   font-size: 15px;
   outline: none;
+  border: none; 
   background-color: rgba(255, 255, 255, 0.7);
   color: white;
+}
+
+#submit:hover {
+  background-color: rgb(157, 110, 91);
 }
 
 #soknad {
   position: relative;
   margin: auto;
   text-align: center;
-}
-
-#whybox {
-  resize: none;
-  overflow: auto;
-  width: 300px;
-  height: 200px;
 }
 
 input[placeholder],
@@ -673,6 +684,14 @@ select {
   width: 50%;
   text-align: center;
 }
+
+#whybox {
+  text-align: left;
+  resize: none;
+  overflow: auto;
+  height: 200px;
+}
+
 .cInput {
   width: 100%;
 }
@@ -690,10 +709,6 @@ input,
 .button,
 select {
   outline-color: rgb(157, 110, 91);
-}
-
-.button:active {
-  background-color: rgb(157, 110, 91);
 }
 
 #velgStilling option:first-child {
@@ -937,7 +952,7 @@ li a:hover {
     width: 160px;
   }
 
-  
+
 
   .navIndex.responsive {
     background-color: black;
