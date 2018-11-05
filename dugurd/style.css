@@ -308,7 +308,7 @@ li a:hover {
   font-size: 15px;
   outline: none;
   border: none;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   color: white;
   text-decoration: none;
   cursor: default;
@@ -710,6 +710,7 @@ select {
   text-align: center;
   padding: 20px 16px;
   text-decoration: none;
+  cursor: default;
 }
 
 .logoHeader {
