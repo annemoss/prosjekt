@@ -51,6 +51,12 @@ h1 {
 }
 /*1 navbar til index*/
 /*ny*/
+#minilogoIndex {
+  width: 80px;
+  height: 80px;
+  display: none;
+}
+
 .navIndex {
   background-color: black;
   font-family: "FjallaOne", "Verdana", sans-serif;

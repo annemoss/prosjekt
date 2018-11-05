@@ -22,5 +22,5 @@ function changeDisp(){
     else{
         z.style.display = 'none';
     }
-    
+
 }
