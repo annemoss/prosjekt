@@ -202,73 +202,7 @@ li a:hover {
   .dropdownIndex ul {
     width: 165%;
   }
-  /*
-  .navUl {
-    position: absolute;
-    top: -30px;
-  }*/
-  /*
-  .navUl > li {
-    padding-bottom: 24px;
-    padding-top: 30px;
-    padding-right: 1.4%;
-    padding-left: 1.4%;
-  }*/
-  /*
-  .navUl > li > #aJobb {
-    padding-right: 0;
-  }*/
 }
-/*gammel
-
-.navIndex {
-  background-color: black;
-  font-family: "FjallaOne", "Verdana", sans-serif;
-  font-size: 24pt;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 80px;
-  z-index: 1;
-}
-
-.navUlIndex > li {
-  display: inline;
-  /*padding: browser width / menyknapper*/
-/*padding: 5px;
-  padding-bottom: 20px;
-  padding-top: 30px;
-  padding-right: 1.5%;
-  padding-left: 1.5%;
-}
-
-.navUlIndex {
-  position: absolute;
-  left: 50px;
-  top: -12px;
-}
-
-.logoHeaderIndex {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-}
-
-.dropdownIndex {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-contentIndex {
-  display: none;
-  position: absolute;
-  background-color: black;
-  z-index: 2;
-  margin-block-start: 20px;
-  list-style-type: none;
-  padding: 0px;
-}*/
-
 /*slideshow*/
 * {
   box-sizing: border-box;
@@ -377,7 +311,7 @@ li a:hover {
   background-color: rgba(0,0,0,0.9);
   color: white;
   text-decoration: none;
-  cursor: pointer
+  cursor: default;
 }
 
 .bestillBordButton:hover {
@@ -453,15 +387,20 @@ span {
 
 #cSubmit {
   position: relative;
-  padding: 10px;
   margin-top: 20px;
   left: 65%;
   top: 0%;
-  font-size: 15px;
+  padding: 15px;
+  border: none;
   outline: none;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
   color: white;
-  cursor: pointer;
+  font-family: "FjallaOne", "Verdana", sans-serif;
+  font-size: 15pt;
+}
+
+#cSubmit:hover {
+  background-color: rgb(157, 110, 91);
 }
 
 @media only screen and (max-width: 800px) {
@@ -568,7 +507,6 @@ span {
   display: inline;
   font-size: 15pt;
   top: 10px;
-  cursor: pointer;
 }
 
 .divForm {
@@ -661,7 +599,6 @@ span {
   border: none;
   background-color: rgba(255, 255, 255, 0.7);
   color: white;
-  cursor: pointer;
 }
 
 #submit:hover {
@@ -763,9 +700,7 @@ select {
   text-decoration: none;
   padding: 20px 16px;
 }
-#navMeny {
-  cursor:default;
-}
+
 .dropdown {
   position: relative;
   display: inline-block;
