@@ -380,7 +380,7 @@ li a:hover {
   cursor: pointer
 }
 
-.bestillBordButton:hover{
+.bestillBordButton:hover {
   background-color: rgb(157, 110, 91);
   color: white;
 }
@@ -839,6 +839,52 @@ li a:hover {
 
 @media only screen and (max-width: 1000px) {
   .nav {
+    font-size: 22pt;
+  }
+
+  .nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 23px 13px;
+  }
+
+  .dropdown {
+    padding: 23px 13px;
+  }
+
+  .dropdown ul {
+    width: 145px;
+  }
+
+  .dropdown ul li:last-of-type {
+    padding-right: 31px;
+  }
+
+  .navIndex {
+    font-size: 20pt;
+  }
+
+  .navIndex li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 23px 25.5px;
+  }
+
+  .dropdownIndex {
+    padding: 23px 25.5px;
+  }
+
+  .dropdownIndex ul {
+    width: 165%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .nav {
     font-size: 20pt;
   }
 
@@ -1027,6 +1073,10 @@ li a:hover {
   #footer3 {
     float: none;
     width: 100%;
+  }
+  #footer2,
+  #footer3 {
+    margin-top: 50px;
   }
   #footerBox {
     position: static;
