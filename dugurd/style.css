@@ -1,15 +1,15 @@
 @font-face {
   font-family: "FjallaOne";
-  src: url(../Fjalla_One/FjallaOne-Regular.ttf);
+  src: url(Fjalla_One/FjallaOne-Regular.ttf);
 }
 
 @font-face {
   font-family: "Lobster";
-  src: url(../Lobster/Lobster-Regular.ttf);
+  src: url(Lobster/Lobster-Regular.ttf);
 }
 
 body {
-  background-image: url("../img/wood.jpg");
+  background-image: url("img/wood.jpg");
   background-attachment: fixed;
   background-size: cover;
   color: white;
@@ -51,6 +51,10 @@ h1 {
 }
 /*1 navbar til index*/
 /*ny*/
+#minilogoIndex {
+  display: none;
+}
+
 .navIndex {
   background-color: black;
   font-family: "FjallaOne", "Verdana", sans-serif;
@@ -93,15 +97,14 @@ h1 {
 .dropdownIndex {
   position: relative;
   display: inline-block;
-  /*display: block;*/
   color: white;
   text-align: center;
   padding: 20px 38.8px;
   text-decoration: none;
+  cursor: default;
 }
 
 .dropdownIndex ul {
-  margin-left: 0px;
   width: 192px;
 }
 
@@ -120,7 +123,7 @@ h1 {
   z-index: 2;
   list-style-type: none;
   top: 80px;
-  left: 0;
+  left: -15px;
 }
 
 .dropdown-contentIndex a {
@@ -150,11 +153,15 @@ li a:hover {
   color: white;
 }
 
+#logoHeaderIndexNone:hover {
+  background-color: rgba(255, 255, 255, 0.0001);
+}
+
 .navIndex .iconMobil {
   display: none;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1300px) {
   .navIndex {
     font-size: 20pt;
   }
@@ -168,19 +175,27 @@ li a:hover {
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 20px 15px;
+    padding-top: 20px;
+    padding-bottom: 26px;
   }
+
   .dropdownIndex {
-    padding: 20px 15px;
+    padding: 23px 38.8px;
   }
+
   .dropdownIndex ul {
-    width: 165%;
+    width: 124.5%;
+    left: -6.5px;
+  }
+
+  .dropdownIndex ul li:last-of-type {
+    padding-right: 32px;
   }
 }
 
 @media only screen and (max-width: 1100px) {
   .navIndex {
-    font-size: 20pt;
+    font-size: 18pt;
   }
 
   .navIndex ul {
@@ -192,17 +207,67 @@ li a:hover {
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 20px 16px;
+    padding: 25px 15px;
   }
 
   .dropdownIndex {
-    padding: 20px 16px;
+    padding: 25px 38.8px;
   }
   .dropdownIndex ul {
-    width: 165%;
+    width: 112%;
+    top: 80px;
+    left: -3px;
+  }
+
+  .dropdownIndex ul li:last-of-type {
+    padding-right: 28px;
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  .dropdownIndex ul {
+    width: 104.5%;
+    top: 80px;
+    left: -3px;
+  }
+
+  .navIndex li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 25px 10px;
+  }
+  /*
+  .dropdown-contentIndex {
+    top: 80px;
+    left: -2px;
+  }*/
+
+  /*.dropdownIndex ul li:last-of-type {
+    padding-right: 28px;
+  /* } */
+}
+
+@media only screen and (max-width: 910px) {
+  .navIndex li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 25px 5px;
+  }
+
+  .dropdownIndex {
+    padding: 25px 5px;
+  }
+
+  .dropdownIndex ul {
+    width: 204%;
+    top: 80px;
+    left: -1px;
+  }
+}
 
 /*slideshow*/
 * {
@@ -227,13 +292,13 @@ li a:hover {
   color: #ffffff;
   font-size: 8em;
   padding: 8px 12px;
-  position: absolute;
-  top: 50%;
+  position: fixed;
+  top: 40%;
   right: auto;
   width: 100%;
   text-align: center;
   font-family: "Lobster";
-  text-shadow: 3px 2px black;
+  text-shadow: 3px 3px black;
 }
 
 /*2 rMeny */
@@ -291,6 +356,99 @@ li a:hover {
     margin: 0;
   }
 }
+
+/*3 Catering Meny*/
+
+#cFoodPic {
+  width: 100%;
+  margin-left: -10%;
+  margin-top: 5%;
+}
+
+#leftSide {
+  max-width: 45%;
+  float: left;
+}
+
+#rightSide {
+  max-width: 45%;
+  float: right;
+}
+
+.contentBox {
+  padding: 5%;
+}
+
+#textboxOmoss {
+  overflow: hidden;
+}
+
+#contentHeader {
+  font-size: 3vw;
+}
+#headerContainer {
+  max-height: 40%;
+  margin-left: 10%;
+}
+
+.innerHeader {
+  font-size: 2vw;
+}
+#contentContainerL {
+  margin-top: 6%;
+  margin-left: 5%;
+}
+
+#contentContainerR {
+  margin-top: 10%;
+  margin-right: 5%;
+}
+
+.courseHeader {
+  color: rgb(157, 110, 91);
+}
+
+@media only screen and (max-width: 800px) {
+  #contentHeader {
+    font-size: 5vw;
+    text-align: left;
+    margin-left: 5%;
+  }
+
+  #textboxOmoss {
+    font-family: Verdana;
+    font-size: 2.5vw;
+    overflow: hidden;
+  }
+
+  .innerHeader {
+    font-size: 4vw;
+  }
+
+  #cFoodPic {
+    display: none;
+  }
+
+  #rightSide {
+    max-width: 100%;
+    float: left;
+    position: relative;
+    margin-bottom: 0%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  #leftSide {
+    max-width: 100%;
+    float: left;
+    position: relative;
+    margin-top: 0%;
+  }
+  .contentBox {
+    padding: 5%;
+  }
+}
+
 /*4 BESTILL BORD*/
 .bestillBordForm {
   padding: 25px;
@@ -348,7 +506,7 @@ span {
 }
 .bestillBordForm input[type="radio"] {
   width: 20px;
-  background-color: orange;
+  background-color: rgb(157, 110, 91);
 }
 
 #ikkeLedigReservasjon,
@@ -379,10 +537,10 @@ span {
 }
 
 #cateringDiv {
-  display:block;
+  display: block;
 }
 #cateringConfirmation {
-  display:none;
+  display: none;
   padding-top: 20%;
   padding-bottom: 30%;
   text-align: center;
@@ -469,6 +627,156 @@ span {
 
 .container input[type="checkbox"]:checked + span:after {
   opacity: 1;
+}
+
+/* 6 Om Oss */
+#headerOmoss {
+  text-align: center;
+}
+
+.pic_container {
+  font-size: 1.35vw;
+}
+
+#pic1_text {
+  display: none;
+  position: absolute;
+  margin-left: 10%;
+  margin-top: -25%;
+  max-width: 25%;
+}
+
+#inner_container1 {
+  float: left;
+  max-width: 50%;
+}
+
+#container1_text {
+  position: absolute;
+  margin-top: 0%;
+  margin-left: 50%;
+  max-width: 35%;
+  float: right;
+}
+
+#pic2_text {
+  display: none;
+  position: absolute;
+  margin-left: 5%;
+  margin-top: -28%;
+  max-width: 35%;
+}
+#inner_container2 {
+  margin-top: 50%;
+  margin-right: -3%;
+  float: right;
+  max-width: 50%;
+}
+
+#container2_text {
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 30%;
+  max-width: 35%;
+  float: left;
+}
+
+#pic3_text {
+  display: none;
+  position: absolute;
+  margin-left: 10%;
+  margin-top: -65%;
+  max-width: 80%;
+}
+#inner_container3 {
+  position: relative;
+  margin-top: 65%;
+  float: left;
+  max-width: 50%;
+}
+
+#container3_text {
+  position: absolute;
+  margin-top: 85%;
+  margin-left: 55%;
+  max-width: 35%;
+  float: left;
+}
+
+.pic_container {
+  height: 50%;
+  margin: 5%;
+}
+
+.om_oss_pics {
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .pic_container {
+    font-family: "FjallaOne", "Verdana", sans-serif;
+    font-size: 2.5vw;
+  }
+
+  #inner_container1 {
+    max-width: 100%;
+  }
+
+  #pic1_text {
+    display: none;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: -50%;
+    max-width: 80%;
+  }
+
+  #container1_text {
+    position: relative;
+    margin-top: 5%;
+    margin-left: 15%;
+    max-width: 70%;
+    float: left;
+  }
+
+  #pic2_text {
+    display: none;
+    position: absolute;
+    margin-left: 5%;
+    margin-top: -50%;
+    max-width: 70%;
+  }
+  #inner_container2 {
+    margin-top: 10%;
+    max-width: 100%;
+  }
+  #container2_text {
+    position: relative;
+    margin-top: 5%;
+    margin-left: 15%;
+    max-width: 70%;
+    float: left;
+  }
+
+  #pic3_text {
+    display: none;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: -60%;
+    max-width: 80%;
+  }
+  #inner_container3 {
+    margin-top: 10%;
+    float: left;
+    max-width: 100%;
+  }
+
+  #container3_text {
+    position: relative;
+    margin-top: 5%;
+    margin-left: 15%;
+    max-width: 70%;
+    float: left;
+  }
 }
 
 /*7 Kontakt oss*/
@@ -800,39 +1108,23 @@ li a:hover {
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 23px 13px;
+    padding: 21.5px 13px;
   }
 
   .dropdown {
-    padding: 23px 13px;
+    padding: 21.5px 13px;
   }
 
   .dropdown ul {
-    width: 145px;
+    width: 180px;
+  }
+
+  .dropdown ul a {
+    padding: 20px;
   }
 
   .dropdown ul li:last-of-type {
-    padding-right: 31px;
-  }
-
-  .navIndex {
-    font-size: 20pt;
-  }
-
-  .navIndex li a {
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 23px 25.5px;
-  }
-
-  .dropdownIndex {
-    padding: 23px 25.5px;
-  }
-
-  .dropdownIndex ul {
-    width: 165%;
+    padding-right: 34px;
   }
 }
 
@@ -860,31 +1152,18 @@ li a:hover {
   .dropdown ul li:last-of-type {
     padding-right: 31px;
   }
-
-  .navIndex {
-    font-size: 20pt;
-  }
-
-  .navIndex li a {
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 23px 25.5px;
-  }
-
-  .dropdownIndex {
-    padding: 23px 25.5px;
-  }
-
-  .dropdownIndex ul {
-    width: 165%;
-  }
 }
 
 /* When the screen is less than 800 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 800px) {
   /* Index navbar styling */
+  #minilogoIndex {
+    display: inline-block;
+    width: 155px;
+    height: 155px;
+    position: absolute;
+    left: 35%;
+  }
 
   .navIndex li {
     display: none;
@@ -931,7 +1210,6 @@ li a:hover {
     position: absolute;
     right: 10px;
     top: 0;
-    margin-top: 10px;
   }
   .navIndex.responsive a {
     float: none;
@@ -959,15 +1237,26 @@ li a:hover {
   }
 
   .menymeny {
-    width: 160px;
+    text-align: right;
+    width: 100%;
   }
 
   .menymeny a {
     background-color: black;
-    width: 160px;
+    width: 100%;
   }
 
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  .dropdown {
+    text-align: left;
+  }
+  .dropdown-content {
+    position: absolute;
+    left: 180px;
+    top: 0px;
+    float: right;
+  }
+
   .nav.responsive {
     background-color: black;
     position: relative;
@@ -981,6 +1270,7 @@ li a:hover {
   .nav.responsive li {
     display: block;
     float: left;
+    width: 100%;
   }
 
   .nav.responsive a.iconMobil {
@@ -992,6 +1282,82 @@ li a:hover {
     float: none;
     display: block;
     text-align: left;
+  }
+
+  .dropdownIndex:hover .dropdown-contentIndex {
+    display: none;
+  }
+
+  .dropdownIndex:onclick .dropdown-contentIndex {
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: none;
+  }
+
+  .dropdown:onclick .dropdown-content {
+    display: block;
+  }
+
+  /*på index siden */
+  .sitat {
+    font-size: 6em;
+  }
+  .dropdownIndex {
+    text-align: left;
+  }
+  .dropdown-contentIndex {
+    position: absolute;
+    left: 180px;
+    top: 0px;
+    float: right;
+  }
+
+  .navIndex.responsive {
+    background-color: black;
+    position: relative;
+  }
+
+  .navIndex.responsive ul {
+    width: 100%;
+    background-color: black;
+  }
+
+  .navIndex.responsive li {
+    display: block;
+    float: left;
+    width: 100%;
+  }
+
+  .navIndex.responsive a.iconMobil {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navIndex.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  #logoHeaderIndexNone {
+    display: none;
+  }
+
+  .navIndex a.iconMobil {
+    float: right;
+    display: block;
+    color: white;
+    margin-top: 3px;
+    margin-right: 10px;
+  }
+
+  .navUlIndex {
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    width: 100%;
   }
 }
 
