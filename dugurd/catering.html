@@ -18,7 +18,7 @@
             <form id="cForm" method="post" onsubmit="cFormSvar()">
               <div class="cLeft">
                 Navn:<br>
-                <input type="text" name="navn" class="cInput" placeholder="Skriv inn ditt navn..." required>
+                <input type="text" name="navn" class="cInput" placeholder="Skriv inn ditt navn" required>
                 <br><br>
                 E-post:
                 <br>
@@ -30,10 +30,14 @@
                 <br><br>
                 Dato:
                 <br>
-                <input type="date" name="dato" class="cInput" id="datoCatering">
+                <input type="date" name="dato" class="cInput" id="datoCatering" min="1111-11-11" required>
               </div>
               <div class="cRight">
                 <br>
+                Velg hvor mange som skal motta catering:
+                <br>
+                <input type="number" name="antall" class="cInput" min="1" max="120" placeholder="Skriv inn antall (maks 120)" required>
+                <br><br>
                 Ønskede pakke:<br>
                 <select class="cSelect" required>
                   <option value="" disabled selected hidden id="ikkeEnStilling">Velg pakke</option>
