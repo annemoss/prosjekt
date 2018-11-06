@@ -124,7 +124,6 @@ h1 {
   list-style-type: none;
   top: 80px;
   left: -15px;
-
 }
 
 .dropdown-contentIndex a {
@@ -225,7 +224,7 @@ li a:hover {
   }
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1000px) {
   .dropdownIndex ul {
     width: 104.5%;
     top: 80px;
@@ -240,7 +239,7 @@ li a:hover {
     text-decoration: none;
     padding: 25px 10px;
   }
-/*
+  /*
   .dropdown-contentIndex {
     top: 80px;
     left: -2px;
@@ -406,7 +405,7 @@ li a:hover {
   margin-right: 5%;
 }
 
-.courseHeader{
+.courseHeader {
   color: rgb(157, 110, 91);
 }
 
@@ -636,7 +635,7 @@ span {
   text-align: center;
 }
 
-.pic_container{
+.pic_container {
   font-size: 1.35vw;
 }
 
@@ -715,8 +714,7 @@ span {
 }
 
 @media only screen and (max-width: 800px) {
-
-  .pic_container{
+  .pic_container {
     font-family: "FjallaOne", "Verdana", sans-serif;
     font-size: 2.5vw;
   }
@@ -1128,8 +1126,6 @@ li a:hover {
   .dropdown ul li:last-of-type {
     padding-right: 34px;
   }
-
-
 }
 
 @media only screen and (max-width: 900px) {
@@ -1156,7 +1152,6 @@ li a:hover {
   .dropdown ul li:last-of-type {
     padding-right: 31px;
   }
-
 }
 
 /* When the screen is less than 800 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
@@ -1215,7 +1210,6 @@ li a:hover {
     position: absolute;
     right: 10px;
     top: 0;
-    margin-top: 10px;
   }
   .navIndex.responsive a {
     float: none;
