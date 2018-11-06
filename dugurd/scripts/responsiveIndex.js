@@ -22,11 +22,3 @@ function changeDisp() {
     z.style.display = "none";
   }
 }
-
-var bilde = document.getElementById("minilogoIndex");
-
-function flytt_bilde() {
-  bilde.style.width = "80px";
-  bilde.style.height = "80px";
-  bilde.style.left = "0";
-}
