@@ -97,7 +97,6 @@ h1 {
 .dropdownIndex {
   position: relative;
   display: inline-block;
-  /*display: block;*/
   color: white;
   text-align: center;
   padding: 20px 38.8px;
@@ -180,16 +179,22 @@ li a:hover {
     padding-bottom: 26px;
   }
   .dropdownIndex {
-    padding: 20px 38.8px;
+    padding-top: 20px;
+    padding-bottom: 26px;
   }
+
   .dropdownIndex ul {
     width: 165%;
+  }
+
+  .dropdownIndex ul li:last-of-type {
+    padding-right: 37px;
   }
 }
 
 @media only screen and (max-width: 1100px) {
   .navIndex {
-    font-size: 20pt;
+    font-size: 18pt;
   }
 
   .navIndex ul {
@@ -201,15 +206,41 @@ li a:hover {
     color: white;
     text-align: center;
     text-decoration: none;
-    padding-top: 20px;
-    padding-bottom: 26px;
+    padding-top: 22px;
+    padding-bottom: 28px;
+    padding-left: 13px;
+    padding-right: 13px;
   }
 
   .dropdownIndex {
-    padding: 20px 38.8px;
+    padding: 22px 38.8px;
+    padding-left: 13px;
+    padding-right: 13px;
   }
   .dropdownIndex ul {
     width: 165%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .navIndex li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 22px;
+    padding-bottom: 28px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .dropdownIndex {
+    padding: 22px 38.8px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .dropdownIndex ul {
+    width: 200%;
   }
 }
 
@@ -237,7 +268,7 @@ li a:hover {
   font-size: 8em;
   padding: 8px 12px;
   position: fixed;
-  top: 50%;
+  top: 40%;
   right: auto;
   width: 100%;
   text-align: center;
@@ -1057,25 +1088,7 @@ li a:hover {
     padding-right: 31px;
   }
 
-  .navIndex {
-    font-size: 20pt;
-  }
 
-  .navIndex li a {
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 23px 25.5px;
-  }
-
-  .dropdownIndex {
-    padding: 23px 25.5px;
-  }
-
-  .dropdownIndex ul {
-    width: 165%;
-  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -1103,25 +1116,7 @@ li a:hover {
     padding-right: 31px;
   }
 
-  .navIndex {
-    font-size: 20pt;
-  }
 
-  .navIndex li a {
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 23px 25.5px;
-  }
-
-  .dropdownIndex {
-    padding: 23px 25.5px;
-  }
-
-  .dropdownIndex ul {
-    width: 165%;
-  }
 }
 
 /* When the screen is less than 800 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
