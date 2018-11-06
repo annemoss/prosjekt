@@ -51,6 +51,10 @@ h1 {
 }
 /*1 navbar til index*/
 /*ny*/
+#minilogoIndex {
+  display: none;
+}
+
 .navIndex {
   background-color: black;
   font-family: "FjallaOne", "Verdana", sans-serif;
@@ -150,7 +154,7 @@ li a:hover {
   color: white;
 }
 
-#logoIndex:hover {
+#logoHeaderIndexNone:hover {
   background-color: rgba(255, 255, 255, 0.0001);
 }
 
@@ -172,10 +176,11 @@ li a:hover {
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 20px 15px;
+    padding-top: 20px;
+    padding-bottom: 26px;
   }
   .dropdownIndex {
-    padding: 20px 15px;
+    padding: 20px 38.8px;
   }
   .dropdownIndex ul {
     width: 165%;
@@ -196,11 +201,12 @@ li a:hover {
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 20px 16px;
+    padding-top: 20px;
+    padding-bottom: 26px;
   }
 
   .dropdownIndex {
-    padding: 20px 16px;
+    padding: 20px 38.8px;
   }
   .dropdownIndex ul {
     width: 165%;
@@ -1121,6 +1127,13 @@ li a:hover {
 /* When the screen is less than 800 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 800px) {
   /* Index navbar styling */
+  #minilogoIndex {
+    display: inline-block;
+    width: 155px;
+    height: 155px;
+    position: absolute;
+    left: 35%;
+  }
 
   .navIndex li {
     display: none;
@@ -1280,7 +1293,7 @@ li a:hover {
     text-align: left;
   }
 
-  #logoIndex {
+  #logoHeaderIndexNone {
     display: none;
   }
 
