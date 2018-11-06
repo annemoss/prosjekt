@@ -1129,7 +1129,8 @@ li a:hover {
     display: inline-block;
     width: 155px;
     height: 155px;
-    margin-right: 20%;
+    position: absolute;
+    left: 35%;
   }
 
   .navIndex li {
