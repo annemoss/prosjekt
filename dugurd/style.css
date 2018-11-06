@@ -100,21 +100,22 @@ h1 {
   /*display: block;*/
   color: white;
   text-align: center;
-  padding: 20px 38.8px;
+  padding: 27px 38.8px;
   text-decoration: none;
+  cursor: default;
 }
 
-.dropdownIndex ul {
+/*.dropdownIndex ul {
   margin-left: 0px;
   width: 192px;
-}
+}*/
 
 .dropdownIndex ul a {
   padding: 20px;
 }
 
 .dropdownIndex ul li:last-of-type {
-  padding-right: 37px;
+  padding-right: 31px;
 }
 
 .dropdown-contentIndex {
@@ -124,7 +125,8 @@ h1 {
   z-index: 2;
   list-style-type: none;
   top: 80px;
-  left: 0;
+  left: -3px;
+  width: 124.5%;
 }
 
 .dropdown-contentIndex a {
@@ -180,10 +182,11 @@ li a:hover {
     padding-bottom: 26px;
   }
   .dropdownIndex {
-    padding: 20px 38.8px;
+    padding: 23px 38.8px;
   }
   .dropdownIndex ul {
-    width: 165%;
+    width: 124.5%;
+    left: -7px;
   }
 }
 
@@ -206,10 +209,11 @@ li a:hover {
   }
 
   .dropdownIndex {
-    padding: 20px 38.8px;
+    padding: 23px 38.8px;
   }
   .dropdownIndex ul {
-    width: 165%;
+    width: 124.5%;
+    left: -2px;
   }
 }
 
@@ -1052,19 +1056,23 @@ li a:hover {
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 23px 13px;
+    padding: 21.5px 13px;
   }
 
   .dropdown {
-    padding: 23px 13px;
+    padding: 21.5px 13px;
   }
 
   .dropdown ul {
-    width: 145px;
+    width: 180px;
+  }
+
+  .dropdown ul a {
+    padding: 20px;
   }
 
   .dropdown ul li:last-of-type {
-    padding-right: 31px;
+    padding-right: 34px;
   }
 
   .navIndex {
@@ -1085,6 +1093,15 @@ li a:hover {
 
   .dropdownIndex ul {
     width: 165%;
+  }
+
+  .dropdown-contentIndex {
+    top: 80px;
+    left: -2px;
+  }
+
+  .dropdownIndex ul li:last-of-type {
+    padding-right: 31px;
   }
 }
 
@@ -1131,6 +1148,11 @@ li a:hover {
 
   .dropdownIndex ul {
     width: 165%;
+  }
+
+  .dropdown-contentIndex {
+    top: 80px;
+    left: -3px;
   }
 }
 
@@ -1263,6 +1285,22 @@ li a:hover {
     float: none;
     display: block;
     text-align: left;
+  }
+
+  .dropdownIndex:hover .dropdown-contentIndex {
+    display: none;
+  }
+
+  .dropdownIndex:onclick .dropdown-contentIndex {
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: none;
+  }
+
+  .dropdown:onclick .dropdown-content {
+    display: block;
   }
 
   /*på index siden */
