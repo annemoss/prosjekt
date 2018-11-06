@@ -190,7 +190,7 @@ li a:hover {
   }
 
   .dropdownIndex ul li:last-of-type {
-    padding-right: 37px;
+    padding-right: 31px;
   }
 }
 
@@ -380,7 +380,7 @@ li a:hover {
   margin-right: 5%;
 }
 
-.courseHeader{
+.courseHeader {
   color: rgb(157, 110, 91);
 }
 
@@ -610,7 +610,7 @@ span {
   text-align: center;
 }
 
-.pic_container{
+.pic_container {
   font-size: 1.35vw;
 }
 
@@ -689,8 +689,7 @@ span {
 }
 
 @media only screen and (max-width: 800px) {
-
-  .pic_container{
+  .pic_container {
     font-family: "FjallaOne", "Verdana", sans-serif;
     font-size: 2.5vw;
   }
@@ -1220,7 +1219,6 @@ li a:hover {
     position: absolute;
     right: 10px;
     top: 0;
-    margin-top: 10px;
   }
   .navIndex.responsive a {
     float: none;
