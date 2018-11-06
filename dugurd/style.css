@@ -117,7 +117,7 @@ h1 {
 }
 
 .dropdown-contentIndex {
-  /*display: none;*/
+  display: none;
   position: absolute;
   background-color: black;
   z-index: 2;
