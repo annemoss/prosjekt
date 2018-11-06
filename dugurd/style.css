@@ -1127,8 +1127,8 @@ li a:hover {
   /* Index navbar styling */
   #minilogoIndex {
     display: inline-block;
-    width: 155px;
-    height: 155px;
+    width: 80px;
+    height: 80px;
     margin-right: 20%;
   }
 
@@ -1290,7 +1290,7 @@ li a:hover {
     text-align: left;
   }
 
-  #logoIndex {
+  #logoHeaderIndexNone {
     display: none;
   }
 
