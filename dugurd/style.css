@@ -9,7 +9,7 @@
 }
 
 body {
-  background-image: url("../img/wood.jpg");
+  background-image: url("img/wood.jpg");
   background-attachment: fixed;
   background-size: cover;
   color: white;
@@ -230,7 +230,6 @@ li a:hover {
     top: 80px;
     left: -3px;
   }
-
 
   .navIndex li a {
     display: block;
