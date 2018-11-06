@@ -99,33 +99,32 @@ h1 {
   display: inline-block;
   color: white;
   text-align: center;
-  padding: 27px 38.8px;
+  padding: 20px 38.8px;
   text-decoration: none;
   cursor: default;
 }
 
-/*.dropdownIndex ul {
-  margin-left: 0px;
+.dropdownIndex ul {
   width: 192px;
-}*/
+}
 
 .dropdownIndex ul a {
   padding: 20px;
 }
 
 .dropdownIndex ul li:last-of-type {
-  padding-right: 31px;
+  padding-right: 37px;
 }
 
 .dropdown-contentIndex {
-  display: none;
+  /*display: none;*/
   position: absolute;
   background-color: black;
   z-index: 2;
   list-style-type: none;
   top: 80px;
-  left: -3px;
-  width: 124.5%;
+  left: -15px;
+
 }
 
 .dropdown-contentIndex a {
@@ -190,7 +189,7 @@ li a:hover {
   }
 
   .dropdownIndex ul li:last-of-type {
-    padding-right: 37px;
+    padding-right: 32px;
   }
 }
 
@@ -208,19 +207,46 @@ li a:hover {
     color: white;
     text-align: center;
     text-decoration: none;
-    padding-top: 22px;
-    padding-bottom: 28px;
-    padding-left: 13px;
-    padding-right: 13px;
+    padding: 25px 25.5px;
   }
 
   .dropdownIndex {
-    padding: 23px 38.8px;
+    padding: 25px 38.8px;
   }
   .dropdownIndex ul {
-    width: 124.5%;
+    width: 129%;
+    top: 80px;
     left: -2px;
   }
+
+  .dropdownIndex ul li:last-of-type {
+    padding-right: 28px;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .dropdownIndex ul {
+    width: 128.5%;
+    top: 80px;
+    left: -3px;
+  }
+
+  .navIndex li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 25px 25.5px;
+  }
+/*
+  .dropdown-contentIndex {
+    top: 80px;
+    left: -2px;
+  }*/
+
+  /*.dropdownIndex ul li:last-of-type {
+    padding-right: 28px;
+  /* } */
 }
 
 @media only screen and (max-width: 900px) {
@@ -229,19 +255,16 @@ li a:hover {
     color: white;
     text-align: center;
     text-decoration: none;
-    padding-top: 22px;
-    padding-bottom: 28px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 25px 25.5px;
   }
 
   .dropdownIndex {
-    padding: 22px 38.8px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 25px 25.5px;
   }
+
   .dropdownIndex ul {
-    width: 200%;
+    width: 162%;
+    top: 80px;
   }
 }
 
@@ -1103,18 +1126,7 @@ li a:hover {
     padding-right: 34px;
   }
 
-  .dropdownIndex ul {
-    width: 165%;
-  }
 
-  .dropdown-contentIndex {
-    top: 80px;
-    left: -2px;
-  }
-
-  .dropdownIndex ul li:last-of-type {
-    padding-right: 31px;
-  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -1142,26 +1154,6 @@ li a:hover {
     padding-right: 31px;
   }
 
-  .navIndex li a {
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 23px 25.5px;
-  }
-
-  .dropdownIndex {
-    padding: 23px 25.5px;
-  }
-
-  .dropdownIndex ul {
-    width: 165%;
-  }
-
-  .dropdown-contentIndex {
-    top: 80px;
-    left: -3px;
-  }
 }
 
 /* When the screen is less than 800 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
