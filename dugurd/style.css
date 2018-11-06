@@ -1301,6 +1301,9 @@ li a:hover {
   }
 
   /*på index siden */
+  .sitat {
+    font-size: 6em;
+  }
   .dropdownIndex {
     text-align: left;
   }
