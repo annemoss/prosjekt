@@ -176,10 +176,11 @@ li a:hover {
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 20px 15px;
+    padding-top: 20px;
+    padding-bottom: 26px;
   }
   .dropdownIndex {
-    padding: 20px 15px;
+    padding: 20px 38.8px;
   }
   .dropdownIndex ul {
     width: 165%;
@@ -200,11 +201,12 @@ li a:hover {
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 20px 16px;
+    padding-top: 20px;
+    padding-bottom: 26px;
   }
 
   .dropdownIndex {
-    padding: 20px 16px;
+    padding: 20px 38.8px;
   }
   .dropdownIndex ul {
     width: 165%;
