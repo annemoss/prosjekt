@@ -1,11 +1,11 @@
 @font-face {
   font-family: "FjallaOne";
-  src: url(../Fjalla_One/FjallaOne-Regular.ttf);
+  src: url(Fjalla_One/FjallaOne-Regular.ttf);
 }
 
 @font-face {
   font-family: "Lobster";
-  src: url(../Lobster/Lobster-Regular.ttf);
+  src: url(Lobster/Lobster-Regular.ttf);
 }
 
 body {
@@ -178,13 +178,14 @@ li a:hover {
     padding-top: 20px;
     padding-bottom: 26px;
   }
+
   .dropdownIndex {
     padding: 23px 38.8px;
   }
 
   .dropdownIndex ul {
     width: 124.5%;
-    left: -7px;
+    left: -6.5px;
   }
 
   .dropdownIndex ul li:last-of-type {
@@ -206,16 +207,16 @@ li a:hover {
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 25px 25.5px;
+    padding: 25px 15px;
   }
 
   .dropdownIndex {
     padding: 25px 38.8px;
   }
   .dropdownIndex ul {
-    width: 129%;
+    width: 112%;
     top: 80px;
-    left: -2px;
+    left: -3px;
   }
 
   .dropdownIndex ul li:last-of-type {
@@ -225,17 +226,18 @@ li a:hover {
 
 @media only screen and (max-width: 1000px) {
   .dropdownIndex ul {
-    width: 128.5%;
+    width: 104.5%;
     top: 80px;
     left: -3px;
   }
+
 
   .navIndex li a {
     display: block;
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 25px 25.5px;
+    padding: 25px 10px;
   }
   /*
   .dropdown-contentIndex {
@@ -248,22 +250,23 @@ li a:hover {
   /* } */
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 910px) {
   .navIndex li a {
     display: block;
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 25px 25.5px;
+    padding: 25px 5px;
   }
 
   .dropdownIndex {
-    padding: 25px 25.5px;
+    padding: 25px 5px;
   }
 
   .dropdownIndex ul {
-    width: 162%;
+    width: 204%;
     top: 80px;
+    left: -1px;
   }
 }
 
@@ -1298,6 +1301,9 @@ li a:hover {
   }
 
   /*på index siden */
+  .sitat {
+    font-size: 6em;
+  }
   .dropdownIndex {
     text-align: left;
   }
