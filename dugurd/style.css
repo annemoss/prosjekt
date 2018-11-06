@@ -304,8 +304,9 @@ li a:hover {
 /*3 Catering Meny*/
 
 #cFoodPic {
-  width: 70%;
-  margin-left: 10%;
+  width: 100%;
+  margin-left: -10%;
+  margin-top: 5%;
 }
 
 #leftSide {
@@ -323,8 +324,6 @@ li a:hover {
 }
 
 #textboxOmoss {
-  font-family: Verdana;
-  font-size: 0.9vw;
   overflow: hidden;
 }
 
@@ -333,11 +332,11 @@ li a:hover {
 }
 #headerContainer {
   max-height: 40%;
+  margin-left: 10%;
 }
 
 .innerHeader {
-  font-size: 1.25vw;
-  letter-spacing: 3px;
+  font-size: 2vw;
 }
 #contentContainerL {
   margin-top: 6%;
@@ -345,8 +344,12 @@ li a:hover {
 }
 
 #contentContainerR {
-  margin-top: -6%;
+  margin-top: 10%;
   margin-right: 5%;
+}
+
+.courseHeader{
+  color: rgb(157, 110, 91);
 }
 
 @media only screen and (max-width: 800px) {
@@ -574,6 +577,11 @@ span {
 #headerOmoss {
   text-align: center;
 }
+
+.pic_container{
+  font-size: 1.35vw;
+}
+
 #pic1_text {
   display: none;
   position: absolute;
@@ -598,12 +606,12 @@ span {
 #pic2_text {
   display: none;
   position: absolute;
-  margin-left: 10%;
-  margin-top: -25%;
-  max-width: 25%;
+  margin-left: 5%;
+  margin-top: -28%;
+  max-width: 35%;
 }
 #inner_container2 {
-  margin-top: 34%;
+  margin-top: 50%;
   margin-right: -3%;
   float: right;
   max-width: 50%;
@@ -621,18 +629,19 @@ span {
   display: none;
   position: absolute;
   margin-left: 10%;
-  margin-top: -25%;
-  max-width: 25%;
+  margin-top: -65%;
+  max-width: 80%;
 }
 #inner_container3 {
-  margin-top: 34%;
+  position: relative;
+  margin-top: 65%;
   float: left;
   max-width: 50%;
 }
 
 #container3_text {
   position: absolute;
-  margin-top: 65%;
+  margin-top: 85%;
   margin-left: 55%;
   max-width: 35%;
   float: left;
@@ -641,7 +650,6 @@ span {
 .pic_container {
   height: 50%;
   margin: 5%;
-  font-size: 0.9vw;
 }
 
 .om_oss_pics {
@@ -649,8 +657,10 @@ span {
 }
 
 @media only screen and (max-width: 800px) {
-  .pic_container {
-    font-size: 2vw;
+
+  .pic_container{
+    font-family: "FjallaOne", "Verdana", sans-serif;
+    font-size: 2.5vw;
   }
 
   #inner_container1 {
@@ -662,7 +672,7 @@ span {
     position: absolute;
     margin-left: 10%;
     margin-top: -50%;
-    max-width: 60%;
+    max-width: 80%;
   }
 
   #container1_text {
@@ -676,9 +686,9 @@ span {
   #pic2_text {
     display: none;
     position: absolute;
-    margin-left: 10%;
+    margin-left: 5%;
     margin-top: -50%;
-    max-width: 60%;
+    max-width: 70%;
   }
   #inner_container2 {
     margin-top: 10%;
@@ -696,8 +706,8 @@ span {
     display: none;
     position: absolute;
     margin-left: 10%;
-    margin-top: -50%;
-    max-width: 60%;
+    margin-top: -60%;
+    max-width: 80%;
   }
   #inner_container3 {
     margin-top: 10%;
@@ -708,8 +718,8 @@ span {
   #container3_text {
     position: relative;
     margin-top: 5%;
-    margin-right: 15%;
-    max-width: 80%;
+    margin-left: 15%;
+    max-width: 70%;
     float: left;
   }
 }
