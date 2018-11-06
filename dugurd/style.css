@@ -937,7 +937,8 @@ span {
 
 input[placeholder],
 #whybox,
-select {
+select,
+#datoCatering{
   padding: 3%;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
