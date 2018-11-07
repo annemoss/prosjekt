@@ -1,78 +1,82 @@
 <!DOCTYPE html>
 <html lang="nb">
-    <head>
-        <meta charset="utf-8">
-        <title>Dugurd Restaurant</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="../img/logo.png" type="image/png" sizes="25x25">
-    </head>
-    <body>
-        <header></header>
-        <div class="textbox" id="runneth">
-          <div id="cateringDiv">
-            <h1>Bestilling av catering</h1>
-            <br>
-            <div>På denne siden kan du bestille catering hos oss. Bare skriv inn kontaktinformasjonen din og så skal vi ta kontakt med deg så snart som mulig.
-            Hvis du ikke er kjent med catering-menyen vår, kan du sjekke den <a href="../dugurd/cMeny.html" class="hyperlink">her</a></div>
-            <br>
-            <form id="cForm" method="post" onsubmit="cFormSvar()">
-              <div class="cLeft">
-                Navn:<br>
-                <input type="text" name="navn" class="cInput" placeholder="Skriv inn ditt navn" required>
-                <br><br>
-                E-post:
-                <br>
-                <input type="email" name="email" class="cInput" placeholder="Skriv inn din e-post" required>
-                <br><br>
-                Adresse:
-                <br>
-                <input type="text" name="adresse" class="cInput" placeholder="Skriv inn din adresse" required>
-                <br><br>
-                Dato:
-                <br>
-                <input type="date" name="dato" class="cInput" id="datoCatering" min="1111-11-11" required>
-              </div>
-              <div class="cRight">
-                <br>
-                Velg hvor mange som skal motta catering:
-                <br>
-                <input type="number" name="antall" class="cInput" min="1" max="120" placeholder="Skriv inn antall (maks 120)" required>
-                <br><br>
-                Ønskede pakke:<br>
-                <select class="cSelect" required>
-                  <option value="" disabled selected hidden id="ikkeEnStilling">Velg pakke</option>
-                  <option value="1">Pakke 1</option>
-                  <option value="2">Pakke 2</option>
-                  <option value="3">Pakke 3</option>
-                  <option value="4">Pakke 4</option>
-                  <option value="5">Pakke 5</option>
-                </select>
-                <br><br>
-                Allergener:<br>
-                <br>
-                <label class="container">
-                  <input type="checkbox" name="nøtter" class="cCheck" id="nøtter">
-                    <span class="styleBox"></span>
-                    <a class="cTekst">Nøtter</a><br>
-                </label>
-                <label class="container">
-                  <input type="checkbox" name="egg" class="cCheck" id="egg">
-                  <span class="styleBox"></span>
-                  <a class="cTekst">Egg</a><br>
-                </label>
-                <label class="container">
-                  <input type="checkbox" name="melk" class="cCheck" id="melk">
-                    <span class="styleBox"></span>
-                    <a class="cTekst">Melkeprodukter</a><br>
-                </label>
-                <label class="container">
-                  <input type="checkbox" name="annet" class="cCheck" id="annet">
-                    <span class="styleBox"></span>
-                    <a class="cTekst">Annet</a><br>
-                </label>
-                <br>
-              </div>
-            </form>
+
+<head>
+  <meta charset="utf-8">
+  <title>Dugurd Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/logo.png" type="image/png" sizes="25x25">
+</head>
+
+<body>
+  <header></header>
+  <div class="textbox" id="runneth">
+    <div id="cateringDiv">
+      <h1>Bestilling av catering</h1>
+      <br>
+      <div>På denne siden kan du bestille catering hos oss. Bare skriv inn kontaktinformasjonen din og så skal vi ta
+        kontakt med deg så snart som mulig.
+        Hvis du ikke er kjent med catering-menyen vår, kan du sjekke den <a href="cMeny.html" class="hyperlink">her</a></div>
+      <br>
+      <form id="cForm" method="post" onsubmit="cFormSvar()">
+        <div class="cLeft">
+          Navn:<br>
+          <input type="text" name="navn" class="cInput" placeholder="Skriv inn ditt navn" required>
+          <br><br>
+          E-post:
+          <br>
+          <input type="email" name="email" class="cInput" placeholder="Skriv inn din e-post" required>
+          <br><br>
+          Adresse:
+          <br>
+          <input type="text" name="adresse" class="cInput" placeholder="Skriv inn din adresse" required>
+          <br><br>
+          Dato:
+          <br>
+          <input type="date" name="dato" class="cInput" id="datoCatering" min="1111-11-11" required>
+        </div>
+        <div class="cRight">
+          <br>
+          Antall personer:
+          <br>
+          <input type="number" name="antall" class="cInput" min="1" max="120" placeholder="Skriv inn antall (maks 120)"
+            required>
+          <br><br>
+          Ønskede pakke:<br>
+          <select class="cSelect" required>
+            <option value="" disabled selected hidden id="ikkeEnStilling">Velg pakke</option>
+            <option value="1">Pakke 1</option>
+            <option value="2">Pakke 2</option>
+            <option value="3">Pakke 3</option>
+            <option value="4">Pakke 4</option>
+            <option value="5">Pakke 5</option>
+          </select>
+          <br><br>
+          Allergener:<br>
+          <br>
+          <label class="container">
+            <input type="checkbox" name="nøtter" class="cCheck" id="nøtter">
+            <span class="styleBox"></span>
+            <a class="cTekst">Nøtter</a><br>
+          </label>
+          <label class="container">
+            <input type="checkbox" name="egg" class="cCheck" id="egg">
+            <span class="styleBox"></span>
+            <a class="cTekst">Egg</a><br>
+          </label>
+          <label class="container">
+            <input type="checkbox" name="melk" class="cCheck" id="melk">
+            <span class="styleBox"></span>
+            <a class="cTekst">Melkeprodukter</a><br>
+          </label>
+          <label class="container">
+            <input type="checkbox" name="annet" class="cCheck" id="annet">
+            <span class="styleBox"></span>
+            <a class="cTekst">Annet</a><br>
+          </label>
+          <br>
+        </div>
+      </form>
 
       <div class="clearchild">
         <button type="submit" value="Submit" id="cSubmit" form="cForm">Bestill catering</button>

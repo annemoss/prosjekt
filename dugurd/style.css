@@ -64,7 +64,6 @@ h1 {
   width: 100%;
   height: 80px;
   z-index: 1;
-
 }
 
 .navIndex ul {
@@ -74,12 +73,10 @@ h1 {
   margin-left: 10%;
   padding: 0;
   width: 100%;
-
 }
 
 .navIndex li {
   float: left;
-
 }
 
 .navIndex li a {
@@ -327,9 +324,8 @@ li a:hover {
   margin-top: 20px;
 }
 
-.rett {
-  text-align: center;
-  font-size: 24pt;
+.h1 {
+  color: rgb(157, 110, 91);
 }
 
 #left {
@@ -411,8 +407,19 @@ li a:hover {
   color: rgb(157, 110, 91);
 }
 
+#mobileHeader{
+  display: none;
+}
+
 @media only screen and (max-width: 800px) {
   #contentHeader {
+    display: none;
+  }
+
+  #mobileHeader {
+
+    max-width: 100%;
+    display: block;
     font-size: 5vw;
     text-align: left;
     margin-left: 5%;
@@ -645,9 +652,9 @@ span {
 #pic1_text {
   display: none;
   position: absolute;
-  margin-left: 10%;
+  margin-left: 5%;
   margin-top: -25%;
-  max-width: 25%;
+  max-width: 35%;
 }
 
 #inner_container1 {
@@ -874,6 +881,7 @@ span {
 .map-responsive iframe {
   height: 100%;
   width: 100%;
+  border: 0;
 }
 
 @media screen and (max-width: 800px) {
@@ -885,6 +893,10 @@ span {
 
   .infoPart:last-of-type {
     margin-bottom: 10px;
+  }
+
+  #info {
+    width: 100%;
   }
 }
 
@@ -942,7 +954,7 @@ span {
 input[placeholder],
 #whybox,
 select,
-#datoCatering{
+#datoCatering {
   padding: 3%;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
@@ -976,12 +988,6 @@ input,
 .button,
 select {
   outline-color: rgb(157, 110, 91);
-}
-
-#velgStilling option:first-child {
-  color: rgb(157, 110, 91);
-  /*ENDRE FARGE PÅ FØRSTE FUNKER IKKE
-FARGE:  rgb(138, 142, 139)  */
 }
 
 select {
@@ -1159,7 +1165,7 @@ li a:hover {
 }
 
 /* When the screen is less than 800 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
   /* Index navbar styling */
   #minilogoIndex {
     display: inline-block;
