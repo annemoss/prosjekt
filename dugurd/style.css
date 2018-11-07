@@ -265,15 +265,6 @@ li a:hover {
     text-decoration: none;
     padding: 25px 10px;
   }
-  /*
-  .dropdown-contentIndex {
-    top: 80px;
-    left: -2px;
-  }*/
-
-  /*.dropdownIndex ul li:last-of-type {
-    padding-right: 28px;
-  /* } */
 }
 
 @media only screen and (max-width: 910px) {
@@ -1139,58 +1130,6 @@ li a:hover {
     left: 35%;
   }
 
-  .navIndex li {
-    display: none;
-  }
-
-  .navUlIndex {
-    position: absolute;
-    top: 80px;
-    right: 0px;
-    width: 100%;
-  }
-
-  .navIndex a.iconMobil {
-    float: right;
-    display: block;
-    color: white;
-  }
-
-  .menymenyIndex {
-    width: 160px;
-  }
-
-  .menymenyIndex a {
-    background-color: black;
-    width: 160px;
-  }
-
-  .navIndex.responsive {
-    background-color: black;
-    position: relative;
-  }
-
-  .navIndex.responsive ul {
-    width: 100%;
-    background-color: black;
-  }
-
-  .navIndex.responsive li {
-    display: block;
-    float: left;
-  }
-
-  .navIndex.responsive a.iconMobil {
-    position: absolute;
-    right: 10px;
-    top: 0;
-  }
-  .navIndex.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-
   .nav li {
     display: none;
   }
@@ -1258,14 +1197,6 @@ li a:hover {
     text-align: left;
   }
 
-  .dropdownIndex:hover .dropdown-contentIndex {
-    display: none;
-  }
-
-  .dropdownIndex:onclick .dropdown-contentIndex {
-    display: block;
-  }
-
   .dropdown:hover .dropdown-content {
     display: none;
   }
@@ -1278,6 +1209,7 @@ li a:hover {
   .sitat {
     font-size: 6em;
   }
+
   .dropdownIndex {
     text-align: left;
   }
@@ -1315,8 +1247,15 @@ li a:hover {
     text-align: left;
   }
 
-  #logoHeaderIndexNone {
+  .navIndex li {
     display: none;
+  }
+
+  .navUlIndex {
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    width: 100%;
   }
 
   .navIndex a.iconMobil {
@@ -1327,11 +1266,41 @@ li a:hover {
     margin-right: 10px;
   }
 
-  .navUlIndex {
-    position: absolute;
-    top: 80px;
-    right: 0px;
+  .menymenyIndex {
+    text-align: right;
     width: 100%;
+  }
+
+  .menymenyIndex a {
+    background-color: rgb(41, 41, 41);
+    width: 100%;
+  }
+
+  #logoHeaderIndexNone {
+    display: none;
+  }
+
+  .dropdownIndex:hover .dropdown-contentIndex {
+    display: none;
+  }
+
+  .dropdownIndex:onclick .dropdown-contentIndex {
+    display: block;
+  }
+
+  .navIndex ul {
+    margin-left: 0;
+  }
+
+  .dropdown-contentindex a:last-of-type {
+    width: 100%;
+  }
+
+  .dropdownIndex ul li:last-of-type {
+    padding-right: 0;
+  }
+  .dropdownIndex ul {
+    left: 0;
   }
 }
 
