@@ -64,7 +64,6 @@ h1 {
   width: 100%;
   height: 80px;
   z-index: 1;
-
 }
 
 .navIndex ul {
@@ -74,12 +73,10 @@ h1 {
   margin-left: 10%;
   padding: 0;
   width: 100%;
-
 }
 
 .navIndex li {
   float: left;
-
 }
 
 .navIndex li a {
@@ -941,7 +938,7 @@ span {
 input[placeholder],
 #whybox,
 select,
-#datoCatering{
+#datoCatering {
   padding: 3%;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
