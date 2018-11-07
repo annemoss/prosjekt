@@ -22,10 +22,10 @@
       <p>Vi har gjort et par endringer både innenfor CSS, men også JavaScript. For å få nok JavaScript-funksjoner,
         måtte vi legge til en funksjon.</p>
       <h3>Generell layout</h3>
-      <p>Den generelle layouten har vi endret på et par punkt. Planen var å bruke en grå, gjennomsiktig farge på
-        både nav, footer og tekstboksen. For tekstboksen beholdt vi fargen, men valgte å gjøre både nav og footer
-        svarte. Dette fordi navbaren er sticky, og siden fargen var gjennomsiktig ville man se teksten under. Vi
-        endra også hovrefunksjonen på navbaren og knappene. Når man hovrer endrer knappen farge til: rgb(157, 110, 91).
+      <p>Den generelle layouten har vi endret på et par punkter. Planen var å bruke en grå, gjennomsiktig farge på
+        både navigasjonsbar, footer og tekstboksen. For tekstboksen beholdt vi fargen, men valgte å gjøre både nav og footer
+        svarte. Dette fordi navigasjonsbaren er sticky, og siden fargen var gjennomsiktig ville man se teksten under. Vi
+        endra også hovrefunksjonen på navigasjonsbaren og knappene. Når man hovrer endrer knappen farge til: rgb(157, 110, 91).
         Skriftstørrelsen endra vi også, fordi det så bedre ut. I tillegg har vi valgt å bruke fonten Fjalla One på
         alle overskrifter i steden for Lobster. Lobster ble en veldig rotete font, så denne blir når bare brukt på sitatet
          på forsiden. I alle forms på siden bruker vi en svart bakgrunn på input-feltene.</p>
@@ -38,9 +38,9 @@
       det en forklaring av hva det inneholder.</p>
       <h3>Meny - catering: cMeny.html</h3>
       <p>På denne nettsiden er det hovedsakelig bare selve innholdet som er blitt endret. I stedet for at brukeren skal få
-        «bygge» en egen pakke som består av retter, så bestemte vi å bare ha forhåndsbestemte to- eller treretterspakker.
-        I tillegg til å fjerne litt av valgfriheten har vi også bestemt oss å fjerne bildene som skulle høre til enhver
-        pakke og bare ha en tekstsnutt som forteller om innholdet i de forskjellige pakkene.</p>
+        «bygge» en egen pakke som består av retter, så bestemte vi oss for å kun ha forhåndsbestemte to- eller treretterspakker.
+        I tillegg til å fjerne litt av valgfriheten, har vi også bestemt oss å fjerne bildene som skulle høre til hver av
+        pakkene og bare ha en tekstsnutt som forteller om hva de forskjellige inneholder.</p>
       <h3>Bestill bord: bestillBord.html</h3>
       <p>På denne nettsiden er det en del endringer som har blitt utført. Først og fremst har vi fjernet infoboksen som
         skulle være på høyre siden av nettsiden. Grunnen bak dette var at informasjonen som ble gitt til brukeren på selve
@@ -59,7 +59,7 @@
       <h3>Søk jobb: jobb.html</h3>
       <p>Ingen store endringer her heller. Men vi valgte å gjøre om inputtypen på feltet om arbeidserfaring til en filopplasting.</p>
       <h3>Navigasjonsbar: add.js</h3>
-      <p>Måten vi legger til navigasjonsbaren på er endret. Planen var å lage et eget html-dokument for navbaren, og linke denne på
+      <p>Måten vi legger til navigasjonsbaren på er endret. Planen var å lage et eget html-dokument for navigasjonsbaren, og linke denne på
         alle andre sider. Dette ble gjort på nesten samme måte, men vi legger den til gjennom JavaScript i stedet.</p>
       <h3>Footer: add.js</h3>
       <p>Det samme gjelder for footeren, den legges til gjennom JavaScript-filen add.js.</p>
@@ -74,22 +74,22 @@
       <p>Ikke store endringer, men det er fire bilder og bildene blir vist i 4 sekunder før det bytter automatisk.</p>
       <h3>Responsive knapp: responsive.js og responsiveIndex.js</h3>
       <p>Vi hadde planer om å ha et kart fra Google Maps som en JavaScript-funksjon. Dette kunne man ikke gjøre med JavaScript
-        derfor la vi til en ny funksjon, nemlig en endring av navbaren når skjermen blir mindre enn 800px. </p>
-      Responsive.js inneholder en funksjon som sjekker når hamburgermeny ikonet blir trykt på. Når det gjøres endrer
-      funksjonen class navnet til hele navbaren. Den nye classen har style som tilpasser den til mobil. Filen inneholder en
-      funksjon som endrer på dropdown menyen for restaurant og catering menyer. I stedet for at de skal aktiveres «on hover»
-      blir de aktiver «on click». Dette ble gjort for å tilpasse navbaren for mobilbruk.
+        derfor la vi til en ny funksjon, nemlig en endring av navigasjonsbaren når skjermen blir mindre enn 800px. </p>
+      Responsive.js inneholder en funksjon som sjekker når hamburgermeny-ikonet blir trykket på. Når det gjøres, endrer
+      en funksjon class-navnet til hele navigasjonsbaren. Den nye classen har style som tilpasser den til mobil. Filen inneholder en
+      funksjon som endrer på dropdown menyen for restaurant- og cateringmenyen. I stedet for at de skal aktiveres «on hover»
+      blir de aktiver «on click». Dette ble gjort for å tilpasse navigasjonsbaren for mobilbruk.
       <h3>Knapper: bestillBordKnapp.js, cateringKnapp.js og jobbKnapp.js</h3>
-      <p>Største endringen er at hver side har fått sin egen JavaScript-fil. Dette gjorde det ryddigere og enklere å kode for
-        hver enkelt knapp.</p>
+      <p>Største endringen er at hver side har fått sin egen JavaScript-fil. Dette ble først og fremst gjort fordi det oppstod feil når alt scriptet var i samme fil. I tillegg ble det ryddigere og enklere å kode for
+        funksjonenene til hver enkelt side. </p>
       <h3>Endring på bilde: om.js</h3>
-      <p>Om oss javascript filen måtte utvides slik at den fungerte på mobil versjonen av nettsiden også. Dette måtte gjøres
-        fordi at man kan ikke «hover» over et bilde på mobil. Funksjonen måtte derfor omskrives slik at man hadde to forskjellige
-        måter å gjøre bildene mørkere på basert på skjermstørrelsen.</p>
+      <p>"Om oss" javascript-filen måtte utvides slik at den fungerte på mobil versjonen av nettsiden også. Dette måtte gjøres
+        fordi man ikke kan «hovre» over et bilde på mobil. Funksjonen måtte derfor omskrives slik at man hadde to forskjellige
+        måter å gjøre bildene mørkere på, basert på skjermstørrelsen.</p>
 
       <h2>Modularitet</h2>
-      <p>For å oppfylle kravet om modularitet har vi en fil, add.js, der både footeren og navbaren ligger. Anne hadde ansvar for
-        navbaren, og Vidar for footeren. Hver javascript-funksjon har en egen fil, dette oppfyller hver enkelt av oss, da alle
+      <p>For å oppfylle kravet om modularitet har vi en fil, add.js, der både footeren og navigasjonsbaren ligger. Anne hadde ansvar for
+        navigasjonsbaren, og Vidar for footeren. Hver javascript-funksjon har en egen fil, dette oppfyller hver enkelt av oss, da alle
         hadde ansvar for minst en javascript-funksjon. Stylingen av nettsiden hadde vi alle ansvar for, og dette har vi samlet
         i et felles dokument, style.css.</p>
 
