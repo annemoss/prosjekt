@@ -50,6 +50,8 @@ html {
 
 h1 {
   font-size: 27pt;
+}
+.h1 {
   color: rgb(157, 110, 91);
 }
 
@@ -555,7 +557,7 @@ li a:hover {
   display: block;
 }
 #cateringConfirmation {
-  font-size: 20pt;
+  display: none;
 }
 
 .cInput {
