@@ -18,6 +18,8 @@ body {
   padding-bottom: 180px;
   height: 100%;
 }
+
+
 html {
   position: relative;
   min-height: 100%;
@@ -48,6 +50,7 @@ html {
 
 h1 {
   font-size: 27pt;
+  color: rgb(157, 110, 91);
 }
 
 .buttons{
@@ -319,7 +322,7 @@ li a:hover {
   right: auto;
   width: 100%;
   text-align: center;
-  font-family: "Lobster";
+  font-family: "Lobster", serif;
   text-shadow: 3px 3px black;
 }
 
@@ -332,11 +335,6 @@ li a:hover {
   }
 }
 
-#flyteguri {
-  overflow: hidden;
-  top: 0;
-}
-
 #illustrasjonsbilde {
   max-width: 100%;
   position: relative;
@@ -346,9 +344,6 @@ li a:hover {
   margin-top: 20px;
 }
 
-.h1 {
-  color: rgb(157, 110, 91);
-}
 
 #left {
   text-align: center;
@@ -448,7 +443,6 @@ li a:hover {
   }
 
   #textboxOmoss {
-    font-family: Verdana;
     font-size: 2.5vw;
     overflow: hidden;
   }
@@ -526,7 +520,8 @@ li a:hover {
 }
 
 #ikkeLedigReservasjon,
-#reservasjonFullfort {
+#reservasjonFullfort,
+#cateringConfirmation {
   /*KAN KOPLES SAMMEN MED JOBB*/
   padding-top: 20%;
   padding-bottom: 30%;
@@ -556,10 +551,6 @@ li a:hover {
   display: block;
 }
 #cateringConfirmation {
-  display: none;
-  padding-top: 20%;
-  padding-bottom: 30%;
-  text-align: center;
   font-size: 20pt;
 }
 
@@ -732,7 +723,7 @@ li a:hover {
     position: absolute;
     margin-left: 10%;
     margin-top: -50%;
-    max-width: 80%;
+    max-width: 70%;
   }
 
   #container1_text {
