@@ -926,7 +926,6 @@ select,
   height: 200px;
 }
 
-
 select {
   width: 30%;
   padding: 2.5%;
@@ -1136,7 +1135,7 @@ li a:hover {
     margin-right: 10px;
     height:100px;
     width:100px;
-  }
+
 
   .menymeny {
     text-align: right;
@@ -1286,7 +1285,7 @@ li a:hover {
     margin-left: 0;
   }
 
-  .dropdown-contentindex a:last-of-type {
+  .dropdown-contentIndex a:last-of-type {
     width: 100%;
   }
 
@@ -1295,6 +1294,15 @@ li a:hover {
   }
   .dropdownIndex ul {
     left: 0;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  .dropdown-contentIndex {
+    display: none;
+  }
+  .dropdown-content {
+    display: none;
   }
 }
 
