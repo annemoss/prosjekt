@@ -907,6 +907,12 @@ select,
   max-width: 500px;
 }
 
+#file {
+  all:unset;
+  padding: 3%;
+  font-size: 12pt;
+}
+
 #whybox {
   text-align: left;
   resize: none;
@@ -918,18 +924,11 @@ select,
 select {
   width: 30%;
   padding: 2.5%;
-  /*ENDRE FARGE*/
+  outline-color: rgb(157, 110, 91);
 }
 
 #soknad p {
   font-size: 15pt;
-}
-
-input,
-#whybox,
-.button,
-select {
-  outline-color: rgb(157, 110, 91);
 }
 
 /*9 nav.html*/
