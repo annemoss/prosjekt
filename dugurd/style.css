@@ -1135,6 +1135,7 @@ li a:hover {
     margin-right: 10px;
     height:100px;
     width:100px;
+
   }
 
   .menymeny {
@@ -1230,7 +1231,6 @@ li a:hover {
     position: absolute;
     right: 0;
     top: 0;
-    width:50px;
   }
   .navIndex.responsive a {
     float: none;
@@ -1257,7 +1257,10 @@ li a:hover {
     margin-right: 10px;
   }
 
-  .fa
+  .fa.fa-bars {
+    font-size:70px;
+    right:0;
+  }
 
   .menymenyIndex {
     text-align: right;
