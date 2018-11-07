@@ -488,8 +488,15 @@ li a:hover {
   margin: auto;
   position: relative;
   margin-top: 20px;
+  text-decoration: none;
+}
+#ledigBordSkrift{
+  font-size: 15pt;
 }
 
+.bestillBordForm table {
+  margin: auto;
+}
 
 .bestillBordForm input {
   padding: 3%;
@@ -511,9 +518,6 @@ li a:hover {
   text-align: center;
 }
 
-.bestillBordForm table {
-  margin: auto;
-}
 .bestillBordForm input[type="radio"] {
   width: 20px;
   background-color: rgb(157, 110, 91);
