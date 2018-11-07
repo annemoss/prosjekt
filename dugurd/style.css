@@ -18,6 +18,7 @@ body {
   padding-bottom: 180px;
   height: 100%;
 }
+
 html {
   position: relative;
   min-height: 100%;
@@ -48,6 +49,31 @@ html {
 
 h1 {
   font-size: 27pt;
+}
+.h1 {
+  color: rgb(157, 110, 91);
+}
+
+.buttons {
+  position: relative;
+  padding: 15px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  font-family: "FjallaOne", "Verdana", sans-serif;
+  font-size: 15pt;
+  cursor: pointer;
+}
+
+.buttons:hover {
+  background-color: rgb(157, 110, 91);
+  color: white;
+}
+
+span {
+  color: rgb(157, 110, 91);
 }
 /*1 navbar til index*/
 /*ny*/
@@ -238,15 +264,6 @@ li a:hover {
     text-decoration: none;
     padding: 25px 10px;
   }
-  /*
-  .dropdown-contentIndex {
-    top: 80px;
-    left: -2px;
-  }*/
-
-  /*.dropdownIndex ul li:last-of-type {
-    padding-right: 28px;
-  /* } */
 }
 
 @media only screen and (max-width: 910px) {
@@ -297,7 +314,7 @@ li a:hover {
   right: auto;
   width: 100%;
   text-align: center;
-  font-family: "Lobster";
+  font-family: "Lobster", serif;
   text-shadow: 3px 3px black;
 }
 
@@ -310,11 +327,6 @@ li a:hover {
   }
 }
 
-#flyteguri {
-  overflow: hidden;
-  top: 0;
-}
-
 #illustrasjonsbilde {
   max-width: 100%;
   position: relative;
@@ -322,10 +334,6 @@ li a:hover {
   float: left;
   margin-bottom: 20px;
   margin-top: 20px;
-}
-
-.h1 {
-  color: rgb(157, 110, 91);
 }
 
 #left {
@@ -407,7 +415,7 @@ li a:hover {
   color: rgb(157, 110, 91);
 }
 
-#mobileHeader{
+#mobileHeader {
   display: none;
 }
 
@@ -417,7 +425,6 @@ li a:hover {
   }
 
   #mobileHeader {
-
     max-width: 100%;
     display: block;
     font-size: 5vw;
@@ -426,7 +433,6 @@ li a:hover {
   }
 
   #textboxOmoss {
-    font-family: Verdana;
     font-size: 2.5vw;
     overflow: hidden;
   }
@@ -467,42 +473,21 @@ li a:hover {
   width: 100%;
   margin: auto;
 }
-.bestillBordButton {
-  /*position: relative;*/
+#bestillBordButton,
+#kontaktinfoButton,
+#provPaNyttButton {
   left: 35%;
   margin: auto;
   position: relative;
-  padding: 15px;
   margin-top: 20px;
-  font-size: 15pt;
-  outline: none;
-  border: none;
-  background-color: rgba(0, 0, 0, 0.9);
-  color: white;
-  font-family: "FjallaOne", "Verdana", sans-serif;
-  cursor: pointer;
+  text-decoration: none;
 }
 
-.bestillBordButton:hover {
-  background-color: rgb(157, 110, 91);
-  color: white;
+.bestillBordForm table {
+  margin: auto;
 }
 
-span {
-  color: rgb(157, 110, 91);
-}
 
-.bestillBordForm input {
-  padding: 3%;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  border-color: black;
-  font-size: 12pt;
-  width: 50%;
-  text-align: center;
-  outline-color: rgb(157, 110, 91);
-  max-width: 300px; 
-}
 
 #reservasjonen,
 #leggInnKontaktInfo,
@@ -512,16 +497,12 @@ span {
   text-align: center;
 }
 
-.bestillBordForm table {
-  margin: auto;
-}
 .bestillBordForm input[type="radio"] {
   width: 20px;
   background-color: rgb(157, 110, 91);
 }
 
-#ikkeLedigReservasjon,
-#reservasjonFullfort {
+.sluttSubmit {
   /*KAN KOPLES SAMMEN MED JOBB*/
   padding-top: 20%;
   padding-bottom: 30%;
@@ -552,10 +533,6 @@ span {
 }
 #cateringConfirmation {
   display: none;
-  padding-top: 20%;
-  padding-bottom: 30%;
-  text-align: center;
-  font-size: 20pt;
 }
 
 .cInput {
@@ -571,18 +548,6 @@ span {
   margin-top: 20px;
   left: 65%;
   top: 0%;
-  padding: 15px;
-  border: none;
-  outline: none;
-  background-color: rgba(0, 0, 0, 0.9);
-  color: white;
-  font-family: "FjallaOne", "Verdana", sans-serif;
-  font-size: 15pt;
-  cursor: pointer;
-}
-
-#cSubmit:hover {
-  background-color: rgb(157, 110, 91);
 }
 
 @media only screen and (max-width: 800px) {
@@ -738,7 +703,7 @@ span {
     position: absolute;
     margin-left: 10%;
     margin-top: -50%;
-    max-width: 80%;
+    max-width: 70%;
   }
 
   #container1_text {
@@ -829,17 +794,10 @@ span {
   margin-bottom: 30px;
 }
 
-.buttonKontakt {
-  padding: 15px;
-  border: none;
-  outline: none;
-  background-color: rgba(0, 0, 0, 0.9);
-  color: white;
-  font-family: "FjallaOne", "Verdana", sans-serif;
+#buttonKontakt1,
+#buttonKontakt2 {
   display: inline;
-  font-size: 15pt;
   top: 10px;
-  cursor: pointer;
 }
 
 .divForm {
@@ -851,10 +809,6 @@ span {
 #infoMap {
   margin-top: 18px;
   padding-bottom: 0px;
-}
-
-.buttonKontakt:hover {
-  background-color: rgb(157, 110, 91);
 }
 
 #info {
@@ -929,20 +883,8 @@ span {
 /*8 JOBBSØKNAD*/
 #submit {
   position: relative;
-  padding: 15px;
   margin-top: 20px;
   left: 35%;
-  font-size: 15pt;
-  outline: none;
-  border: none;
-  background-color: rgba(0, 0, 0, 0.9);
-  color: white;
-  cursor: pointer;
-  font-family: "FjallaOne", "Verdana", sans-serif;
-}
-
-#submit:hover {
-  background-color: rgb(157, 110, 91);
 }
 
 #soknad {
@@ -952,6 +894,7 @@ span {
 }
 
 input[placeholder],
+input,
 #whybox,
 select,
 #datoCatering {
@@ -962,6 +905,8 @@ select,
   font-size: 12pt;
   width: 50%;
   text-align: center;
+  outline-color: rgb(157, 110, 91);
+  max-width: 500px;
 }
 
 #whybox {
@@ -971,12 +916,11 @@ select,
   height: 200px;
 }
 
-.cInput {
-  width: 100%;
-}
 
 select {
   width: 30%;
+  padding: 2.5%;
+  /*ENDRE FARGE*/
 }
 
 #soknad p {
@@ -988,18 +932,6 @@ input,
 .button,
 select {
   outline-color: rgb(157, 110, 91);
-}
-
-select {
-  padding: 2.5%;
-  /*ENDRE FARGE*/
-}
-
-#confirmation {
-  padding-top: 20%;
-  padding-bottom: 30%;
-  text-align: center;
-  font-size: 20pt;
 }
 
 /*9 nav.html*/
@@ -1175,58 +1107,6 @@ li a:hover {
     left: 35%;
   }
 
-  .navIndex li {
-    display: none;
-  }
-
-  .navUlIndex {
-    position: absolute;
-    top: 80px;
-    right: 0px;
-    width: 100%;
-  }
-
-  .navIndex a.iconMobil {
-    float: right;
-    display: block;
-    color: white;
-  }
-
-  .menymenyIndex {
-    width: 160px;
-  }
-
-  .menymenyIndex a {
-    background-color: black;
-    width: 160px;
-  }
-
-  .navIndex.responsive {
-    background-color: black;
-    position: relative;
-  }
-
-  .navIndex.responsive ul {
-    width: 100%;
-    background-color: black;
-  }
-
-  .navIndex.responsive li {
-    display: block;
-    float: left;
-  }
-
-  .navIndex.responsive a.iconMobil {
-    position: absolute;
-    right: 10px;
-    top: 0;
-  }
-  .navIndex.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-
   .nav li {
     display: none;
   }
@@ -1294,14 +1174,6 @@ li a:hover {
     text-align: left;
   }
 
-  .dropdownIndex:hover .dropdown-contentIndex {
-    display: none;
-  }
-
-  .dropdownIndex:onclick .dropdown-contentIndex {
-    display: block;
-  }
-
   .dropdown:hover .dropdown-content {
     display: none;
   }
@@ -1314,6 +1186,7 @@ li a:hover {
   .sitat {
     font-size: 6em;
   }
+
   .dropdownIndex {
     text-align: left;
   }
@@ -1351,8 +1224,15 @@ li a:hover {
     text-align: left;
   }
 
-  #logoHeaderIndexNone {
+  .navIndex li {
     display: none;
+  }
+
+  .navUlIndex {
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    width: 100%;
   }
 
   .navIndex a.iconMobil {
@@ -1363,11 +1243,41 @@ li a:hover {
     margin-right: 10px;
   }
 
-  .navUlIndex {
-    position: absolute;
-    top: 80px;
-    right: 0px;
+  .menymenyIndex {
+    text-align: right;
     width: 100%;
+  }
+
+  .menymenyIndex a {
+    background-color: rgb(41, 41, 41);
+    width: 100%;
+  }
+
+  #logoHeaderIndexNone {
+    display: none;
+  }
+
+  .dropdownIndex:hover .dropdown-contentIndex {
+    display: none;
+  }
+
+  .dropdownIndex:onclick .dropdown-contentIndex {
+    display: block;
+  }
+
+  .navIndex ul {
+    margin-left: 0;
+  }
+
+  .dropdown-contentindex a:last-of-type {
+    width: 100%;
+  }
+
+  .dropdownIndex ul li:last-of-type {
+    padding-right: 0;
+  }
+  .dropdownIndex ul {
+    left: 0;
   }
 }
 
