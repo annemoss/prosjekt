@@ -882,6 +882,10 @@ span {
   .infoPart:last-of-type {
     margin-bottom: 10px;
   }
+
+  #info {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 470px) {
@@ -938,7 +942,7 @@ span {
 input[placeholder],
 #whybox,
 select,
-#datoCatering{
+#datoCatering {
   padding: 3%;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
@@ -1155,7 +1159,7 @@ li a:hover {
 }
 
 /* When the screen is less than 800 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
   /* Index navbar styling */
   #minilogoIndex {
     display: inline-block;
