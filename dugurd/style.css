@@ -880,6 +880,7 @@ span {
 .map-responsive iframe {
   height: 100%;
   width: 100%;
+  border: 0;
 }
 
 @media screen and (max-width: 800px) {
@@ -986,12 +987,6 @@ input,
 .button,
 select {
   outline-color: rgb(157, 110, 91);
-}
-
-#velgStilling option:first-child {
-  color: rgb(157, 110, 91);
-  /*ENDRE FARGE PÅ FØRSTE FUNKER IKKE
-FARGE:  rgb(138, 142, 139)  */
 }
 
 select {
