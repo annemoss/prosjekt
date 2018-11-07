@@ -435,7 +435,7 @@ li a:hover {
     max-width: 100%;
     display: block;
     font-size: 5vw;
-    text-align: left;
+    text-align: center;
     margin-left: 5%;
   }
 
@@ -451,24 +451,26 @@ li a:hover {
   #cFoodPic {
     display: none;
   }
-
   #rightSide {
     max-width: 100%;
-    float: left;
+    float: none;
     position: relative;
     margin-bottom: 0%;
     margin-top: 5%;
-    margin-left: 5%;
   }
 
   #leftSide {
     max-width: 100%;
-    float: left;
+    float: none;
     position: relative;
     margin-top: 0%;
+    margin-right: 5%;
   }
   .contentBox {
     padding: 5%;
+    width: 100%;
+    float: none;
+    text-align: center;
   }
 }
 
@@ -904,12 +906,6 @@ select,
   max-width: 500px;
 }
 
-#file {
-  all:unset;
-  padding: 3%;
-  font-size: 12pt;
-}
-
 #whybox {
   text-align: left;
   resize: none;
@@ -921,11 +917,18 @@ select,
 select {
   width: 30%;
   padding: 2.5%;
-  outline-color: rgb(157, 110, 91);
+  /*ENDRE FARGE*/
 }
 
 #soknad p {
   font-size: 15pt;
+}
+
+input,
+#whybox,
+.button,
+select {
+  outline-color: rgb(157, 110, 91);
 }
 
 /*9 nav.html*/
@@ -1118,6 +1121,10 @@ li a:hover {
     color: white;
     margin-top: 3px;
     margin-right: 10px;
+    height:100px;
+  }
+
+  .bars {
   }
 
   .menymeny {
