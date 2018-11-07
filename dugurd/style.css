@@ -194,6 +194,12 @@ li a:hover {
   display: none;
 }
 
+@media only screen and (min-width: 1700px) {
+  .navIndex ul {
+    margin-left: 17%;
+  }
+}
+
 @media only screen and (max-width: 1300px) {
   .navIndex {
     font-size: 20pt;
@@ -1121,6 +1127,8 @@ li a:hover {
     color: white;
     margin-top: 3px;
     margin-right: 10px;
+    height:100px;
+    width:100px;
   }
 
   .menymeny {
@@ -1206,7 +1214,7 @@ li a:hover {
     background-color: black;
   }
 
-  .navIndex.responsive li {
+  .navIndex.responsive ul li {
     display: block;
     float: left;
     width: 100%;
@@ -1216,6 +1224,7 @@ li a:hover {
     position: absolute;
     right: 0;
     top: 0;
+    width:50px;
   }
   .navIndex.responsive a {
     float: none;
