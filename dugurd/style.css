@@ -1212,7 +1212,7 @@ li a:hover {
     background-color: black;
   }
 
-  .navIndex.responsive li {
+  .navIndex.responsive ul li {
     display: block;
     float: left;
     width: 100%;
@@ -1222,6 +1222,7 @@ li a:hover {
     position: absolute;
     right: 0;
     top: 0;
+    width:50px;
   }
   .navIndex.responsive a {
     float: none;
