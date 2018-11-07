@@ -89,6 +89,9 @@
       på "RESTAURANT" og "CATERING" slik at man lett kan se at man har trykket de fram. Hadde det vært en reell side
       ville vi selvfølgelig
       endret koden slik at dette ville sett likt ut på alle sidene. </p>
+    <p>Når siden er mindre enn 800px, må man også trykke på "MENY" to ganger for at undermenyene skal komme opp. Dette
+      kunne var ikke slik vi hadde tenkt at det skulle være, men vi har ikke klart å fikse det.
+    </p>
 
     <h2>JavaScript</h2>
     <h3>Slideshow: slideshow.js</h3>
@@ -115,23 +118,30 @@
       måter å gjøre bildene mørkere på basert på skjermstørrelsen.</p>
 
 
-      <h2>JavaScript</h2>
-      <h3>Slideshow: slideshow.js</h3>
-      <p>Ikke store endringer, men det er fire bilder og bildene blir vist i 4 sekunder før det bytter automatisk.</p>
-      <h3>Responsive knapp: responsive.js og responsiveIndex.js</h3>
-      <p>Vi hadde planer om å ha et kart fra Google Maps som en JavaScript-funksjon. Dette kunne man ikke gjøre med JavaScript
-        derfor la vi til en ny funksjon, nemlig en endring av navbaren når skjermen blir mindre enn 800px.
-      Responsive.js og responsiveIndex.js inneholder en funksjon som sjekker når hamburgermeny ikonet blir trykt på. Når det gjøres endrer
-      funksjonen class navnet til hele navbaren. Den nye classen har style som tilpasser den til mobil. Filen inneholder en
-      funksjon som endrer på dropdown menyen for restaurant og catering menyer. I stedet for at de skal aktiveres «on hover»
+    <h2>JavaScript</h2>
+    <h3>Slideshow: slideshow.js</h3>
+    <p>Ikke store endringer, men det er fire bilder og bildene blir vist i 4 sekunder før det bytter automatisk.</p>
+    <h3>Responsive knapp: responsive.js og responsiveIndex.js</h3>
+    <p>Vi hadde planer om å ha et kart fra Google Maps som en JavaScript-funksjon. Dette kunne man ikke gjøre med
+      JavaScript
+      derfor la vi til en ny funksjon, nemlig en endring av navbaren når skjermen blir mindre enn 800px.
+      Responsive.js og responsiveIndex.js inneholder en funksjon som sjekker når hamburgermeny ikonet blir trykt på.
+      Når det gjøres endrer
+      funksjonen class navnet til hele navbaren. Den nye classen har style som tilpasser den til mobil. Filen
+      inneholder en
+      funksjon som endrer på dropdown menyen for restaurant og catering menyer. I stedet for at de skal aktiveres «on
+      hover»
       blir de aktiver «on click». Dette ble gjort for å tilpasse navbaren for mobilbruk.</p>
-      <h3>Knapper: bestillBordKnapp.js, cateringKnapp.js og jobbKnapp.js</h3>
-      <p>Største endringen er at hver side har fått sin egen JavaScript-fil. Dette gjorde det ryddigere og enklere å kode for
-        hver enkelt knapp.</p>
-      <h3>Endring på bilde: om.js</h3>
-      <p>Om oss javascript filen måtte utvides slik at den fungerte på mobil versjonen av nettsiden også. Dette måtte gjøres
-        fordi at man kan ikke «hover» over et bilde på mobil. Funksjonen måtte derfor omskrives slik at man hadde to forskjellige
-        måter å gjøre bildene mørkere på basert på skjermstørrelsen.</p>
+    <h3>Knapper: bestillBordKnapp.js, cateringKnapp.js og jobbKnapp.js</h3>
+    <p>Største endringen er at hver side har fått sin egen JavaScript-fil. Dette gjorde det ryddigere og enklere å kode
+      for
+      hver enkelt knapp.</p>
+    <h3>Endring på bilde: om.js</h3>
+    <p>Om oss javascript filen måtte utvides slik at den fungerte på mobil versjonen av nettsiden også. Dette måtte
+      gjøres
+      fordi at man kan ikke «hover» over et bilde på mobil. Funksjonen måtte derfor omskrives slik at man hadde to
+      forskjellige
+      måter å gjøre bildene mørkere på basert på skjermstørrelsen.</p>
 
     <h2>Modularitet</h2>
     <p>For å oppfylle kravet om modularitet har vi en fil, add.js, der både footeren og navbaren ligger. Anne hadde
@@ -242,4 +252,5 @@
 
   </div>
 </body>
+
 </html>
