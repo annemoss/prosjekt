@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
     '<li><a href="kontaktOss.html">KONTAKT OSS</a></li>' +
     '<li><a id="aJobb" href="jobb.html">SØK JOBB</a></li>' +
     "</ul>" +
-    '<a href="javascript:void(0);" class="iconMobil" onclick="responsive()"><i class="fa fa-bars"></i></a>' +
+    '<a href="javascript:void(0);" class="iconMobil" onclick="responsive()"><i class="bars"></i></a>' +
     "</div>";
 
   const footer = document.querySelector("footer");
