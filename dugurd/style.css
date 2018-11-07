@@ -324,9 +324,8 @@ li a:hover {
   margin-top: 20px;
 }
 
-.rett {
-  text-align: center;
-  font-size: 24pt;
+.h1 {
+  color: rgb(157, 110, 91);
 }
 
 #left {
@@ -893,6 +892,10 @@ span {
   .infoPart:last-of-type {
     margin-bottom: 10px;
   }
+
+  #info {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 470px) {
@@ -1166,7 +1169,7 @@ li a:hover {
 }
 
 /* When the screen is less than 800 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
   /* Index navbar styling */
   #minilogoIndex {
     display: inline-block;
