@@ -426,7 +426,6 @@ li a:hover {
   }
 
   #textboxOmoss {
-    font-family: Verdana;
     font-size: 2.5vw;
     overflow: hidden;
   }
@@ -501,7 +500,7 @@ span {
   width: 50%;
   text-align: center;
   outline-color: rgb(157, 110, 91);
-  max-width: 300px; 
+  max-width: 300px;
 }
 
 #reservasjonen,
