@@ -487,12 +487,8 @@ li a:hover {
   margin: auto;
 }
 
-
-
 #reservasjonen,
-#leggInnKontaktInfo,
-#ikkeLedigReservasjon,
-#reservasjonFullfort {
+#leggInnKontaktInfo {
   position: relative;
   text-align: center;
 }
@@ -503,7 +499,6 @@ li a:hover {
 }
 
 .sluttSubmit {
-  /*KAN KOPLES SAMMEN MED JOBB*/
   padding-top: 20%;
   padding-bottom: 30%;
   text-align: center;
