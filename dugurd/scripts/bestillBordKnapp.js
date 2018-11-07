@@ -1,15 +1,6 @@
 /* BESTILL BORD*/
 // QUESTION: ENDRE DATOFORM
 
-console.log(window.innerWidth);
-
-while (window.innerWidth < 800) {
-  console.log('hei');
-  new Picker(inputDato)
-  //format: 'MM/DD/YYYY',
-//};
-}
-
 /*dato*/
 const datoen = document.querySelector('#dato');
 var today = new Date();
