@@ -20,24 +20,25 @@ document.addEventListener("DOMContentLoaded", function(e) {
     '<a href="javascript:void(0);" class="iconMobil" onclick="responsive()"><i class="fa fa-bars"></i></a>' +
     "</div>";
 
-    const footer = document.querySelector("footer");
-    footer.innerHTML = '<div id="footerBox">' +
-      '<div class="footerDiv" id="footer1">' +
-      '<h3>Åpningstider:</h3>' +
-      '<p>Mandag-Torsdag: 11-20</p>' +
-      '<p>Fredag-Søndag: 11-22</p>' +
-      '</div>' +
-      '<div class="footerDiv" id="footer2">' +
-      '<h3>Kontaktinformasjon:</h3>' +
-      '<p>Email: kontakt@dugurd.no</p>' +
-      '<p>Telefon: +47 483 56 782</p>' +
-      '<p>Adresse: Skadvinvegen 14, 3560 Hemsedal</p>' +
-      '</div>' +
-      '<div class="footerDiv" id="footer3">' +
-      '<h3>Utviklere:</h3>' +
-      '<p>Siden er utviklet av Sarunas Juskenas,</p>' +
-      '<p>Vidar Michaelsen, Anne Mosvold Ørke,</p>' +
-      '<p>Gunvor Huso og Emilie Kalleberg</p>' +
-      '</div>'+
-      '</div>'
+  const footer = document.querySelector("footer");
+  footer.innerHTML =
+    '<div id="footerBox">' +
+    '<div class="footerDiv" id="footer1">' +
+    "<h3>Åpningstider:</h3>" +
+    "<p>Mandag-Torsdag: 11-20</p>" +
+    "<p>Fredag-Søndag: 11-22</p>" +
+    "</div>" +
+    '<div class="footerDiv" id="footer2">' +
+    "<h3>Kontaktinformasjon:</h3>" +
+    "<p>Email: kontakt@dugurd.no</p>" +
+    "<p>Telefon: +47 483 56 782</p>" +
+    "<p>Adresse: Skadvinvegen 14, 3560 Hemsedal</p>" +
+    "</div>" +
+    '<div class="footerDiv" id="footer3">' +
+    "<h3>Utviklere:</h3>" +
+    "<p>Siden er utviklet av Sarunas Juskenas,</p>" +
+    "<p>Vidar Michaelsen, Anne Mosvold Ørke,</p>" +
+    "<p>Gunvor Huso og Emilie Kalleberg</p>" +
+    "</div>" +
+    "</div>";
 });
