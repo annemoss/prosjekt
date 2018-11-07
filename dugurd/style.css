@@ -1229,6 +1229,8 @@ li a:hover {
     position: absolute;
     right: 0;
     top: 0;
+    margin-right:20px;
+    margin-top:20px;
   }
   .navIndex.responsive a {
     float: none;
@@ -1251,8 +1253,8 @@ li a:hover {
     float: right;
     display: block;
     color: white;
-    margin-top: 3px;
-    margin-right: 10px;
+    margin-right:20px;
+    margin-top:20px;
   }
 
   .fa.fa-bars {
