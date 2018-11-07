@@ -18,6 +18,8 @@ body {
   padding-bottom: 180px;
   height: 100%;
 }
+
+
 html {
   position: relative;
   min-height: 100%;
@@ -48,6 +50,7 @@ html {
 
 h1 {
   font-size: 27pt;
+  color: rgb(157, 110, 91);
 }
 /*1 navbar til index*/
 /*ny*/
@@ -297,7 +300,7 @@ li a:hover {
   right: auto;
   width: 100%;
   text-align: center;
-  font-family: "Lobster";
+  font-family: "Lobster", serif;
   text-shadow: 3px 3px black;
 }
 
@@ -310,11 +313,6 @@ li a:hover {
   }
 }
 
-#flyteguri {
-  overflow: hidden;
-  top: 0;
-}
-
 #illustrasjonsbilde {
   max-width: 100%;
   position: relative;
@@ -324,9 +322,6 @@ li a:hover {
   margin-top: 20px;
 }
 
-.h1 {
-  color: rgb(157, 110, 91);
-}
 
 #left {
   text-align: center;
@@ -520,7 +515,8 @@ span {
 }
 
 #ikkeLedigReservasjon,
-#reservasjonFullfort {
+#reservasjonFullfort,
+#cateringConfirmation {
   /*KAN KOPLES SAMMEN MED JOBB*/
   padding-top: 20%;
   padding-bottom: 30%;
@@ -550,10 +546,6 @@ span {
   display: block;
 }
 #cateringConfirmation {
-  display: none;
-  padding-top: 20%;
-  padding-bottom: 30%;
-  text-align: center;
   font-size: 20pt;
 }
 
