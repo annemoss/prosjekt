@@ -19,7 +19,6 @@ body {
   height: 100%;
 }
 
-
 html {
   position: relative;
   min-height: 100%;
@@ -55,22 +54,22 @@ h1 {
   color: rgb(157, 110, 91);
 }
 
-.buttons{
-position: relative;
-padding: 15px;
-margin-top: 20px;
-border: none;
-outline: none;
-background-color: rgba(0, 0, 0, 0.9);
-color: white;
-font-family: "FjallaOne", "Verdana", sans-serif;
-font-size: 15pt;
-cursor: pointer;
+.buttons {
+  position: relative;
+  padding: 15px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  font-family: "FjallaOne", "Verdana", sans-serif;
+  font-size: 15pt;
+  cursor: pointer;
 }
 
 .buttons:hover {
-background-color: rgb(157, 110, 91);
-color: white;
+  background-color: rgb(157, 110, 91);
+  color: white;
 }
 
 span {
@@ -337,7 +336,6 @@ li a:hover {
   margin-top: 20px;
 }
 
-
 #left {
   text-align: center;
   float: left;
@@ -417,7 +415,7 @@ li a:hover {
   color: rgb(157, 110, 91);
 }
 
-#mobileHeader{
+#mobileHeader {
   display: none;
 }
 
@@ -427,7 +425,6 @@ li a:hover {
   }
 
   #mobileHeader {
-
     max-width: 100%;
     display: block;
     font-size: 5vw;
@@ -476,14 +473,16 @@ li a:hover {
   width: 100%;
   margin: auto;
 }
-#bestillBordButton, #kontaktinfoButton, #provPaNyttButton {
+#bestillBordButton,
+#kontaktinfoButton,
+#provPaNyttButton {
   left: 35%;
   margin: auto;
   position: relative;
   margin-top: 20px;
   text-decoration: none;
 }
-#ledigBordSkrift{
+#ledigBordSkrift {
   font-size: 15pt;
 }
 
@@ -565,7 +564,6 @@ li a:hover {
   left: 65%;
   top: 0%;
 }
-
 
 @media only screen and (max-width: 800px) {
   .cInput,
@@ -811,7 +809,8 @@ li a:hover {
   margin-bottom: 30px;
 }
 
-#buttonKontakt1, #buttonKontakt2 {
+#buttonKontakt1,
+#buttonKontakt2 {
   display: inline;
   top: 10px;
 }
@@ -826,7 +825,6 @@ li a:hover {
   margin-top: 18px;
   padding-bottom: 0px;
 }
-
 
 #info {
   width: 50%;
@@ -936,8 +934,8 @@ select,
 
 select {
   width: 30%;
-    padding: 2.5%;
-    /*ENDRE FARGE*/
+  padding: 2.5%;
+  /*ENDRE FARGE*/
 }
 
 #soknad p {
@@ -950,8 +948,6 @@ input,
 select {
   outline-color: rgb(157, 110, 91);
 }
-
-
 
 #confirmation {
   padding-top: 20%;
