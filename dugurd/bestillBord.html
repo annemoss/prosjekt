@@ -15,19 +15,18 @@
               <h1>Bordreservasjon</h1>
 
               <form class='bestillBordForm' action='bestillBord.html' method="post" onsubmit='ledigBord()'>
-                <p>Velg hvor mange du ønsker å reservere bord til:</p>
-
+                <p>Velg hvor mange du ønsker å reservere bord til:*</p>
               <label for="antall_manuell"> </label> <br>
                 <input type="number" name="antall" id="antall_manuell" min="1" max="50" autofocus required>
-
                 <!--KontaktINFO-->
+              <br><br>
               <p> Velg dato og klokkeslett for når du ønsker bordreservasjonen, så skal
                   vi sjekke om vi har noe ledig. </p>
 
-              <label for="dato">Dato: </label> <br>
+              <label for="dato">Dato:* </label> <br><br>
               <input type="date" id="dato" required> <br>
               <br>
-              <label for="klokkeslett">klokkeslett: </label> <br>
+              <label for="klokkeslett">Klokkeslett:* </label> <br><br>
               <input type="time" id="klokkeslett" required>
               <br>
               <button type="submit" name="neste" class="buttons" id="bestillBordButton"> Neste –> </button>
