@@ -488,17 +488,7 @@ li a:hover {
   margin: auto;
 }
 
-.bestillBordForm input {
-  padding: 3%;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  border-color: black;
-  font-size: 12pt;
-  width: 50%;
-  text-align: center;
-  outline-color: rgb(157, 110, 91);
-  max-width: 300px;
-}
+
 
 #reservasjonen,
 #leggInnKontaktInfo,
@@ -513,9 +503,7 @@ li a:hover {
   background-color: rgb(157, 110, 91);
 }
 
-#ikkeLedigReservasjon,
-#reservasjonFullfort,
-#cateringConfirmation {
+.sluttSubmit {
   /*KAN KOPLES SAMMEN MED JOBB*/
   padding-top: 20%;
   padding-bottom: 30%;
@@ -908,6 +896,7 @@ li a:hover {
 }
 
 input[placeholder],
+input,
 #whybox,
 select,
 #datoCatering {
@@ -918,6 +907,8 @@ select,
   font-size: 12pt;
   width: 50%;
   text-align: center;
+  outline-color: rgb(157, 110, 91);
+  max-width: 500px;
 }
 
 #whybox {
@@ -946,15 +937,6 @@ input,
 .button,
 select {
   outline-color: rgb(157, 110, 91);
-}
-
-
-
-#confirmation {
-  padding-top: 20%;
-  padding-bottom: 30%;
-  text-align: center;
-  font-size: 20pt;
 }
 
 /*9 nav.html*/
