@@ -194,7 +194,7 @@ li a:hover {
   display: none;
 }
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1700px) {
   .navIndex ul {
     margin-left: 17%;
   }
