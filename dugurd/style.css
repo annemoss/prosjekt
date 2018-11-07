@@ -72,6 +72,13 @@ h1 {
   color: white;
 }
 
+.sluttSubmit {
+  padding-top: 20%;
+  padding-bottom: 30%;
+  text-align: center;
+  font-size: 20pt;
+}
+
 span {
   color: rgb(157, 110, 91);
 }
@@ -496,13 +503,6 @@ li a:hover {
 .bestillBordForm input[type="radio"] {
   width: 20px;
   background-color: rgb(157, 110, 91);
-}
-
-.sluttSubmit {
-  padding-top: 20%;
-  padding-bottom: 30%;
-  text-align: center;
-  font-size: 20pt;
 }
 
 /*5 Catering*/
