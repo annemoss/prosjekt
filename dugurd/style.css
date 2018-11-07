@@ -501,6 +501,7 @@ span {
   width: 50%;
   text-align: center;
   outline-color: rgb(157, 110, 91);
+  max-width: 300px; 
 }
 
 #reservasjonen,
