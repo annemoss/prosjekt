@@ -199,8 +199,11 @@ li a:hover {
     margin-left: 17%;
   }
   .dropdownIndex ul {
-    width: 124.5%;
-    left: -12.5px;
+    width: 132.5%;
+    left: -25px;
+  }
+  .dropdownIndex ul li:last-of-type {
+    padding-right: 38px;
   }
 }
 
