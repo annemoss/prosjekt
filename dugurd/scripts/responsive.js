@@ -1,7 +1,6 @@
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 
 function responsive() {
-    console.log(responsive);
     var y = document.querySelector('.dropdown');
     y.addEventListener('click', function(){
         changeDisp();
@@ -18,9 +17,6 @@ function responsive() {
 }
 
 function changeDisp(){
-    console.log(changeDisp);
-
-
     var z = document.querySelector('.dropdown-content');
 
     if(z.style.display == "none"){
@@ -29,7 +25,4 @@ function changeDisp(){
     else{
         z.style.display = 'none';
     }
-    
-
-    console.log(z.style.display);
 }
