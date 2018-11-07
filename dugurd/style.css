@@ -1138,6 +1138,7 @@ li a:hover {
     text-align: left;
   }
   .dropdown-content {
+    display: none;
     position: absolute;
     left: 180px;
     top: 0px;
@@ -1193,6 +1194,7 @@ li a:hover {
     top: 0px;
     float: right;
   }
+
 
   .navIndex.responsive {
     background-color: black;

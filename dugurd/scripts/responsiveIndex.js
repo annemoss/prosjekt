@@ -21,6 +21,8 @@ function responsive() {
     minilogiIndex.style.height = "155px";
     minilogiIndex.style.left = "35%";
   }
+
+  changeDisp();
 }
 
 function changeDisp() {
