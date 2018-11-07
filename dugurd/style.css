@@ -1122,9 +1122,7 @@ li a:hover {
     margin-top: 3px;
     margin-right: 10px;
     height:100px;
-  }
-
-  .bars {
+    width:100px;
   }
 
   .menymeny {
