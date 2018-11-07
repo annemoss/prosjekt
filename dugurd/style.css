@@ -894,7 +894,9 @@ li a:hover {
 #submit {
   position: relative;
   margin-top: 20px;
+  margin-right:100px;
   left: 35%;
+  max-width:250px;
 }
 
 #soknad {
