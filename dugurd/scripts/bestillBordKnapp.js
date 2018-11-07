@@ -24,6 +24,7 @@ var yyyy = today.getFullYear();
     }
 today = yyyy+'-'+mm+'-'+dd;
 datoen.setAttribute("min", today);
+// Kilde: https://stackoverflow.com/questions/1531093/how-do-i-get-the-current-date-in-javascript
 
 /*klokkeslett*/
 const time = document.querySelector('#klokkeslett');
