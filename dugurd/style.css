@@ -198,6 +198,10 @@ li a:hover {
   .navIndex ul {
     margin-left: 17%;
   }
+  .dropdownIndex ul {
+    width: 124.5%;
+    left: -12.5px;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -1248,6 +1252,8 @@ li a:hover {
     margin-top: 3px;
     margin-right: 10px;
   }
+
+  .fa
 
   .menymenyIndex {
     text-align: right;
