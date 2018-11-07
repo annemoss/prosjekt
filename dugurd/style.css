@@ -407,8 +407,19 @@ li a:hover {
   color: rgb(157, 110, 91);
 }
 
+#mobileHeader{
+  display: none;
+}
+
 @media only screen and (max-width: 800px) {
   #contentHeader {
+    display: none;
+  }
+
+  #mobileHeader {
+
+    max-width: 100%;
+    display: block;
     font-size: 5vw;
     text-align: left;
     margin-left: 5%;
@@ -640,9 +651,9 @@ span {
 #pic1_text {
   display: none;
   position: absolute;
-  margin-left: 10%;
+  margin-left: 5%;
   margin-top: -25%;
-  max-width: 25%;
+  max-width: 35%;
 }
 
 #inner_container1 {
