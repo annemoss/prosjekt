@@ -1,15 +1,15 @@
 @font-face {
   font-family: "FjallaOne";
-  src: url(../Fjalla_One/FjallaOne-Regular.ttf);
+  src: url(Fjalla_One/FjallaOne-Regular.ttf);
 }
 
 @font-face {
   font-family: "Lobster";
-  src: url(../Lobster/Lobster-Regular.ttf);
+  src: url(Lobster/Lobster-Regular.ttf);
 }
 
 body {
-  background-image: url("../img/wood.jpg");
+  background-image: url("img/wood.jpg");
   background-attachment: fixed;
   background-size: cover;
   color: white;
@@ -99,22 +99,21 @@ h1 {
   display: inline-block;
   color: white;
   text-align: center;
-  padding: 27px 38.8px;
+  padding: 20px 38.8px;
   text-decoration: none;
   cursor: default;
 }
 
-/*.dropdownIndex ul {
-  margin-left: 0px;
+.dropdownIndex ul {
   width: 192px;
-}*/
+}
 
 .dropdownIndex ul a {
   padding: 20px;
 }
 
 .dropdownIndex ul li:last-of-type {
-  padding-right: 31px;
+  padding-right: 37px;
 }
 
 .dropdown-contentIndex {
@@ -124,8 +123,7 @@ h1 {
   z-index: 2;
   list-style-type: none;
   top: 80px;
-  left: -3px;
-  width: 124.5%;
+  left: -15px;
 }
 
 .dropdown-contentIndex a {
@@ -180,17 +178,18 @@ li a:hover {
     padding-top: 20px;
     padding-bottom: 26px;
   }
+
   .dropdownIndex {
     padding: 23px 38.8px;
   }
 
   .dropdownIndex ul {
     width: 124.5%;
-    left: -7px;
+    left: -6.5px;
   }
 
   .dropdownIndex ul li:last-of-type {
-    padding-right: 37px;
+    padding-right: 32px;
   }
 }
 
@@ -208,40 +207,65 @@ li a:hover {
     color: white;
     text-align: center;
     text-decoration: none;
-    padding-top: 22px;
-    padding-bottom: 28px;
-    padding-left: 13px;
-    padding-right: 13px;
+    padding: 25px 15px;
   }
 
   .dropdownIndex {
-    padding: 23px 38.8px;
+    padding: 25px 38.8px;
   }
   .dropdownIndex ul {
-    width: 124.5%;
-    left: -2px;
+    width: 112%;
+    top: 80px;
+    left: -3px;
+  }
+
+  .dropdownIndex ul li:last-of-type {
+    padding-right: 28px;
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
+  .dropdownIndex ul {
+    width: 104.5%;
+    top: 80px;
+    left: -3px;
+  }
+
   .navIndex li a {
     display: block;
     color: white;
     text-align: center;
     text-decoration: none;
-    padding-top: 22px;
-    padding-bottom: 28px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 25px 10px;
+  }
+  /*
+  .dropdown-contentIndex {
+    top: 80px;
+    left: -2px;
+  }*/
+
+  /*.dropdownIndex ul li:last-of-type {
+    padding-right: 28px;
+  /* } */
+}
+
+@media only screen and (max-width: 910px) {
+  .navIndex li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 25px 5px;
   }
 
   .dropdownIndex {
-    padding: 22px 38.8px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 25px 5px;
   }
+
   .dropdownIndex ul {
-    width: 200%;
+    width: 204%;
+    top: 80px;
+    left: -1px;
   }
 }
 
@@ -380,7 +404,7 @@ li a:hover {
   margin-right: 5%;
 }
 
-.courseHeader{
+.courseHeader {
   color: rgb(157, 110, 91);
 }
 
@@ -482,7 +506,7 @@ span {
 }
 .bestillBordForm input[type="radio"] {
   width: 20px;
-  background-color: orange;
+  background-color: rgb(157, 110, 91);
 }
 
 #ikkeLedigReservasjon,
@@ -610,7 +634,7 @@ span {
   text-align: center;
 }
 
-.pic_container{
+.pic_container {
   font-size: 1.35vw;
 }
 
@@ -689,8 +713,7 @@ span {
 }
 
 @media only screen and (max-width: 800px) {
-
-  .pic_container{
+  .pic_container {
     font-family: "FjallaOne", "Verdana", sans-serif;
     font-size: 2.5vw;
   }
@@ -914,7 +937,8 @@ span {
 
 input[placeholder],
 #whybox,
-select {
+select,
+#datoCatering {
   padding: 3%;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
@@ -1102,19 +1126,6 @@ li a:hover {
   .dropdown ul li:last-of-type {
     padding-right: 34px;
   }
-
-  .dropdownIndex ul {
-    width: 165%;
-  }
-
-  .dropdown-contentIndex {
-    top: 80px;
-    left: -2px;
-  }
-
-  .dropdownIndex ul li:last-of-type {
-    padding-right: 31px;
-  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -1140,27 +1151,6 @@ li a:hover {
 
   .dropdown ul li:last-of-type {
     padding-right: 31px;
-  }
-
-  .navIndex li a {
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 23px 25.5px;
-  }
-
-  .dropdownIndex {
-    padding: 23px 25.5px;
-  }
-
-  .dropdownIndex ul {
-    width: 165%;
-  }
-
-  .dropdown-contentIndex {
-    top: 80px;
-    left: -3px;
   }
 }
 
@@ -1220,7 +1210,6 @@ li a:hover {
     position: absolute;
     right: 10px;
     top: 0;
-    margin-top: 10px;
   }
   .navIndex.responsive a {
     float: none;
@@ -1312,6 +1301,9 @@ li a:hover {
   }
 
   /*på index siden */
+  .sitat {
+    font-size: 6em;
+  }
   .dropdownIndex {
     text-align: left;
   }

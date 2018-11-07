@@ -18,7 +18,7 @@
             <form id="cForm" method="post" onsubmit="cFormSvar()">
               <div class="cLeft">
                 Navn:<br>
-                <input type="text" name="navn" class="cInput" placeholder="Skriv inn ditt navn..." required>
+                <input type="text" name="navn" class="cInput" placeholder="Skriv inn ditt navn" required>
                 <br><br>
                 E-post:
                 <br>
@@ -27,9 +27,17 @@
                 Adresse:
                 <br>
                 <input type="text" name="adresse" class="cInput" placeholder="Skriv inn din adresse" required>
+                <br><br>
+                Dato:
+                <br>
+                <input type="date" name="dato" class="cInput" id="datoCatering" min="1111-11-11" required>
               </div>
               <div class="cRight">
                 <br>
+                Velg hvor mange som skal motta catering:
+                <br>
+                <input type="number" name="antall" class="cInput" min="1" max="120" placeholder="Skriv inn antall (maks 120)" required>
+                <br><br>
                 Ønskede pakke:<br>
                 <select class="cSelect" required>
                   <option value="" disabled selected hidden id="ikkeEnStilling">Velg pakke</option>
@@ -66,18 +74,19 @@
               </div>
             </form>
 
-            <div class="clearchild">
-              <button type="submit" value="Submit" id="cSubmit" form="cForm">Bestill catering</button>
-            </div>
-          </div>
-          <div id="cateringConfirmation">
-            <p>Takk for din bestilling! Vi vil kontakte deg så snart som mulig.
-            </p>
-          </div>
-        </div>
-        <footer></footer>
-        <script src="scripts/add.js"> </script>
-        <script src="scripts/cateringKnapp.js"> </script>
-        <script src="scripts/responsive.js"></script>
-    </body>
+      <div class="clearchild">
+        <button type="submit" value="Submit" id="cSubmit" form="cForm">Bestill catering</button>
+      </div>
+    </div>
+    <div id="cateringConfirmation">
+      <p>Takk for din bestilling! Vi vil kontakte deg så snart som mulig.
+      </p>
+    </div>
+  </div>
+  <footer></footer>
+  <script src="scripts/add.js"> </script>
+  <script src="scripts/cateringKnapp.js"> </script>
+  <script src="scripts/responsive.js"></script>
+</body>
+
 </html>
