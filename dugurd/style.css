@@ -894,9 +894,9 @@ li a:hover {
 #submit {
   position: relative;
   margin-top: 20px;
-  margin-right:100px;
+  margin-right: 100px;
   left: 35%;
-  max-width:250px;
+  max-width: 250px;
 }
 
 #soknad {
@@ -1190,7 +1190,7 @@ li a:hover {
     display: none;
   }
 
-  .dropdown:onclick .dropdown-content {
+  .dropdown:target .dropdown-content {
     display: block;
   }
 
@@ -1229,8 +1229,8 @@ li a:hover {
     position: absolute;
     right: 0;
     top: 0;
-    margin-right:20px;
-    margin-top:20px;
+    margin-right: 20px;
+    margin-top: 20px;
   }
   .navIndex.responsive a {
     float: none;
@@ -1253,8 +1253,8 @@ li a:hover {
     float: right;
     display: block;
     color: white;
-    margin-right:20px;
-    margin-top:20px;
+    margin-right: 20px;
+    margin-top: 20px;
   }
 
   .fa.fa-bars {
@@ -1279,7 +1279,7 @@ li a:hover {
     display: none;
   }
 
-  .dropdownIndex:onclick .dropdown-contentIndex {
+  .dropdownIndex:target .dropdown-contentIndex {
     display: block;
   }
 
