@@ -6,26 +6,32 @@ catering.html
 omOss.html
 kontaktOss.html
 jobb.html
-nav.html
-footer.html
+style.css
 ...
 img/
+	tempfood.jpg
+	chef.jpg
+	slide1.jpg
+	slide2.jpg
+	slide3.jpg
+	slide4.jpg
 	logo.png
 	wood.jpg
 	tel.png
 	pin.png
 	mail.png
-	laktose.png
-	gluten.png
-	nott.png
-	egg.png
-	...
-css/
-	style.css
 	...
 scripts/
-	slideshow.js
-	maps.js
-	knapp.js
+	responsive.js
+	responsiveIndex.js
+	bestillBordKnapp.js
+	cateringKnapp.js
+	jobbKnapp.js
 	om.js
+	slideshow.js
+	add.js
+	...
+Lobster/
+	...
+Fjalla_One/
 	...
