@@ -13,7 +13,7 @@
     <div class="textbox"> <!--legg til alt av kode inni her-->
       <div id='soknad'>
         <h1>Vil du jobbe hos oss?</h1>
-        <form action="jobb.html" method="post"><!--FINN UT HVOR DET SKAL SENDES -->
+        <form action="jobb.html" method="post" onsubmit="SendInn()">
 
             <p>Hva vil du jobbe med?</p>
             <select required id="velgStilling" autofocus>
@@ -63,7 +63,7 @@
           </form>
         </div>
 
-          <p id="confirmation" class="sluttSubmit"> Takk for din søknad, <span id='bekreftelseNavn'></span>! <br>
+          <p id="confirmation" class="sluttSubmit" onsubmit=""> Takk for din søknad, <span id='bekreftelseNavn'></span>! <br>
             Du vil høre fra oss snart!</p>
 
       </div>

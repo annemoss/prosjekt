@@ -39,12 +39,8 @@ const inputDato = document.querySelector('#dato');
 const inputKlokkeslett = document.querySelector('#klokkeslett');
 const inputMail = document.querySelector('#epost');
 const inputFornavn = document.querySelector('#fornavn');
-const inputEtternavn = document.querySelector('#etternavn');
-const inputMobil = document.querySelector('#telefonnummer');
 
 const reservasjon = document.querySelector('#reservasjonen');
-const btn = document.querySelector('.bestillBordButton');
-const btn2 = document.querySelector('#kontaktinfoButton');
 const ikkeLedig = document.querySelector('#ikkeLedigReservasjon');
 const reservasjonFullfort = document.querySelector('#reservasjonFullfort');
 const leggInnKontaktInfo = document.querySelector('#leggInnKontaktInfo');
