@@ -36,8 +36,9 @@
         Den generelle layouten har vi endret på et par punkter. Planen var å
         bruke en grå, gjennomsiktig farge på både navigasjonsbar, footer og
         tekstboksen. For tekstboksen beholdt vi fargen, men valgte å gjøre både
-        navigasjonsbar og footer svarte. Dette fordi navigasjonsbaren er sticky,
-        og siden fargen var gjennomsiktig ville man se teksten under. Vi endret
+        navigasjonsbar og footer svarte. Footeren er bittelitt gjennomsiktig,
+        mens navbaren er helt svart. Dette fordi navigasjonsbaren er sticky, og
+        siden fargen var gjennomsiktig ville man se teksten under. Vi endret
         også hovrefunksjonen på navigasjonsbaren og knappene. Når man hovrer
         endrer knappen farge til: rgb(157, 110, 91). Skriftstørrelsen endret vi
         også, fordi det så bedre ut. I tillegg har vi valgt å bruke fonten
@@ -136,141 +137,171 @@
         siden mobilkompatibel har vi valgt å ikke gjøre noe med dette.
       </p>
 
+      <h2>JavaScript</h2>
+      <p>
+        I prosjektet har vi tildelt hverandre ansvar for sider slik at alle har
+        fått noe JavaScript. Vi endret som nevnt vår plan om kun to JavaScript
+        filer, til at hver delside har en egen fil med tilhørende
+        JavaScript-funksjoner.
+      </p>
+      <h3>Slideshow: slideshow.js</h3>
+      <p>
+        Ikke store endringer, men det er fire bilder og bildene blir vist i 4
+        sekunder før det bytter automatisk.
+      </p>
+      <h3>Responsiv knapp: responsive.js og responsiveIndex.js</h3>
+      <p>
+        Vi hadde planer om å ha et kart fra Google Maps som en
+        JavaScript-funksjon. Dette kunne man ikke gjøre med JavaScript, derfor
+        la vi til en ny funksjon, nemlig en endring av navigasjonsbaren når
+        skjermen blir mindre enn 800px.
+      </p>
+      Responsive.js og responsiveIndex.js inneholder en funksjon som sjekker når
+      hamburgermeny-ikonet blir trykket på. Når det gjøres, endrer en funksjon
+      class-navnet til hele navigasjonsbaren. Den nye classen har style som
+      tilpasser den til mobil. Filen inneholder en funksjon som endrer på
+      dropdown menyen for restaurant- og cateringmenyen. I stedet for at de skal
+      aktiveres «on hover» blir de aktivert «on click». Dette ble gjort for å
+      tilpasse navigasjonsbaren for mobilbruk.
+      <h3>Knapper: bestillBordKnapp.js, cateringKnapp.js og jobbKnapp.js</h3>
+      <p>
+        Den største endringen er at hver side har fått sin egen JavaScript-fil.
+        Dette ble først og fremst gjort fordi det lett oppstod feil når alle
+        scriptene var i samme fil. I tillegg ble det ryddigere og enklere å kode
+        for funksjonenene til hver enkelt side.
+      </p>
+      <h3>Endring på bilde: om.js</h3>
+      <p>
+        "Om oss"-JavaScriptfilen måtte utvides slik at den fungerte på mobil
+        versjonen av nettsiden også. Dette måtte gjøres fordi man ikke kan
+        «hovre» over et bilde på mobil. Funksjonen måtte derfor omskrives slik
+        at man hadde to forskjellige måter å gjøre bildene mørkere på, basert på
+        skjermstørrelsen.
+      </p>
+      <h3>Navbar og footer: add.js</h3>
+      <p>
+        add.js inneholder en funksjon som kjører når HTML-en er lastet som
+        legger til innhold i headeren og footeren. Før dette skjer er headeren
+        og footeren helt tomme.
+      </p>
+      <h2>Modularitet</h2>
+      <p>
+        For å oppfylle kravet om modularitet har vi en fil, add.js, der både
+        footeren og navigasjonsbaren ligger. Anne hadde ansvar for
+        navigasjonsbaren, og Vidar for footeren. Denne filen er linket til hver
+        delside, slik at vi slapp å kopiere koden. Stylingen av nettsiden hadde
+        vi alle ansvar for, og dette er samlet i et felles dokument, style.css.
+        Da vi var ferdig med selve kodingen tok vi en gjennomgang for å samle
+        fellestrekkene ved for eksempel knappene, og la dette i en felles kode
+        og tildelte alle knappene en felles class, slik at vi slapp å gjenta
+        stylingen på disse. Vi samlet også koden på bodyen, tekstboksen på alle
+        delsidnene (med unntak av index), overskriftene, noen av paragrafene, og
+        spanene. Dette gjorde koden mye mer ryddig, i tillegg til at det tar opp
+        mindre lagringsplass.
+      </p>
 
-    <h2>JavaScript</h2>
-    <p>I prosjektet har vi tildelt hverandre ansvar for sider slik at alle har fått noe JavaScript. Vi endret som nevnt vår plan om kun to JavaScript filer,
-      til at hver delside har en egen fil med tilhørende JavaScript-funksjoner. </p>
-    <h3>Slideshow: slideshow.js</h3>
-    <p>Ikke store endringer, men det er fire bilder og bildene blir vist i 4 sekunder før det bytter automatisk.</p>
-    <h3>Responsiv knapp: responsive.js og responsiveIndex.js</h3>
-    <p>Vi hadde planer om å ha et kart fra Google Maps som en JavaScript-funksjon. Dette kunne man ikke gjøre med
-      JavaScript,
-      derfor la vi til en ny funksjon, nemlig en endring av navigasjonsbaren når skjermen blir mindre enn 800px. </p>
-    Responsive.js og responsiveIndex.js inneholder en funksjon som sjekker når hamburgermeny-ikonet blir trykket på.
-    Når det gjøres, endrer
-    en funksjon class-navnet til hele navigasjonsbaren. Den nye classen har style som tilpasser den til mobil. Filen
-    inneholder en
-    funksjon som endrer på dropdown menyen for restaurant- og cateringmenyen. I stedet for at de skal aktiveres «on
-    hover»
-    blir de aktivert «on click». Dette ble gjort for å tilpasse navigasjonsbaren for mobilbruk.
-    <h3>Knapper: bestillBordKnapp.js, cateringKnapp.js og jobbKnapp.js</h3>
-    <p>Den største endringen er at hver side har fått sin egen JavaScript-fil. Dette ble først og fremst gjort fordi det
-      lett oppstod feil når alle scriptene var i samme fil. I tillegg ble det ryddigere og enklere å kode for
-      funksjonenene til hver enkelt side. </p>
-    <h3>Endring på bilde: om.js</h3>
-    <p>"Om oss"-JavaScriptfilen måtte utvides slik at den fungerte på mobil versjonen av nettsiden også. Dette måtte
-      gjøres
-      fordi man ikke kan «hovre» over et bilde på mobil. Funksjonen måtte derfor omskrives slik at man hadde to
-      forskjellige
-      måter å gjøre bildene mørkere på, basert på skjermstørrelsen.</p>
-    <h3>Navbar og footer: add.js</h3>
-    <p>add.js inneholder en funksjon som kjører når HTML-en er lastet som legger til innhold i headeren og footeren.
-      Før dette skjer er headeren og footeren helt tomme.
-    </p>
-    <h2>Modularitet</h2>
-    <p>For å oppfylle kravet om modularitet har vi en fil, add.js, der både footeren og navigasjonsbaren ligger. Anne
-      hadde ansvar for
-      navigasjonsbaren, og Vidar for footeren. Denne filen er linket til hver delside, slik at vi slapp å kopiere koden.
-      Stylingen av nettsiden hadde vi alle ansvar for, og dette er samlet i et felles dokument, style.css. Da vi var ferdig med
-      selve kodingen tok vi en gjennomgang for å samle fellestrekkene ved for eksempel knappene, og la dette i en felles kode og
-      tildelte alle knappene en felles class, slik at vi slapp å gjenta stylingen på disse. Vi samlet også koden på bodyen, tekstboksen
-      på alle delsidnene (med unntak av index), overskriftene, noen av paragrafene, og spanene.
-      Dette gjorde koden mye mer ryddig, i tillegg til at det tar opp mindre lagringsplass.
-
-    <h2>Arbeidsfordeling</h2>
-    <p>Vi har valgt å fordele sidene slik at personen som har ansvar for siden, har ansvar for både HTML, CSS og JavaScriptet som hører til.
-    Vi har hjulpet hverandre hvis vi har støtt på problemer, men hovedansvaret og arbeidet er gjort av den som står i tabellen under.  </p>
-    <table>
-      <tr>
-        <th>Filnavn</th>
-        <th>Beskrivelse</th>
-        <th>Ansvar</th>
-      </tr>
-      <tr>
-        <td>index.html</td>
-        <td>Hovedsiden</td>
-        <td>Gunvor</td>
-      </tr>
-      <tr>
-        <td>rMeny.html</td>
-        <td>Restaurantmenyen </td>
-        <td>Vidar</td>
-      </tr>
-      <tr>
-        <td>cMeny.html</td>
-        <td>Cateringmenyen</td>
-        <td>Sarunas</td>
-      </tr>
-      <tr>
-        <td>bestillBord.html</td>
-        <td>Siden der man kan bestille bord</td>
-        <td>Emilie</td>
-      </tr>
-      <tr>
-        <td>catering.html</td>
-        <td>Siden der man kan bestille catering</td>
-        <td>Vidar</td>
-      </tr>
-      <tr>
-        <td>omOss.html</td>
-        <td>Informasjon om restauranten og historien</td>
-        <td>Sarunas</td>
-      </tr>
-      <tr>
-        <td>kontaktOss.html</td>
-        <td>Informasjon for å komme i kontakt med restauranten</td>
-        <td>Anne</td>
-      </tr>
-      <tr>
-        <td>jobb.html</td>
-        <td>Side der man kan søke jobb</td>
-        <td>Emilie</td>
-      </tr>
-      <tr>
-        <td>add.js</td>
-        <td>navigasjonsbaren og footeren</td>
-        <td>Anne og Vidar</td>
-      </tr>
-      <tr>
-        <td>style.css</td>
-        <td>All stylingen til siden </td>
-        <td>Alle</td>
-      </tr>
-      <tr>
-        <td>slideshow.js</td>
-        <td>JavaScript fil som lager slideshow</td>
-        <td>Gunvor</td>
-      </tr>
-      <tr>
-        <td>responsive.js</td>
-        <td>JavaScript fil som fikser navbar på mobilversjon</td>
-        <td>Sarunas</td>
-      </tr>
-      <tr>
-        <td>responsiveIndex.js</td>
-        <td>JavaScript fil fikser navbar index.html på mobilversjon</td>
-        <td>Sarunas</td>
-      </tr>
-      <tr>
-        <td>cateringKnapp.js</td>
-        <td>JavaScript der funksjonenen til knappen på Catering-siden er.</td>
-        <td>Vidar</td>
-      </tr>
-      <tr>
-        <td>bestillBordKnapp.js</td>
-        <td>JavaScript der funksjonenen til knappene på Bestill bord-siden er. </td>
-        <td>Emilie</td>
-      </tr>
-      <tr>
-        <td>jobbKnapp.js</td>
-        <td>JavaScript der funksjonenen til knappene på Søk jobb-siden er. </td>
-        <td>Emilie</td>
-      </tr>
-      <tr>
-        <td>om.js</td>
-        <td>JavaScript fil som fikser funksjonene på Om oss-siden</td>
-        <td>Sarunas</td>
-      </tr>
+      <h2>Arbeidsfordeling</h2>
+      <p>
+        Vi har valgt å fordele sidene slik at personen som har ansvar for siden,
+        har ansvar for både HTML, CSS og JavaScriptet som hører til. Vi har
+        hjulpet hverandre hvis vi har støtt på problemer, men hovedansvaret og
+        arbeidet er gjort av den som står i tabellen under.
+      </p>
+      <table>
+        <tr>
+          <th>Filnavn</th>
+          <th>Beskrivelse</th>
+          <th>Ansvar</th>
+        </tr>
+        <tr>
+          <td>index.html</td>
+          <td>Hovedsiden</td>
+          <td>Gunvor</td>
+        </tr>
+        <tr>
+          <td>rMeny.html</td>
+          <td>Restaurantmenyen</td>
+          <td>Vidar</td>
+        </tr>
+        <tr>
+          <td>cMeny.html</td>
+          <td>Cateringmenyen</td>
+          <td>Sarunas</td>
+        </tr>
+        <tr>
+          <td>bestillBord.html</td>
+          <td>Siden der man kan bestille bord</td>
+          <td>Emilie</td>
+        </tr>
+        <tr>
+          <td>catering.html</td>
+          <td>Siden der man kan bestille catering</td>
+          <td>Vidar</td>
+        </tr>
+        <tr>
+          <td>omOss.html</td>
+          <td>Informasjon om restauranten og historien</td>
+          <td>Sarunas</td>
+        </tr>
+        <tr>
+          <td>kontaktOss.html</td>
+          <td>Informasjon for å komme i kontakt med restauranten</td>
+          <td>Anne</td>
+        </tr>
+        <tr>
+          <td>jobb.html</td>
+          <td>Side der man kan søke jobb</td>
+          <td>Emilie</td>
+        </tr>
+        <tr>
+          <td>add.js</td>
+          <td>navigasjonsbaren og footeren</td>
+          <td>Anne og Vidar</td>
+        </tr>
+        <tr>
+          <td>style.css</td>
+          <td>All stylingen til siden</td>
+          <td>Alle</td>
+        </tr>
+        <tr>
+          <td>slideshow.js</td>
+          <td>JavaScript fil som lager slideshow</td>
+          <td>Gunvor</td>
+        </tr>
+        <tr>
+          <td>responsive.js</td>
+          <td>JavaScript fil som fikser navbar på mobilversjon</td>
+          <td>Sarunas</td>
+        </tr>
+        <tr>
+          <td>responsiveIndex.js</td>
+          <td>JavaScript fil fikser navbar index.html på mobilversjon</td>
+          <td>Sarunas</td>
+        </tr>
+        <tr>
+          <td>cateringKnapp.js</td>
+          <td>JavaScript der funksjonenen til knappen på Catering-siden er.</td>
+          <td>Vidar</td>
+        </tr>
+        <tr>
+          <td>bestillBordKnapp.js</td>
+          <td>
+            JavaScript der funksjonenen til knappene på Bestill bord-siden er.
+          </td>
+          <td>Emilie</td>
+        </tr>
+        <tr>
+          <td>jobbKnapp.js</td>
+          <td>
+            JavaScript der funksjonenen til knappene på Søk jobb-siden er.
+          </td>
+          <td>Emilie</td>
+        </tr>
+        <tr>
+          <td>om.js</td>
+          <td>JavaScript fil som fikser funksjonene på Om oss-siden</td>
+          <td>Sarunas</td>
+        </tr>
       </table>
     </div>
   </body>
