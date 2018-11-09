@@ -29,7 +29,8 @@
       <p>
         Vi har gjort et par endringer både innenfor CSS og HTML, men også
         JavaScript. For å få nok JavaScript-funksjoner, måtte vi legge til en
-        funksjon. Hvilken funksjon det er kommer vi tilbake til senere i dokumentet.
+        funksjon. Hvilken funksjon det er kommer vi tilbake til senere i
+        dokumentet.
       </p>
       <h3>Generell layout</h3>
       <p>
@@ -54,8 +55,8 @@
         ikke vise bilder av hver enkelt matrett fordi det gjorde designet på
         siden bedre. Siden restauranten ikke er ekte har vi ikke priser, men det
         kan enkelt legges til om nettsiden skal bli tatt i bruk. Ikoner av
-        allergener har vi valgt å droppe, men under hver rett står det isteden en
-        kort forklaring av hva det inneholder.
+        allergener har vi valgt å droppe, men under hver rett står det isteden
+        en kort forklaring av hva det inneholder.
       </p>
       <h3>Meny - catering: cMeny.html</h3>
       <p>
@@ -92,7 +93,7 @@
         stedet for to. Utenom dette ser nettsiden ut akkurat som planlagt.
       </p>
       <h3>Kontakt oss: kontaktOss.html</h3>
-      <p>Ingen andre endringer enn fra den generelle layouten.</p>
+      <p>Ingen andre endringer enn den generelle layouten.</p>
       <h3>Søk jobb: jobb.html</h3>
       <p>
         Ingen store endringer her heller. Men vi valgte å gjøre om inputtypen på
@@ -153,9 +154,9 @@
       <h3>Responsiv knapp: responsive.js og responsiveIndex.js</h3>
       <p>
         Vi hadde planer om å ha et kart fra Google Maps som en
-        JavaScript-funksjon. Dette kunne man ikke gjøre med JavaScript, derfor
-        la vi til en ny funksjon, nemlig en endring av navigasjonsbaren når
-        skjermen blir mindre enn 800px.
+        JavaScript-funksjon. Dette var mye lettere å gjøre uten JavaScript, og
+        vil valgte derfor å heller legge til en ny funksjon, nemlig en endring
+        av navigasjonsbaren når skjermen blir mindre enn 800px.
       </p>
       Responsive.js og responsiveIndex.js inneholder en funksjon som sjekker når
       hamburgermeny-ikonet blir trykket på. Når det gjøres, endrer en funksjon
@@ -182,24 +183,25 @@
       </p>
       <h3>Navbar og footer: add.js</h3>
       <p>
-        add.js inneholder en funksjon som kjører når HTML-en er lastet. Denne funksjonen
-        legger til innhold i headeren og footeren. Før dette skjer, er headeren
-        og footeren helt tomme.
+        Vi har endret måten å legge til navbaren og footeren på siden. Nå har vi
+        en JavaScriptfil, add.js, som inneholder en funksjon som kjører når
+        HTML-en er lastet som legger til innhold i headeren og footeren. Før
+        dette skjer er headeren og footeren helt tomme.
       </p>
       <h2>Modularitet</h2>
       <p>
         For å oppfylle kravet om modularitet har vi en fil, add.js, der både
         footeren og navigasjonsbaren ligger. Anne hadde ansvar for
-        navigasjonsbaren, og Vidar for footeren. Denne filen er linket til hver
-        delside, slik at vi slapp å kopiere koden. Stylingen av nettsiden hadde
-        vi alle ansvar for, og dette er samlet i et felles dokument, style.css.
-        Da vi var ferdig med selve kodingen tok vi en gjennomgang for å samle
-        fellestrekkene ved for eksempel knappene, og la dette i en felles kode
-        og tildelte alle knappene en felles class, slik at vi slapp å gjenta
-        stylingen på disse. Vi samlet også koden på bodyen, tekstboksen på alle
-        delsidnene (med unntak av index), overskriftene, noen av paragrafene, og
-        spanene. Dette gjorde koden mye mer ryddig, i tillegg til at det tar opp
-        mindre lagringsplass.
+        navigasjonsbaren, og Vidar for footeren. Denne filen er linket til på
+        hver delside, slik at vi slapp å kopiere koden. Stylingen av nettsiden
+        hadde vi alle ansvar for, og dette er samlet i et felles dokument,
+        style.css. Da vi var ferdig med selve kodingen tok vi en gjennomgang for
+        å samle fellestrekkene ved for eksempel knappene, og la dette i en
+        felles kode og tildelte alle knappene en felles class, slik at vi slapp
+        å gjenta stylingen på disse. Vi samlet også koden på bodyen, tekstboksen
+        på alle delsidnene (med unntak av index), overskriftene, noen av
+        paragrafene, og spanene. Dette gjorde koden mye mer ryddig, i tillegg
+        til at det tar opp mindre lagringsplass.
       </p>
 
       <h2>Arbeidsfordeling</h2>
